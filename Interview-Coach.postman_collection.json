@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "0a9c6f6e-a3a2-4c41-a40d-edf19f44dbcc",
+		"name": "Interview-Coach",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45743622",
+		"_collection_link": "https://jasonyun-9388096.postman.co/workspace/Jason-Yun's-Workspace~9e0e80b8-779d-4854-80c5-536d00777323/collection/45743622-0a9c6f6e-a3a2-4c41-a40d-edf19f44dbcc?action=share&source=collection_link&creator=45743622"
+	},
+	"item": [
+		{
+			"name": "Dev",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Sign up",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"john@gmail.com\",\n    \"password\": \"test123123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/auth/signup",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
