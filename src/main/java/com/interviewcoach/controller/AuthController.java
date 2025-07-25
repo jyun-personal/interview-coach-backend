@@ -3,6 +3,7 @@ package com.interviewcoach.controller;
 import com.interviewcoach.dto.AuthRequestDto;
 import com.interviewcoach.dto.AuthResponseDto;
 import com.interviewcoach.service.IAuthService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,14 +18,14 @@ public class AuthController {
     private IAuthService authService;
 
     @PostMapping("/signup")
-    public ResponseEntity<AuthResponseDto> signup(@RequestBody AuthRequestDto authRequestDto) {
+    public ResponseEntity<AuthResponseDto> signup(@Valid @RequestBody AuthRequestDto authRequestDto) {
         AuthResponseDto authResponseDto = authService.signup(authRequestDto);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(authResponseDto);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AuthResponseDto> login(@RequestBody AuthRequestDto authRequestDto) {
+    public ResponseEntity<AuthResponseDto> login(@Valid @RequestBody AuthRequestDto authRequestDto) {
         AuthResponseDto authResponseDto = authService.login(authRequestDto);
 
         return ResponseEntity.ok().body(authResponseDto);
