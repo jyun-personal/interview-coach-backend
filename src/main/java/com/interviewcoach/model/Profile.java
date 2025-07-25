@@ -1,5 +1,6 @@
 package com.interviewcoach.model;
 
+import com.interviewcoach.enums.Gender;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -18,6 +19,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "profiles")
 public class Profile {
 
     @Id
@@ -36,14 +38,18 @@ public class Profile {
     @Column(length = 50, nullable = false)
     private String lastName;
 
-    //    private String title;
+    @Size(max = 50)
+    @Column(length = 50)
+    private String title;  // Current job title. E.g. Data Engineer. Optional
 
     @Size(max = 50)
     @Column(length = 50)
     private String bio;
 
-    //    private String gender;
-    //    private String image; // Maybe generate mock user profile image with pollination AI here to meet the project requirement? Or use random avatar API such as https://randomuser.me/api/portraits/men/12.jpg
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20)
+    private Gender gender;  // Optional gender field
+    // This will be used to generate mock user profile images with https://randomuser.me/api/portraits/{gender}/12.jpg, etc
 
     @NotBlank
     @Size(max = 50)
@@ -60,8 +66,6 @@ public class Profile {
     @Column(length = 50, nullable = false)
     private String state;
 
-//    private String zip;
-
     @NotBlank
     @Size(max = 50)
     @Column(length = 50, nullable = false)
@@ -75,5 +79,6 @@ public class Profile {
     @Column(nullable = false)
     private OffsetDateTime updatedAt;
 
-    //private String resumeText; // Manually pasted resume content
+    @Column(columnDefinition = "TEXT")
+    private String resumeText; // Manually pasted resume content. Optional
 }

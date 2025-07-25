@@ -25,8 +25,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-//    private String username;
-
     @Email
     @NotBlank
     @Size(max = 254)
@@ -38,7 +36,7 @@ public class User {
     @Column(nullable = false, length = 255)
     private String passwordHash;
 
-//    private String role; // e.g., "JOB_SEEKER", "EMPLOYER"
+//    private String role; // e.g., "JOB_SEEKER", "EMPLOYER" - Maybe in the future after the MVP phase
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
