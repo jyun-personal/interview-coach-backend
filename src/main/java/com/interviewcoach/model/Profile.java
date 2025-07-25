@@ -73,4 +73,6 @@ public class Profile {
     @UpdateTimestamp
     @Column(nullable = false)
     private OffsetDateTime updatedAt;
+
+    //private String resumeText; // Manually pasted resume content
 }

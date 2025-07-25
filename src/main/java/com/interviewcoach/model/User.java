@@ -38,7 +38,7 @@ public class User {
     @Column(nullable = false, length = 255)
     private String passwordHash;
 
-//    private String role;
+//    private String role; // e.g., "JOB_SEEKER", "EMPLOYER"
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
