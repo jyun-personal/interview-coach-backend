@@ -42,7 +42,8 @@ public class Profile {
     @Column(length = 50)
     private String bio;
 
-    //    private String image;
+    //    private String gender;
+    //    private String image; // Maybe generate mock user profile image with pollination AI here to meet the project requirement? Or use random avatar API such as https://randomuser.me/api/portraits/men/12.jpg
 
     @NotBlank
     @Size(max = 50)
