@@ -2,6 +2,7 @@ package com.interviewcoach.service;
 
 import com.interviewcoach.dto.ProfileRequestDto;
 import com.interviewcoach.dto.ProfileResponseDto;
+import com.interviewcoach.exception.ResourceNotFoundException;
 import com.interviewcoach.model.Profile;
 import com.interviewcoach.model.User;
 import com.interviewcoach.repository.ProfileRepository;
@@ -24,7 +25,7 @@ public class ProfileService implements IProfileService {
 
     @Override
     public ProfileResponseDto createProfile(Long userId, ProfileRequestDto profileRequestDto) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
 
         if (user.getProfile() != null) {
             throw new RuntimeException("User already has a profile");
@@ -41,7 +42,7 @@ public class ProfileService implements IProfileService {
 
     @Override
     public ProfileResponseDto getProfileByUserId(Long userId) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
 
         if (user.getProfile() == null) {
             throw new RuntimeException("User has no profile");
@@ -54,7 +55,7 @@ public class ProfileService implements IProfileService {
 
     @Override
     public ProfileResponseDto updateProfile(Long userId, ProfileRequestDto profileRequestDto) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
+        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
 
         if (user.getProfile() == null) {
             throw new RuntimeException("User has no profile. You have to create a new one.");

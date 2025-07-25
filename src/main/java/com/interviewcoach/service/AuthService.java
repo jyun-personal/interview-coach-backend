@@ -2,6 +2,7 @@ package com.interviewcoach.service;
 
 import com.interviewcoach.dto.AuthRequestDto;
 import com.interviewcoach.dto.AuthResponseDto;
+import com.interviewcoach.exception.ResourceNotFoundException;
 import com.interviewcoach.model.User;
 import com.interviewcoach.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +42,7 @@ public class AuthService implements IAuthService {
 
     @Override
     public AuthResponseDto login(AuthRequestDto authRequestDto) {
-        User user = userRepository.findByEmail(authRequestDto.getEmail()).orElseThrow(() -> new RuntimeException("Invalid email or password"));
+        User user = userRepository.findByEmail(authRequestDto.getEmail()).orElseThrow(() -> new ResourceNotFoundException("User", "email", authRequestDto.getEmail()));
 
         if (!passwordEncoder.matches(authRequestDto.getPassword(), user.getPasswordHash())) {
             throw new RuntimeException("Invalid email or password");
