@@ -2,6 +2,7 @@ package com.interviewcoach.service;
 
 import com.interviewcoach.dto.AuthRequestDto;
 import com.interviewcoach.dto.AuthResponseDto;
+import com.interviewcoach.enums.UserRole;
 import com.interviewcoach.exception.BadRequestException;
 import com.interviewcoach.exception.ResourceNotFoundException;
 import com.interviewcoach.model.Profile;
@@ -38,10 +39,10 @@ public class AuthService implements IAuthService {
         String hashedPassword = passwordEncoder.encode(authRequestDto.getPassword());
 
         User newUser = User.builder()
-                .username(authRequestDto.getUsername()) // Set username
+                .username(authRequestDto.getUsername())
                 .email(authRequestDto.getEmail())
                 .passwordHash(hashedPassword)
-                .role("JOB_SEEKER") // Set default role
+                .role(UserRole.JOB_SEEKER) // Use Enum here
                 .build();
 
         User savedUser = userRepository.save(newUser);

@@ -1,6 +1,7 @@
 package com.interviewcoach.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.interviewcoach.enums.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,5 +19,5 @@ public class AuthResponseDto {
     private Long id; // User ID
     private String username; // Added username
     private String email;
-    private String role; // Added role
+    private UserRole role; // Added role
 }

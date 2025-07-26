@@ -4,11 +4,13 @@ import com.interviewcoach.dto.JobApplicationDto;
 import com.interviewcoach.service.IJobApplicationService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -26,9 +28,11 @@ public class JobApplicationController {
     }
 
     @GetMapping
-    public ResponseEntity<List<JobApplicationDto>> getAllJobApplicationsForUser(@RequestHeader("X-User-ID") Long userId) {
-        List<JobApplicationDto> jobApplications = jobApplicationService.getAllJobApplicationsForUser(userId);
-        return ResponseEntity.ok(jobApplications);
+    public ResponseEntity<Page<JobApplicationDto>> getAllJobApplicationsForUser(
+            @RequestHeader("X-User-ID") Long userId,
+            @PageableDefault(size = 10, sort = "applicationDate,desc") Pageable pageable) { // <--- Use @PageableDefault for default page/size/sort
+        Page<JobApplicationDto> jobApplicationsPage = jobApplicationService.getAllJobApplicationsForUser(userId, pageable);
+        return ResponseEntity.ok(jobApplicationsPage);
     }
 
     @GetMapping("/{id}")

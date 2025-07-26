@@ -10,12 +10,12 @@ import com.interviewcoach.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.OffsetDateTime;
-import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 @Service
 public class JobApplicationService implements IJobApplicationService {
@@ -37,24 +37,22 @@ public class JobApplicationService implements IJobApplicationService {
 
         JobApplication jobApplication = modelMapper.map(jobApplicationDto, JobApplication.class);
         jobApplication.setUser(user);
-        jobApplication.setApplicationDate(OffsetDateTime.now()); // Set application date automatically
-        jobApplication.setExpectedInterviewDate(jobApplicationDto.getExpectedInterviewDate()); // From DTO, can be null
+        jobApplication.setApplicationDate(OffsetDateTime.now());
+        jobApplication.setExpectedInterviewDate(jobApplicationDto.getExpectedInterviewDate());
         jobApplication.setTitle(jobApplicationDto.getTitle());
         jobApplication.setDescription(jobApplicationDto.getDescription());
-        jobApplication.setStatus("PENDING"); // Initial status
+        jobApplication.setStatus("PENDING");
 
         JobApplication savedJobApplication = jobApplicationRepository.save(jobApplication);
         return mapToDto(savedJobApplication);
     }
 
     @Override
-    public List<JobApplicationDto> getAllJobApplicationsForUser(Long userId) {
+    public Page<JobApplicationDto> getAllJobApplicationsForUser(Long userId, Pageable pageable) {
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId)); // Ensure user exists
-        List<JobApplication> jobApplications = jobApplicationRepository.findByUserId(userId);
-        return jobApplications.stream()
-                .map(this::mapToDto)
-                .collect(Collectors.toList());
+                .orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
+        Page<JobApplication> jobApplicationsPage = jobApplicationRepository.findAllByUser(user, pageable);
+        return jobApplicationsPage.map(this::mapToDto);
     }
 
     @Override
@@ -102,8 +100,7 @@ public class JobApplicationService implements IJobApplicationService {
 
     private JobApplicationDto mapToDto(JobApplication jobApplication) {
         JobApplicationDto dto = modelMapper.map(jobApplication, JobApplicationDto.class);
-        dto.setUserId(jobApplication.getUser().getId()); // Ensure userId is set in DTO
-        // Tags are not in MVP, but can be added here if needed in DTO
+        dto.setUserId(jobApplication.getUser().getId());
         return dto;
     }
 }

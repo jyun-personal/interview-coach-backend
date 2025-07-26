@@ -1,5 +1,6 @@
 package com.interviewcoach.model;
 
+import com.interviewcoach.enums.UserRole;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -41,9 +42,10 @@ public class User {
     @Column(nullable = false, length = 255)
     private String passwordHash;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
     @Builder.Default
-    private String role = "JOB_SEEKER"; // Default role for MVP. Can add "Employer" in the future
+    private UserRole role = UserRole.JOB_SEEKER; // Default role for MVP
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)

@@ -1,6 +1,7 @@
 package com.interviewcoach.config;
 
 import com.interviewcoach.enums.QuestionType;
+import com.interviewcoach.enums.UserRole;
 import com.interviewcoach.model.*;
 import com.interviewcoach.repository.*;
 import jakarta.transaction.Transactional;
@@ -36,7 +37,7 @@ public class DataSeeder implements CommandLineRunner {
 
     // Helper records for structured seeding data
     private record UserSeedData(String username, String email, String password, String firstName, String lastName,
-                                String bio, String resumeText) {
+                                String bio, String resumeText, UserRole role) {
     }
 
     private record JobAppSeedData(String title, String description, int weeksAhead, String status,
@@ -59,7 +60,8 @@ public class DataSeeder implements CommandLineRunner {
             UserSeedData tinaData = new UserSeedData(
                     "tinabrown", "tina.brown@example.com", "password123", "Tina", "Brown",
                     "Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects.",
-                    "Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira."
+                    "Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira.",
+                    UserRole.JOB_SEEKER
             );
             List<JobAppSeedData> tinaJobApps = new ArrayList<>();
             tinaJobApps.add(new JobAppSeedData(
@@ -217,7 +219,8 @@ public class DataSeeder implements CommandLineRunner {
             UserSeedData davidData = new UserSeedData(
                     "davidsmith", "david.smith@example.com", "password456", "David", "Smith",
                     "Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes.",
-                    "CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills."
+                    "CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills.",
+                    UserRole.JOB_SEEKER
             );
             List<JobAppSeedData> davidJobApps = new ArrayList<>();
             davidJobApps.add(new JobAppSeedData(
@@ -375,7 +378,8 @@ public class DataSeeder implements CommandLineRunner {
             UserSeedData lisaData = new UserSeedData(
                     "lisajones", "lisa.jones@example.com", "password789", "Lisa", "Jones",
                     "Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care.",
-                    "RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment."
+                    "RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment.",
+                    UserRole.JOB_SEEKER
             );
             List<JobAppSeedData> lisaJobApps = new ArrayList<>();
             lisaJobApps.add(new JobAppSeedData(
@@ -543,7 +547,7 @@ public class DataSeeder implements CommandLineRunner {
                 .username(userData.username())
                 .email(userData.email())
                 .passwordHash(passwordEncoder.encode(userData.password()))
-                .role("JOB_SEEKER")
+                .role(userData.role())
                 .build();
         newUser = userRepository.save(newUser);
 

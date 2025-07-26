@@ -1,14 +1,15 @@
 package com.interviewcoach.service;
 
 import com.interviewcoach.dto.JobApplicationDto;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import java.util.List;
 import java.util.UUID;
 
 public interface IJobApplicationService {
     JobApplicationDto createJobApplication(Long userId, JobApplicationDto jobApplicationDto);
 
-    List<JobApplicationDto> getAllJobApplicationsForUser(Long userId);
+    Page<JobApplicationDto> getAllJobApplicationsForUser(Long userId, Pageable pageable);
 
     JobApplicationDto getJobApplicationById(UUID jobApplicationId, Long userId);
 
