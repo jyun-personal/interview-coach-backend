@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/job-applications/{jobApplicationId}/questions")
+@RequestMapping("/api/job-applications/{jobApplicationId}/questions") // base path
 public class InterviewQuestionController {
 
     @Autowired
@@ -33,6 +33,7 @@ public class InterviewQuestionController {
         return ResponseEntity.ok(questions);
     }
 
+    // Endpoint for user to submit their response and get feedback
     @PatchMapping("/{questionId}/respond")
     public ResponseEntity<InterviewQuestionDto> submitUserResponse(@PathVariable UUID jobApplicationId,
                                                                    @PathVariable UUID questionId,

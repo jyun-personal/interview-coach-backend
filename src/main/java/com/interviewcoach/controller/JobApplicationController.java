@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/job-applications")
+@RequestMapping("/api/job-applications") // base path
 public class JobApplicationController {
 
     @Autowired
