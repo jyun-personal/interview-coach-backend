@@ -37,4 +37,7 @@ public class UserResponse {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "job_application_id", nullable = false)
     private JobApplication jobApplication;
+
+    @OneToOne(mappedBy = "userResponse", cascade = CascadeType.ALL, orphanRemoval = true)
+    private AiFeedback aiFeedback;
 }
