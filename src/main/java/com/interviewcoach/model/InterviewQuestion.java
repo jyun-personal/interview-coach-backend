@@ -12,6 +12,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.OffsetDateTime;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -22,22 +23,29 @@ import java.util.Set;
 public class InterviewQuestion {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     @NotBlank
     @Column(nullable = false, columnDefinition = "TEXT")
-    private String questionText;  // E.g. "What are your strengths and weaknesses?"
+    private String questionText;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = true, length = 50)
-    private QuestionType questionType; // BEHAVIORAL, TECHNICAL, SITUATIONAL, etc. It is ok to have null as the question type. A question like "How did you hear about this job?" basically doesn't have a question type
+    private QuestionType questionType;
 
     @Column(nullable = false, updatable = false)
     @CreationTimestamp
-    private OffsetDateTime createdAt;  // Timestamp the question was created by AI
+    private OffsetDateTime createdAt;
 
-    @ManyToMany(mappedBy = "interviewQuestions", fetch = FetchType.LAZY)
+    // Changed from ManyToMany to OneToMany for the associative entity JobApplicationQuestion
+    @OneToMany(mappedBy = "interviewQuestion", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
-    private Set<JobApplication> jobApplications = new HashSet<>(); // Each job application can have multiple interview questions, and each interview question can show up in multiple job applications
+    private Set<JobApplicationQuestion> jobApplicationQuestions = new HashSet<>();
+
+    // Helper method for managing the OneToMany relationship through the associative entity
+    public void addJobApplicationQuestion(JobApplicationQuestion jaq) {
+        this.jobApplicationQuestions.add(jaq);
+        jaq.setInterviewQuestion(this);
+    }
 }

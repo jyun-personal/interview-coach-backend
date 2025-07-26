@@ -22,8 +22,13 @@ import java.time.OffsetDateTime;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank
+    @Size(min = 3, max = 50)
+    @Column(nullable = false, unique = true, length = 50)
+    private String username;
 
     @Email
     @NotBlank
@@ -36,7 +41,9 @@ public class User {
     @Column(nullable = false, length = 255)
     private String passwordHash;
 
-//    private String role; // e.g., "JOB_SEEKER", "EMPLOYER" - Maybe in the future after the MVP phase
+    @Column(nullable = false, length = 20)
+    @Builder.Default
+    private String role = "JOB_SEEKER"; // Default role for MVP. Can add "Employer" in the future
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
@@ -46,6 +53,7 @@ public class User {
     @Column(nullable = false)
     private OffsetDateTime updatedAt;
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.REMOVE)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    // Cascade.ALL ensures profile operations (save/delete) propagate
     private Profile profile;
 }
