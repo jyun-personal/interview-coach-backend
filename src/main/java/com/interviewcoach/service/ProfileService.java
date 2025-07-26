@@ -2,11 +2,13 @@ package com.interviewcoach.service;
 
 import com.interviewcoach.dto.ProfileRequestDto;
 import com.interviewcoach.dto.ProfileResponseDto;
+import com.interviewcoach.exception.BadRequestException;
 import com.interviewcoach.exception.ResourceNotFoundException;
 import com.interviewcoach.model.Profile;
 import com.interviewcoach.model.User;
 import com.interviewcoach.repository.ProfileRepository;
 import com.interviewcoach.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,49 +26,69 @@ public class ProfileService implements IProfileService {
     private ModelMapper modelMapper;
 
     @Override
+    @Transactional // Ensure profile creation is part of a transaction
     public ProfileResponseDto createProfile(Long userId, ProfileRequestDto profileRequestDto) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
 
         if (user.getProfile() != null) {
-            throw new RuntimeException("User already has a profile");
+            throw new BadRequestException("User already has a profile."); // Use BadRequestException
         }
 
         Profile profile = modelMapper.map(profileRequestDto, Profile.class);
-
-        profile.setUser(user);
+        profile.setUser(user); // Link profile to user
+        profile.setId(user.getId()); // Set profile ID to match user ID due to @MapsId
 
         Profile savedProfile = profileRepository.save(profile);
 
-        return modelMapper.map(savedProfile, ProfileResponseDto.class);
+        // Link the newly created profile back to the user entity if not already cascaded
+        // User entity's @OneToOne(mappedBy="user", cascade=CascadeType.ALL) should handle this automatically.
+        // For explicitness: user.setProfile(savedProfile); userRepository.save(user); // If not cascading properly
+
+        return mapProfileToResponseDto(savedProfile);
     }
 
     @Override
     public ProfileResponseDto getProfileByUserId(Long userId) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
 
         if (user.getProfile() == null) {
-            throw new RuntimeException("User has no profile");
+            throw new ResourceNotFoundException("Profile", "User ID", userId); // More specific error
         }
 
         Profile userProfile = user.getProfile();
-
-        return modelMapper.map(userProfile, ProfileResponseDto.class);
+        return mapProfileToResponseDto(userProfile);
     }
 
     @Override
+    @Transactional // Ensure profile update is part of a transaction
     public ProfileResponseDto updateProfile(Long userId, ProfileRequestDto profileRequestDto) {
-        User user = userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new ResourceNotFoundException("User", "ID", userId));
 
         if (user.getProfile() == null) {
-            throw new RuntimeException("User has no profile. You have to create a new one.");
+            throw new ResourceNotFoundException("Profile", "User ID", userId); // More specific error
         }
 
-        Profile oldProfile = user.getProfile();
+        Profile existingProfile = user.getProfile();
 
-        modelMapper.map(profileRequestDto, oldProfile);
+        // Use modelMapper to update existing entity from DTO
+        modelMapper.map(profileRequestDto, existingProfile);
 
-        Profile updatedProfile = profileRepository.save(oldProfile);
+        Profile updatedProfile = profileRepository.save(existingProfile);
 
-        return modelMapper.map(updatedProfile, ProfileResponseDto.class);
+        return mapProfileToResponseDto(updatedProfile);
+    }
+
+    // Helper method to map Profile entity to ProfileResponseDto
+    private ProfileResponseDto mapProfileToResponseDto(Profile profile) {
+        ProfileResponseDto dto = modelMapper.map(profile, ProfileResponseDto.class);
+        // Manually set username and email from the associated User entity for display
+        if (profile.getUser() != null) {
+            dto.setUsername(profile.getUser().getUsername());
+            dto.setEmail(profile.getUser().getEmail());
+        }
+        return dto;
     }
 }

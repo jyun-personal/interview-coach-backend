@@ -35,12 +35,15 @@ public class JobApplication {
     @Column(name = "description", columnDefinition = "TEXT")
     private String description;
 
-    @Column(name = "application_date", nullable = false) // Made nullable false based on logic of setting on creation
-    @CreationTimestamp // Set automatically when persisted
-    private OffsetDateTime applicationDate; // Changed to OffsetDateTime for consistency
+    @Column(name = "application_date", nullable = false)
+    @CreationTimestamp
+    private OffsetDateTime applicationDate;
 
     @Column(name = "expected_interview_date")
     private LocalDate expectedInterviewDate;
+
+    @Column(name = "status", nullable = false, length = 20)
+    private String status; // e.g., "PENDING", "IN_PROGRESS", "COMPLETED"
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)

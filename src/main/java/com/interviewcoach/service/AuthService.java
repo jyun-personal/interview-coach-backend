@@ -2,9 +2,13 @@ package com.interviewcoach.service;
 
 import com.interviewcoach.dto.AuthRequestDto;
 import com.interviewcoach.dto.AuthResponseDto;
+import com.interviewcoach.exception.BadRequestException;
 import com.interviewcoach.exception.ResourceNotFoundException;
+import com.interviewcoach.model.Profile;
 import com.interviewcoach.model.User;
+import com.interviewcoach.repository.ProfileRepository;
 import com.interviewcoach.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -16,43 +20,64 @@ public class AuthService implements IAuthService {
     private UserRepository userRepository;
 
     @Autowired
+    private ProfileRepository profileRepository; // For creating initial profile
+
+    @Autowired
     PasswordEncoder passwordEncoder;
 
     @Override
+    @Transactional // Ensures both user and profile are saved or none
     public AuthResponseDto signup(AuthRequestDto authRequestDto) {
-
         if (userRepository.findByEmail(authRequestDto.getEmail()).isPresent()) {
-            throw new RuntimeException("User with this email already exists");
+            throw new BadRequestException("User with this email already exists.");
+        }
+        if (userRepository.findByUsername(authRequestDto.getUsername()).isPresent()) {
+            throw new BadRequestException("Username is already taken.");
         }
 
         String hashedPassword = passwordEncoder.encode(authRequestDto.getPassword());
 
-        User user = User.builder()
+        User newUser = User.builder()
+                .username(authRequestDto.getUsername()) // Set username
                 .email(authRequestDto.getEmail())
                 .passwordHash(hashedPassword)
+                .role("JOB_SEEKER") // Set default role
                 .build();
 
-        User savedUser = userRepository.save(user);
+        User savedUser = userRepository.save(newUser);
+
+        // Create an initial profile for the new user
+        Profile initialProfile = new Profile(savedUser, authRequestDto.getUsername(), authRequestDto.getUsername()); // Using username as default for first/last name
+        profileRepository.save(initialProfile);
+        savedUser.setProfile(initialProfile); // Link profile back to user
 
         return AuthResponseDto.builder()
                 .success(true)
                 .message("User registered successfully. Please login.")
+                .id(savedUser.getId())
+                .email(savedUser.getEmail())
+                .username(savedUser.getUsername())
+                .role(savedUser.getRole())
                 .build();
     }
 
     @Override
     public AuthResponseDto login(AuthRequestDto authRequestDto) {
-        User user = userRepository.findByEmail(authRequestDto.getEmail()).orElseThrow(() -> new ResourceNotFoundException("User", "email", authRequestDto.getEmail()));
+        // Allow login by either username or email
+        User user = userRepository.findByUsernameOrEmail(authRequestDto.getUsername(), authRequestDto.getEmail())
+                .orElseThrow(() -> new ResourceNotFoundException("User", "credentials", "provided")); // Use generic message for security
 
         if (!passwordEncoder.matches(authRequestDto.getPassword(), user.getPasswordHash())) {
-            throw new RuntimeException("Invalid email or password");
+            throw new BadRequestException("Invalid username/email or password.");
         }
 
         return AuthResponseDto.builder()
                 .success(true)
                 .message("Login Successful")
                 .id(user.getId())
+                .username(user.getUsername())
                 .email(user.getEmail())
+                .role(user.getRole())
                 .build();
     }
 }
