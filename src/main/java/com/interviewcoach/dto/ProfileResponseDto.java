@@ -5,19 +5,18 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class ProfileResponseDto {
-    private UUID id;
+    private Long id; // Matches User ID
     private String firstName;
     private String lastName;
+    private String phone;
     private String bio;
-    private String street;
-    private String city;
-    private String state;
-    private String country;
+    private String resumeText; // Added resumeText
+    // Removed: street, city, state, country
+    private String username; // For display, fetched from User
+    private String email; // For display, fetched from User
 }

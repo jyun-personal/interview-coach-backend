@@ -13,37 +13,20 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ProfileRequestDto {
 
-    @NotBlank
-    @Size(max = 50)
+    @NotBlank(message = "First name is required")
+    @Size(max = 50, message = "First name cannot exceed 50 characters")
     private String firstName;
 
-    @NotBlank
-    @Size(max = 50)
+    @NotBlank(message = "Last name is required")
+    @Size(max = 50, message = "Last name cannot exceed 50 characters")
     private String lastName;
 
-    //    private String title;
+    @Size(max = 20, message = "Phone number cannot exceed 20 characters")
+    private String phone;
 
-    @Size(max = 50)
+    @Size(max = 500, message = "Bio cannot exceed 500 characters")
     private String bio;
 
-    //    private String gender;
-    //    private String image; // Maybe generate mock user profile image with pollination AI here to meet the project requirement? Or use random avatar API such as https://randomuser.me/api/portraits/men/12.jpg
-
-    @NotBlank
-    @Size(max = 50)
-    private String street;
-
-    @NotBlank
-    @Size(max = 50)
-    private String city;
-
-    @NotBlank
-    @Size(max = 50)
-    private String state;
-
-//    private String zip;
-
-    @NotBlank
-    @Size(max = 50)
-    private String country;
+    private String resumeText; // Added resumeText
+    // Removed: title, gender, street, city, state, country for simplicity for the MVP
 }

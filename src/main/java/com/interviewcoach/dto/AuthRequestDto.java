@@ -14,12 +14,16 @@ import lombok.NoArgsConstructor;
 @Builder
 public class AuthRequestDto {
 
-    @Email
-    @NotBlank
-    @Size(max = 254)
+    @NotBlank(message = "Username is required")
+    @Size(min = 3, max = 50, message = "Username must be between 3 and 50 characters")
+    private String username; // Added username
+
+    @Email(message = "Email should be valid") // Email validation
+    @NotBlank(message = "Email is required")
+    @Size(max = 254, message = "Email cannot exceed 254 characters")
     private String email;
 
-    @NotBlank
-    @Size(min = 8, max = 255)
+    @NotBlank(message = "Password is required")
+    @Size(min = 8, max = 255, message = "Password must be at least 8 characters long")
     private String password;
 }

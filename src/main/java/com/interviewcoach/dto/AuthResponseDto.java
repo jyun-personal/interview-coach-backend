@@ -15,6 +15,8 @@ public class AuthResponseDto {
 
     private boolean success;
     private String message;
-    private Long id;
+    private Long id; // User ID
+    private String username; // Added username
     private String email;
+    private String role; // Added role
 }
