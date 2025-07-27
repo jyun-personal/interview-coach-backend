@@ -535,8 +535,15 @@ public class DataSeeder implements CommandLineRunner {
             seedUserWithJobApps(lisaData, lisaJobApps);
 
             System.out.println("Data seeding complete!");
+            System.out.println("\n=== APPLICATION SUCCESSFULLY LAUNCHED ===");
+            System.out.println("Interview Coach Backend is running on http://localhost:8080");
+            System.out.println(" -- From Data Seeder --");
+            System.out.println("==========================================\n");
         } else {
             System.out.println("Database already contains data. Skipping seeding.");
+            System.out.println("\n=== APPLICATION SUCCESSFULLY LAUNCHED ===");
+            System.out.println("Interview Coach Backend is running on http://localhost:8080");
+            System.out.println("==========================================\n");
         }
     }
 

@@ -20,7 +20,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"username\": \"jasonyun\",\n    \"email\": \"jasonyun@gmail.com\",\n    \"password\": \"password1234\"\n}",
+									"raw": "{\n    \"username\": \"jasonyun\",\n    \"email\": \"jasonyun@example.com\",\n    \"password\": \"password1234\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -134,7 +134,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/api/users/4/profile",
+									"raw": "http://localhost:8080/api/users/1/profile",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -143,7 +143,7 @@
 									"path": [
 										"api",
 										"users",
-										"4",
+										"1",
 										"profile"
 									]
 								}
@@ -222,45 +222,6 @@
 							"response": []
 						},
 						{
-							"name": "Get Job Application By UUID",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "X-User-ID",
-										"value": "1",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8080/api/job-applications/0be461a7-5585-457e-bd6c-0940dc154d44",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8080",
-									"path": [
-										"api",
-										"job-applications",
-										"0be461a7-5585-457e-bd6c-0940dc154d44"
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "Get All Job Application For User",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -270,7 +231,7 @@
 								"header": [
 									{
 										"key": "X-User-ID",
-										"value": "3",
+										"value": "2",
 										"type": "text"
 									}
 								],
@@ -299,6 +260,45 @@
 							"response": []
 						},
 						{
+							"name": "Get Job Application By UUID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "2",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications/99ea0fcf-3603-4e9b-811d-4d599151a586",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications",
+										"99ea0fcf-3603-4e9b-811d-4d599151a586"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Update Job Application",
 							"request": {
 								"method": "PUT",
@@ -311,7 +311,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"title\": \"Frontend Engineer II\",\n    \"description\": \"About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.\\n\\nResponsibilities:\\n*   Develop high-performance, fault-tolerant backend services in Java.\\n*   Design and manage database schemas for new and existing features.\\n*   Implement secure and efficient authentication and authorization mechanisms.\\n*   Participate in the full software development lifecycle, from design to deployment.\\n\\nRequirements:\\n*   Extensive experience with Java and Spring Boot.\\n*   Proficiency in designing and consuming RESTful APIs.\\n*   Strong knowledge of relational databases (e.g., PostgreSQL).\\n*   Experience with unit and integration testing.\\n*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.\\n\",\n    \"applicationDate\": \"2025-07-25T02:02:02.064442Z\",\n    \"expectedInterviewDate\": \"2025-10-11\",\n    \"status\": \"COMPLETED\",\n    \"tags\": null\n}",
+									"raw": "{\n    \"title\": \"Frontend Engineer I\",\n    \"description\": \"About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.\\n\\nResponsibilities:\\n*   Develop high-performance, fault-tolerant backend services in Java.\\n*   Design and manage database schemas for new and existing features.\\n*   Implement secure and efficient authentication and authorization mechanisms.\\n*   Participate in the full software development lifecycle, from design to deployment.\\n\\nRequirements:\\n*   Extensive experience with Java and Spring Boot.\\n*   Proficiency in designing and consuming RESTful APIs.\\n*   Strong knowledge of relational databases (e.g., PostgreSQL).\\n*   Experience with unit and integration testing.\\n*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.\\n\",\n    \"applicationDate\": \"2025-07-25T02:02:02.064442Z\",\n    \"expectedInterviewDate\": \"2025-10-11\",\n    \"status\": \"COMPLETED\",\n    \"tags\": null\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -319,7 +319,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/0be461a7-5585-457e-bd6c-0940dc154d44",
+									"raw": "http://localhost:8080/api/job-applications/8725b74f-90ca-41ea-a5d6-13a66589d82f",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -328,7 +328,7 @@
 									"path": [
 										"api",
 										"job-applications",
-										"0be461a7-5585-457e-bd6c-0940dc154d44"
+										"8725b74f-90ca-41ea-a5d6-13a66589d82f"
 									]
 								}
 							},
@@ -355,7 +355,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/0be461a7-5585-457e-bd6c-0940dc154d44",
+									"raw": "http://localhost:8080/api/job-applications/8725b74f-90ca-41ea-a5d6-13a66589d82f",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -364,7 +364,7 @@
 									"path": [
 										"api",
 										"job-applications",
-										"0be461a7-5585-457e-bd6c-0940dc154d44"
+										"8725b74f-90ca-41ea-a5d6-13a66589d82f"
 									]
 								}
 							},
@@ -382,12 +382,12 @@
 								"header": [
 									{
 										"key": "X-User-ID",
-										"value": "3",
+										"value": "1",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/b8262e86-4977-451b-97a3-ae78b19b1357/questions/generate",
+									"raw": "http://localhost:8080/api/job-applications/81d91faf-e32b-4778-b997-98f59f8267ff/questions/generate",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -396,7 +396,7 @@
 									"path": [
 										"api",
 										"job-applications",
-										"b8262e86-4977-451b-97a3-ae78b19b1357",
+										"81d91faf-e32b-4778-b997-98f59f8267ff",
 										"questions",
 										"generate"
 									]
@@ -416,7 +416,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/27b8e621-543f-46bf-8c9e-cb6fab093a2e/questions",
+									"raw": "http://localhost:8080/api/job-applications/81d91faf-e32b-4778-b997-98f59f8267ff/questions",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -425,7 +425,7 @@
 									"path": [
 										"api",
 										"job-applications",
-										"27b8e621-543f-46bf-8c9e-cb6fab093a2e",
+										"81d91faf-e32b-4778-b997-98f59f8267ff",
 										"questions"
 									]
 								}
@@ -445,7 +445,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"responseText\": \"I make sure to protect the cargo with plenty of packaging materials.\"\n}",
+									"raw": "{\n    \"responseText\": \"How do I ensure the security of the APIs I build? Well. I will make sure that I start by implementing authentication and authorization—typically using OAuth 2.0 or JWT tokens—to control access. I validate all input to prevent injection attacks, enforce HTTPS to secure data in transit, and use rate limiting and logging to monitor and mitigate abuse.\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -453,7 +453,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/27b8e621-543f-46bf-8c9e-cb6fab093a2e/questions/3b57f90a-6647-45bf-9c25-0da2f2251177/respond",
+									"raw": "http://localhost:8080/api/job-applications/87b50e63-86da-4b0f-93c6-86b0df11286e/questions/ccae61db-ff51-4101-9ea0-94f404b0cb78/respond",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -462,9 +462,9 @@
 									"path": [
 										"api",
 										"job-applications",
-										"27b8e621-543f-46bf-8c9e-cb6fab093a2e",
+										"87b50e63-86da-4b0f-93c6-86b0df11286e",
 										"questions",
-										"3b57f90a-6647-45bf-9c25-0da2f2251177",
+										"ccae61db-ff51-4101-9ea0-94f404b0cb78",
 										"respond"
 									]
 								}
