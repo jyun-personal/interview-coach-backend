@@ -15,8 +15,11 @@ public class ProfileController {
     @Autowired
     private IProfileService profileService;
 
-    // The createProfile endpoint was removed
-    // because the Profile is now created automatically when a User signs up via AuthService.
+    @PostMapping
+    public ResponseEntity<ProfileResponseDto> createProfile(@PathVariable Long userId, @Valid @RequestBody ProfileRequestDto profileRequestDto) {
+        ProfileResponseDto profileResponseDto = profileService.createProfile(userId, profileRequestDto);
+        return ResponseEntity.status(201).body(profileResponseDto); // HTTP 201 Created
+    }
 
     @GetMapping
     public ResponseEntity<ProfileResponseDto> getProfile(@PathVariable Long userId) {

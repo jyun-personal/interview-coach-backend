@@ -20,7 +20,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"email\": \"john@gmail.com\",\n    \"password\": \"test123123\"\n}",
+									"raw": "{\n    \"username\": \"janedoe\",\n    \"email\": \"janedoe@gmail.com\",\n    \"password\": \"password123\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28,13 +28,14 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/auth/signup",
+									"raw": "http://localhost:8080/api/auth/signup",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
+										"api",
 										"auth",
 										"signup"
 									]
@@ -49,7 +50,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"email\": \"john@gmail.com\",\n    \"password\": \"test123123\"\n}",
+									"raw": "{\n    \"username\": \"janedoe\",\n    \"email\": \"janedoe@gmail.com\",\n    \"password\": \"password123\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -57,13 +58,14 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/auth/login",
+									"raw": "http://localhost:8080/api/auth/login",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
+										"api",
 										"auth",
 										"login"
 									]
@@ -83,7 +85,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"phone\": \"777-888-9999\",\n    \"bio\": \"Software Engineer with a passion for backend\",\n    \"resumeText\": \"Results-driven Software Engineer with 4+ years of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -91,15 +93,16 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/users/1/profile",
+									"raw": "http://localhost:8080/api/users/4/profile",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
+										"api",
 										"users",
-										"1",
+										"4",
 										"profile"
 									]
 								}
@@ -113,7 +116,14 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
@@ -124,15 +134,16 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/users/1/profile",
+									"raw": "http://localhost:8080/api/users/4/profile",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
+										"api",
 										"users",
-										"1",
+										"4",
 										"profile"
 									]
 								}
@@ -146,7 +157,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"phone\": \"777-888-9999\",\n    \"bio\": \"Software Engineer with a passion for backend\",\n    \"resumeText\": \"Results-driven Software Engineer with 4+ years of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -154,16 +165,206 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/users/1/profile",
+									"raw": "http://localhost:8080/api/users/4/profile",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8080",
 									"path": [
+										"api",
 										"users",
-										"1",
+										"4",
 										"profile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job Applications",
+					"item": [
+						{
+							"name": "Create Job Application",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Frontend Engineer\",\n    \"description\": \"About Us:\\nWe're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.\\n\\nResponsibilities:\\n*   Develop high-performance, fault-tolerant backend services in Java.\\n*   Design and manage database schemas for new and existing features.\\n*   Implement secure and efficient authentication and authorization mechanisms.\\n*   Participate in the full software development lifecycle, from design to deployment.\\n\\nRequirements:\\n*   Extensive experience with Java and Spring Boot.\\n*   Proficiency in designing and consuming RESTful APIs.\\n*   Strong knowledge of relational databases (e.g., PostgreSQL).\\n*   Experience with unit and integration testing.\\n*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.\\n\",\n    \"applicationDate\": \"2025-07-25T02:02:02.064442Z\",\n    \"expectedInterviewDate\": \"2025-08-11\",\n    \"status\": \"IN-PROGRESS\",\n    \"tags\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Job Application By UUID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications/2a153b30-6276-4f39-8c69-654314cfa039",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications",
+										"2a153b30-6276-4f39-8c69-654314cfa039"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Job Application For User",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "3",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Job Application",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Frontend Engineer II\",\n    \"description\": \"About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.\\n\\nResponsibilities:\\n*   Develop high-performance, fault-tolerant backend services in Java.\\n*   Design and manage database schemas for new and existing features.\\n*   Implement secure and efficient authentication and authorization mechanisms.\\n*   Participate in the full software development lifecycle, from design to deployment.\\n\\nRequirements:\\n*   Extensive experience with Java and Spring Boot.\\n*   Proficiency in designing and consuming RESTful APIs.\\n*   Strong knowledge of relational databases (e.g., PostgreSQL).\\n*   Experience with unit and integration testing.\\n*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.\\n\",\n    \"applicationDate\": \"2025-07-25T02:02:02.064442Z\",\n    \"expectedInterviewDate\": \"2025-10-11\",\n    \"status\": \"COMPLETED\",\n    \"tags\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications/b570629a-b614-4c6d-9c47-a3511a81c2b1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications",
+										"b570629a-b614-4c6d-9c47-a3511a81c2b1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Job Application By UUID",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "3",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Frontend Engineer II\",\n    \"description\": \"About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.\\n\\nResponsibilities:\\n*   Develop high-performance, fault-tolerant backend services in Java.\\n*   Design and manage database schemas for new and existing features.\\n*   Implement secure and efficient authentication and authorization mechanisms.\\n*   Participate in the full software development lifecycle, from design to deployment.\\n\\nRequirements:\\n*   Extensive experience with Java and Spring Boot.\\n*   Proficiency in designing and consuming RESTful APIs.\\n*   Strong knowledge of relational databases (e.g., PostgreSQL).\\n*   Experience with unit and integration testing.\\n*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.\\n\",\n    \"applicationDate\": \"2025-07-25T02:02:02.064442Z\",\n    \"expectedInterviewDate\": \"2025-10-11\",\n    \"status\": \"COMPLETED\",\n    \"tags\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications/2a85175c-7200-45bc-baf3-76ea176ba5d7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications",
+										"2a85175c-7200-45bc-baf3-76ea176ba5d7"
 									]
 								}
 							},

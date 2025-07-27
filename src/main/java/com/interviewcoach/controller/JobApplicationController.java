@@ -6,6 +6,7 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +31,7 @@ public class JobApplicationController {
     @GetMapping
     public ResponseEntity<Page<JobApplicationDto>> getAllJobApplicationsForUser(
             @RequestHeader("X-User-ID") Long userId,
-            @PageableDefault(size = 10, sort = "applicationDate,desc") Pageable pageable) { // <--- Use @PageableDefault for default page/size/sort
+            @PageableDefault(size = 10, sort = "applicationDate", direction = Sort.Direction.DESC) Pageable pageable) {
         Page<JobApplicationDto> jobApplicationsPage = jobApplicationService.getAllJobApplicationsForUser(userId, pageable);
         return ResponseEntity.ok(jobApplicationsPage);
     }
@@ -50,7 +51,7 @@ public class JobApplicationController {
         return ResponseEntity.ok(updatedJobApplication);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping(value = "/{id}", produces = "application/json")
     public ResponseEntity<Void> deleteJobApplication(@PathVariable UUID id,
                                                      @RequestHeader("X-User-ID") Long userId) {
         jobApplicationService.deleteJobApplication(id, userId);
