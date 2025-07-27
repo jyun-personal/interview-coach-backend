@@ -6266,3 +6266,283 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2025-07-26 20:30:40.055 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2025-07-26 20:30:40.153 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2025-07-26 20:30:40.156 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.568 seconds (process running for 1.706)
+2025-07-26 20:44:46.430 [34mINFO [0;39m [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 20:44:46.430 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-26 20:44:46.431 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-07-26 20:44:46.445 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 20:44:46.446 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 20:44:46.459 [1;31mERROR[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping dfaf204e-87e4-43c8-848f-07efad8ebf87 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@7ab58e4b failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:44:46.459 [1;31mERROR[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping dfaf204e-87e4-43c8-848f-07efad8ebf87 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@7ab58e4b failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:48:29.709 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 20:48:29.709 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 20:48:29.713 [1;31mERROR[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping dfaf204e-87e4-43c8-848f-07efad8ebf87 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@7ab58e4b failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:48:29.713 [1;31mERROR[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping dfaf204e-87e4-43c8-848f-07efad8ebf87 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@7ab58e4b failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:55:56.885 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 20:55:58.894 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-26 20:55:58.901 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 20:55:58.943 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-26 20:55:58.947 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-26 20:56:00.292 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 24861 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-07-26 20:56:00.292 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-07-26 20:56:00.293 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-26 20:56:00.467 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-26 20:56:00.488 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
+2025-07-26 20:56:00.643 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-26 20:56:00.646 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-26 20:56:00.646 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-26 20:56:00.660 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-26 20:56:00.661 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 356 ms
+2025-07-26 20:56:00.705 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-26 20:56:00.717 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-07-26 20:56:00.726 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-26 20:56:00.793 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-26 20:56:00.799 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-26 20:56:00.829 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7645b7d
+2025-07-26 20:56:00.829 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-26 20:56:00.850 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-26 20:56:01.173 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-26 20:56:01.229 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 20:56:01.320 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-26 20:56:01.595 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-26 20:56:01.692 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-26 20:56:01.695 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.559 seconds (process running for 1.708)
+2025-07-26 20:56:28.377 [34mINFO [0;39m [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 20:56:28.379 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-26 20:56:28.379 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-07-26 20:56:28.392 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 20:56:28.392 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 20:56:28.404 [1;31mERROR[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping fd700b70-0121-4146-b439-73bc002a939d to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@62250a7c failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:56:28.404 [1;31mERROR[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping fd700b70-0121-4146-b439-73bc002a939d to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@62250a7c failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:56:53.019 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 20:56:53.019 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 20:56:53.021 [1;31mERROR[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping fd700b70-0121-4146-b439-73bc002a939d to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@62250a7c failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:56:53.022 [1;31mERROR[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping fd700b70-0121-4146-b439-73bc002a939d to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@62250a7c failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:57:09.343 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 20:57:11.348 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-26 20:57:11.350 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 20:57:11.373 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-26 20:57:11.373 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-26 20:57:40.866 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 25393 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-07-26 20:57:40.866 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-07-26 20:57:40.867 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-26 20:57:41.050 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-26 20:57:41.075 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 7 JPA repository interfaces.
+2025-07-26 20:57:41.242 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-26 20:57:41.246 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-26 20:57:41.246 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-26 20:57:41.263 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-26 20:57:41.263 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 384 ms
+2025-07-26 20:57:41.316 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-26 20:57:41.328 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-07-26 20:57:41.335 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-26 20:57:41.399 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-26 20:57:41.407 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-26 20:57:41.445 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ffa91dc
+2025-07-26 20:57:41.445 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-26 20:57:41.464 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-26 20:57:41.776 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-26 20:57:41.837 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 20:57:41.924 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-26 20:57:42.196 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-26 20:57:42.296 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-26 20:57:42.300 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.602 seconds (process running for 1.75)
+2025-07-26 20:58:11.424 [34mINFO [0;39m [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 20:58:11.424 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-26 20:58:11.425 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-26 20:58:11.443 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 20:58:11.444 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 20:58:11.457 [1;31mERROR[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping 78893c33-302e-42fe-80a3-53ad61e322d9 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@6e3fcbba failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:58:11.457 [1;31mERROR[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping 78893c33-302e-42fe-80a3-53ad61e322d9 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@6e3fcbba failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:58:41.776 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 20:58:41.776 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 20:58:41.780 [1;31mERROR[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping 78893c33-302e-42fe-80a3-53ad61e322d9 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@6e3fcbba failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 20:58:41.781 [1;31mERROR[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Error mapping 78893c33-302e-42fe-80a3-53ad61e322d9 to java.lang.Long
+
+1 error' and message = 'ModelMapper mapping errors:
+
+1) Converter org.modelmapper.internal.converter.NumberConverter@6e3fcbba failed to convert java.util.UUID to java.lang.Long.
+
+1 error'
+2025-07-26 21:01:57.002 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 21:01:59.011 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-26 21:01:59.017 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 21:01:59.058 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-26 21:01:59.061 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-26 21:02:00.430 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 25607 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-07-26 21:02:00.430 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-07-26 21:02:00.431 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-26 21:02:00.607 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-26 21:02:00.628 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
+2025-07-26 21:02:00.785 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-26 21:02:00.788 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-26 21:02:00.788 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-26 21:02:00.802 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-26 21:02:00.802 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 359 ms
+2025-07-26 21:02:00.848 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-26 21:02:00.862 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-07-26 21:02:00.870 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-26 21:02:00.933 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-26 21:02:00.940 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-26 21:02:00.964 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d132bb6
+2025-07-26 21:02:00.965 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-26 21:02:00.983 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-26 21:02:01.277 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-26 21:02:01.325 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 21:02:01.407 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-26 21:02:01.760 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-26 21:02:01.866 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-26 21:02:01.869 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.594 seconds (process running for 1.77)
+2025-07-26 21:02:14.619 [34mINFO [0;39m [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 21:02:14.619 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-26 21:02:14.620 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-26 21:02:14.635 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 21:02:14.635 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 21:02:14.641 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com)
+2025-07-26 21:02:14.644 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com),[]>
+2025-07-26 21:02:39.609 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [2]
+2025-07-26 21:02:39.610 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [2]
+2025-07-26 21:02:39.615 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com)
+2025-07-26 21:02:39.615 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com),[]>
+2025-07-26 21:02:42.223 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [3]
+2025-07-26 21:02:42.223 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [3]
+2025-07-26 21:02:42.226 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com)
+2025-07-26 21:02:42.226 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com),[]>
+2025-07-26 21:02:44.245 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [2]
+2025-07-26 21:02:44.245 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [2]
+2025-07-26 21:02:44.247 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com)
+2025-07-26 21:02:44.247 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com),[]>
+2025-07-26 21:02:45.590 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 21:02:45.591 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 21:02:45.593 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com)
+2025-07-26 21:02:45.594 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com),[]>
+2025-07-26 21:02:47.658 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [2]
+2025-07-26 21:02:47.658 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [2]
+2025-07-26 21:02:47.663 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com)
+2025-07-26 21:02:47.663 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com),[]>
+2025-07-26 21:02:49.206 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [3]
+2025-07-26 21:02:49.207 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [3]
+2025-07-26 21:02:49.209 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com)
+2025-07-26 21:02:49.210 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com),[]>
+2025-07-26 21:02:50.895 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [3]
+2025-07-26 21:02:50.896 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [3]
+2025-07-26 21:02:50.901 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com)
+2025-07-26 21:02:50.901 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com),[]>
+2025-07-26 21:02:52.378 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [33]
+2025-07-26 21:02:52.378 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [33]
+2025-07-26 21:02:52.382 [1;31mERROR[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'NULL' and message = 'User not found with ID : '33''
+2025-07-26 21:02:52.382 [1;31mERROR[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'NULL' and message = 'User not found with ID : '33''
+2025-07-26 21:02:56.872 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [3]
+2025-07-26 21:02:56.872 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [3]
+2025-07-26 21:02:56.875 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com)
+2025-07-26 21:02:56.875 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com),[]>

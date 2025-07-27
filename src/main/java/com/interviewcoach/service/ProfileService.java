@@ -86,8 +86,10 @@ public class ProfileService implements IProfileService {
     // Helper method to map Profile entity to ProfileResponseDto
     private ProfileResponseDto mapProfileToResponseDto(Profile profile) {
         ProfileResponseDto dto = modelMapper.map(profile, ProfileResponseDto.class);
-        // Manually set username and email from the associated User entity for display
+        
+        // Manually set the User ID and other User fields
         if (profile.getUser() != null) {
+            dto.setId(profile.getUser().getId()); // Set User's ID (Long), not Profile's UUID
             dto.setUsername(profile.getUser().getUsername());
             dto.setEmail(profile.getUser().getEmail());
         }
