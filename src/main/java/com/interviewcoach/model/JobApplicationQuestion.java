@@ -1,16 +1,16 @@
 package com.interviewcoach.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.io.Serializable;
 import java.time.OffsetDateTime;
+import java.util.Objects;
 
-@Data
+//@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -32,4 +32,24 @@ public class JobApplicationQuestion implements Serializable { // Serializable fo
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
     private OffsetDateTime addedAt;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        JobApplicationQuestion that = (JobApplicationQuestion) o;
+        return Objects.equals(jobApplication != null ? jobApplication.getId() : null,
+                that.jobApplication != null ? that.jobApplication.getId() : null) &&
+                Objects.equals(interviewQuestion != null ? interviewQuestion.getId() : null,
+                        that.interviewQuestion != null ? that.interviewQuestion.getId() : null);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(
+                jobApplication != null ? jobApplication.getId() : null,
+                interviewQuestion != null ? interviewQuestion.getId() : null
+        );
+    }
+
 }

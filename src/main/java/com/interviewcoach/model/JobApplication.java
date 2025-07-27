@@ -2,12 +2,7 @@ package com.interviewcoach.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
@@ -57,6 +52,12 @@ public class JobApplication {
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private Set<JobApplicationQuestion> jobApplicationQuestions = new HashSet<>();
+
+    @OneToMany(mappedBy = "jobApplication", cascade = CascadeType.ALL, orphanRemoval = true)
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+    @Builder.Default
+    private Set<UserResponse> userResponses = new HashSet<>();
 
     // Helper methods for managing the OneToMany relationship through the associative entity
     public void addJobApplicationQuestion(JobApplicationQuestion jaq) {

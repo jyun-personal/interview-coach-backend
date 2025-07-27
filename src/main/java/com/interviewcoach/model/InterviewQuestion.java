@@ -3,10 +3,7 @@ package com.interviewcoach.model;
 import com.interviewcoach.enums.QuestionType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.OffsetDateTime;
@@ -40,6 +37,8 @@ public class InterviewQuestion {
 
     // Changed from ManyToMany to OneToMany for the associative entity JobApplicationQuestion
     @OneToMany(mappedBy = "interviewQuestion", cascade = CascadeType.ALL, orphanRemoval = true)
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     @Builder.Default
     private Set<JobApplicationQuestion> jobApplicationQuestions = new HashSet<>();
 

@@ -51,7 +51,7 @@ public class JobApplicationController {
         return ResponseEntity.ok(updatedJobApplication);
     }
 
-    @DeleteMapping(value = "/{id}", produces = "application/json")
+    @DeleteMapping("/{id}") //, produces = "application/json")
     public ResponseEntity<Void> deleteJobApplication(@PathVariable UUID id,
                                                      @RequestHeader("X-User-ID") Long userId) {
         jobApplicationService.deleteJobApplication(id, userId);

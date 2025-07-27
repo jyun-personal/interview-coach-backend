@@ -3,10 +3,7 @@ package com.interviewcoach.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.OffsetDateTime;
@@ -24,8 +21,10 @@ public class AiFeedback {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne
     @JoinColumn(name = "user_response_id", nullable = false, unique = true)
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     private UserResponse userResponse;
 
     @Column(name = "feedback_text", columnDefinition = "TEXT", nullable = false)

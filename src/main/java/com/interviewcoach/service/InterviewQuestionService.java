@@ -178,7 +178,6 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         AiFeedback aiFeedback = aiFeedbackRepository.findByUserResponseId(savedUserResponse.getId())
                 .orElse(new AiFeedback()); // Create new if not exists
         aiFeedback.setUserResponse(savedUserResponse); // Set the relationship
-        aiFeedback.setId(savedUserResponse.getId()); // Set ID for @MapsId
         aiFeedback.setFeedbackText(feedbackText);
         aiFeedback.setScore(score);
         AiFeedback savedAiFeedback = aiFeedbackRepository.save(aiFeedback);

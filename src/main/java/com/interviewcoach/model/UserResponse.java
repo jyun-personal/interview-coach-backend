@@ -1,10 +1,7 @@
 package com.interviewcoach.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.OffsetDateTime;
@@ -39,5 +36,7 @@ public class UserResponse {
     private JobApplication jobApplication;
 
     @OneToOne(mappedBy = "userResponse", cascade = CascadeType.ALL, orphanRemoval = true)
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     private AiFeedback aiFeedback;
 }

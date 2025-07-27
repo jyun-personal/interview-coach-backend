@@ -51,17 +51,17 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(errorDto);
     }
 
-    @ExceptionHandler(RuntimeException.class)
-    @ResponseStatus(HttpStatus.NOT_ACCEPTABLE)
-    public ResponseEntity<ErrorDto> handleRuntimeException(RuntimeException ex) {
-        ErrorDto errorDto = ErrorDto.builder()
-                .status(HttpStatus.NOT_ACCEPTABLE.value())
-                .error(HttpStatus.NOT_ACCEPTABLE.getReasonPhrase())
-                .message(ex.getMessage())
-                .build();
-
-        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(errorDto);
-    }
+//    @ExceptionHandler(RuntimeException.class)
+//    @ResponseStatus(HttpStatus.NOT_ACCEPTABLE)
+//    public ResponseEntity<ErrorDto> handleRuntimeException(RuntimeException ex) {
+//        ErrorDto errorDto = ErrorDto.builder()
+//                .status(HttpStatus.NOT_ACCEPTABLE.value())
+//                .error(HttpStatus.NOT_ACCEPTABLE.getReasonPhrase())
+//                .message(ex.getMessage())
+//                .build();
+//
+//        return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(errorDto);
+//    }
 
     // Catch-all for other unexpected exceptions
     @ExceptionHandler(Exception.class)
