@@ -20,7 +20,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"username\": \"janedoe\",\n    \"email\": \"janedoe@gmail.com\",\n    \"password\": \"password123\"\n}",
+									"raw": "{\n    \"username\": \"jasonyun\",\n    \"email\": \"jasonyun@gmail.com\",\n    \"password\": \"password1234\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -50,7 +50,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"username\": \"janedoe\",\n    \"email\": \"janedoe@gmail.com\",\n    \"password\": \"password123\"\n}",
+									"raw": "{\n    \"username\": \"jasonyun\",\n    \"email\": \"jasonyun@gmail.com\",\n    \"password\": \"password1234\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -79,13 +79,13 @@
 					"name": "Profile",
 					"item": [
 						{
-							"name": "Create Profile",
+							"name": "[IGNORE] Create Profile",
 							"request": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"phone\": \"777-888-9999\",\n    \"bio\": \"Software Engineer with a passion for backend\",\n    \"resumeText\": \"Results-driven Software Engineer with 4+ years of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.\"\n}",
+									"raw": "{\n    \"firstName\": \"Jason\",\n    \"lastName\": \"Yun\",\n    \"phone\": \"777-888-9999\",\n    \"bio\": \"Software Engineer in training\",\n    \"resumeText\": \"Results-driven Software Engineer with 3 months of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -157,7 +157,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"phone\": \"777-888-9999\",\n    \"bio\": \"Software Engineer with a passion for backend\",\n    \"resumeText\": \"Results-driven Software Engineer with 4+ years of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.\"\n}",
+									"raw": "{\n    \"firstName\": \"Jason\",\n    \"lastName\": \"Yun\",\n    \"phone\": \"777-888-9999\",\n    \"bio\": \"Software Engineer in training\",\n    \"resumeText\": \"Results-driven Software Engineer with 3 months of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -245,7 +245,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/2a153b30-6276-4f39-8c69-654314cfa039",
+									"raw": "http://localhost:8080/api/job-applications/0be461a7-5585-457e-bd6c-0940dc154d44",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -254,7 +254,7 @@
 									"path": [
 										"api",
 										"job-applications",
-										"2a153b30-6276-4f39-8c69-654314cfa039"
+										"0be461a7-5585-457e-bd6c-0940dc154d44"
 									]
 								}
 							},
@@ -319,7 +319,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/b570629a-b614-4c6d-9c47-a3511a81c2b1",
+									"raw": "http://localhost:8080/api/job-applications/0be461a7-5585-457e-bd6c-0940dc154d44",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -328,7 +328,7 @@
 									"path": [
 										"api",
 										"job-applications",
-										"b570629a-b614-4c6d-9c47-a3511a81c2b1"
+										"0be461a7-5585-457e-bd6c-0940dc154d44"
 									]
 								}
 							},
@@ -341,7 +341,7 @@
 								"header": [
 									{
 										"key": "X-User-ID",
-										"value": "3",
+										"value": "1",
 										"type": "text"
 									}
 								],
@@ -355,7 +355,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/2a85175c-7200-45bc-baf3-76ea176ba5d7",
+									"raw": "http://localhost:8080/api/job-applications/0be461a7-5585-457e-bd6c-0940dc154d44",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -364,7 +364,108 @@
 									"path": [
 										"api",
 										"job-applications",
-										"2a85175c-7200-45bc-baf3-76ea176ba5d7"
+										"0be461a7-5585-457e-bd6c-0940dc154d44"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Interview Questions",
+					"item": [
+						{
+							"name": "Generate Questions",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "3",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications/b8262e86-4977-451b-97a3-ae78b19b1357/questions/generate",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications",
+										"b8262e86-4977-451b-97a3-ae78b19b1357",
+										"questions",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Questions For Job Application",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications/27b8e621-543f-46bf-8c9e-cb6fab093a2e/questions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications",
+										"27b8e621-543f-46bf-8c9e-cb6fab093a2e",
+										"questions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit User Response",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"responseText\": \"I make sure to protect the cargo with plenty of packaging materials.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/job-applications/27b8e621-543f-46bf-8c9e-cb6fab093a2e/questions/3b57f90a-6647-45bf-9c25-0da2f2251177/respond",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"job-applications",
+										"27b8e621-543f-46bf-8c9e-cb6fab093a2e",
+										"questions",
+										"3b57f90a-6647-45bf-9c25-0da2f2251177",
+										"respond"
 									]
 								}
 							},
