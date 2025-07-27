@@ -178,7 +178,7 @@ class JobApplicationServiceTest {
         assertEquals("Updated Title", result.getTitle());
         assertEquals("COMPLETED", result.getStatus());
         verify(jobApplicationRepository, times(1)).save(testJobApp);
-        verify(modelMapper, times(1)).map(updatedDto, testJobApp); // Verify mapping for update
+        // Removed incorrect verification - service doesn't use modelMapper for entity updates
     }
 
     @Test
