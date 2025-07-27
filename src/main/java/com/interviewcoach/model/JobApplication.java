@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
@@ -52,6 +54,8 @@ public class JobApplication {
     // Changed from ManyToMany to OneToMany for the associative entity JobApplicationQuestion
     @OneToMany(mappedBy = "jobApplication", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     private Set<JobApplicationQuestion> jobApplicationQuestions = new HashSet<>();
 
     // Helper methods for managing the OneToMany relationship through the associative entity

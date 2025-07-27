@@ -867,3 +867,39 @@ Part 1: Backend Application (60 points total)
    Meets Expectations: 70-89 points
    Partially Meets Expectations: 50-69 points
    Does Not Meet Expectations: Below 50 points
+
+-------- MVP Plan ------------
+
+My idea: a full stack interview preparation app where users could paste in job descriptions and have AI generate mock
+interview questions for the user to practise answering and then getting feedback from the AI.
+For the first phase the MVP could be simply a functional prototype that can deliver the Core User Flow:
+Before the app runs, data seeder should populate the database with some mock data (such as mock users, mock profiles,
+mock job applications, mock interview questions, mock user responses (sample answers), mock AI feedback, etc)
+Job seeker creates account, logs in and pastes a job description (text)
+Pollinations.ai generates 3 relevant interview questions based on the job description:
+The app should first try to use AI API by passing the job description as part of the prompt and asking AI to come up
+with 3 interview questions that are relevant to this job and most likely come up on the actual interview. For now let’s
+ask for 1 behavioral question, 1 technical question and 1 situational question. For example, a prompt could be like “For
+the following job description, please come up with 3 mock interview questions (ideally 1 behavioral, 1 technical and 1
+situational) assuming you are a career coach. {jobDescription}.”
+If for some reason AI fails to respond or it is taking too long, the app should fall back the mock sample questions we
+have pre-populated in the database at the beginning.
+User practices typing responses under each question
+There is a textarea under each question for the user to type in their answer.
+There is also a submit button the user could use to submit their answer to AI.
+[Bonus] a “Clear” button next to “Submit” to clear the textarea content.
+Basic AI feedback display:
+Once the user finishes typing in the textarea and hit “Submit”, the app takes the user response and puts that in another
+prompt and delivers it to AI, asking it to evaluate this response with respect to the question and provide feedback as a
+career coach. For example, a prompt could be like “For the interview question {InterviewQuestionText}, how would you
+evaluate and provide feedback to the answer {userResponseText} assuming you are a career coach?”.
+Again if AI fails to respond here, display the mock feedback in the database under each question and user response.
+Question history and progress tracking:
+There is a page for the user to view their previous job applications, the sample questions for each application, their
+answers, AI feedback, etc.
+Under each job posting, there could be some progress indicators showing things like “Mock Interview Completed”, “Haven’t
+Practiced Yet”, “In Progress”, etc. These can just be mock data.
+Simple profile management:
+A profile page for each user to view (and possibly edit) their profile information.
+At any point, any errors are handled gracefully with clear error messages displayed to the user.
+Make sure the MVP meets all the requirements in project_instructions.txt.

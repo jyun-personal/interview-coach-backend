@@ -11,6 +11,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.OffsetDateTime;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -21,11 +22,11 @@ import java.time.OffsetDateTime;
 public class Profile {
 
     @Id
-    private Long id; // Matches User.id for shared primary key
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
-    @OneToOne
-    @MapsId // Maps the primary key of the owning entity (Profile) to the primary key of the associated entity (User)
-    @JoinColumn(name = "user_id", nullable = false) // user_id column will be the PK and FK
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id", nullable = false, unique = true)
     private User user;
 
     @NotBlank
@@ -62,7 +63,6 @@ public class Profile {
     // Constructor to link User and Profile for initial creation in AuthService
     public Profile(User user, String firstName, String lastName) {
         this.user = user;
-        this.id = user.getId(); // Set ID from the User
         this.firstName = firstName;
         this.lastName = lastName;
     }

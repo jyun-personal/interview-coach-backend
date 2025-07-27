@@ -549,13 +549,16 @@ public class DataSeeder implements CommandLineRunner {
                 .passwordHash(passwordEncoder.encode(userData.password()))
                 .role(userData.role())
                 .build();
+
         newUser = userRepository.save(newUser);
 
         Profile newProfile = new Profile(newUser, userData.firstName(), userData.lastName());
         newProfile.setBio(userData.bio());
         newProfile.setResumeText(userData.resumeText());
         profileRepository.save(newProfile);
-        newUser.setProfile(newProfile); // Link back
+        newUser.setProfile(newProfile);
+
+//        userRepository.save(newUser); // Explicitly re-save User to ensure its updated Profile association is flushed. It also now cascades the persistence of newProfile
 
         for (JobAppSeedData jobAppInfo : jobAppsData) {
             JobApplication jobApp = JobApplication.builder()
@@ -599,8 +602,9 @@ public class DataSeeder implements CommandLineRunner {
                     .score(qrf.aiFeedbackScore())
                     .userResponse(userResponse)
                     .build();
-            aiFeedback.setId(userResponse.getId()); // Crucial for @MapsId
+//            aiFeedback.setId(userResponse.getId());
             aiFeedbackRepository.save(aiFeedback);
+            userResponse.setAiFeedback(aiFeedback);
         }
         jobApplicationRepository.save(jobApplication); // Ensure JobApplication's questions collection is updated
     }

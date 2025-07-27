@@ -37,9 +37,11 @@ public class ProfileService implements IProfileService {
 
         Profile profile = modelMapper.map(profileRequestDto, Profile.class);
         profile.setUser(user); // Link profile to user
-        profile.setId(user.getId()); // Set profile ID to match user ID due to @MapsId
+//        profile.setId(user.getId()); // Set profile ID to match user ID due to @MapsId
 
         Profile savedProfile = profileRepository.save(profile);
+
+        user.setProfile(savedProfile);
 
         // Link the newly created profile back to the user entity if not already cascaded
         // User entity's @OneToOne(mappedBy="user", cascade=CascadeType.ALL) should handle this automatically.

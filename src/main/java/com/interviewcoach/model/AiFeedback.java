@@ -21,12 +21,11 @@ import java.util.UUID;
 public class AiFeedback {
 
     @Id
-    private UUID id; // Matches UserResponse.id for shared primary key
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
-    @OneToOne
-    @MapsId
-    // Maps the primary key of the owning entity (AiFeedback) to the primary key of the associated entity (UserResponse)
-    @JoinColumn(name = "user_response_id", nullable = false) // user_response_id column will be the PK and FK
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_response_id", nullable = false, unique = true)
     private UserResponse userResponse;
 
     @Column(name = "feedback_text", columnDefinition = "TEXT", nullable = false)
