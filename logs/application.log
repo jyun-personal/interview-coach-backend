@@ -6546,3 +6546,189 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2025-07-26 21:02:56.872 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [3]
 2025-07-26 21:02:56.875 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com)
 2025-07-26 21:02:56.875 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com),[]>
+2025-07-26 21:09:33.792 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [3]
+2025-07-26 21:09:33.793 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [3]
+2025-07-26 21:09:33.795 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com)
+2025-07-26 21:09:33.795 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com),[]>
+2025-07-26 21:09:37.496 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [2]
+2025-07-26 21:09:37.496 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [2]
+2025-07-26 21:09:37.498 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com)
+2025-07-26 21:09:37.498 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=2, firstName=David, lastName=Smith, phone=null, bio=Experienced Commercial Truck Driver with a clean driving record and a commitment to safe and timely delivery. Proficient in various freight types and routes., resumeText=CDL Class A, HAZMAT endorsement. 10+ years regional and OTR experience. Familiar with ELD and DOT regulations. Strong communication and navigation skills., username=davidsmith, email=david.smith@example.com),[]>
+2025-07-26 21:09:44.713 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-26 21:09:44.713 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-26 21:09:44.714 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com)
+2025-07-26 21:09:44.714 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com),[]>
+2025-07-26 21:11:52.434 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [466d6562-a560-48b2-ba9f-114e11f4f1b3, 1]
+2025-07-26 21:11:52.435 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [466d6562-a560-48b2-ba9f-114e11f4f1b3, 1]
+2025-07-26 21:11:52.445 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=466d6562-a560-48b2-ba9f-114e11f4f1b3, userId=1, title=Backend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-27T02:02:02.064442Z, expectedInterviewDate=2025-08-16, status=COMPLETED, tags=null)
+2025-07-26 21:11:52.446 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=466d6562-a560-48b2-ba9f-114e11f4f1b3, userId=1, title=Backend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-27T02:02:02.064442Z, expectedInterviewDate=2025-08-16, status=COMPLETED, tags=null),[]>
+2025-07-26 21:29:35.605 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.createJobApplication() with argument[s] = [1, JobApplicationDto(id=null, userId=null, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-08-11, status=IN-PROGRESS, tags=null)]
+2025-07-26 21:29:35.605 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.createJobApplication() with argument[s] = [1, JobApplicationDto(id=null, userId=null, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-08-11, status=IN-PROGRESS, tags=null)]
+2025-07-26 21:29:35.612 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.createJobApplication() with result = JobApplicationDto(id=c8e58358-0fc3-4b8a-8b37-fd4000a0b0a3, userId=1, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-26T21:29:35.612366-05:00, expectedInterviewDate=2025-08-11, status=PENDING, tags=null)
+2025-07-26 21:29:35.617 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.createJobApplication() with result = <201 CREATED Created,JobApplicationDto(id=c8e58358-0fc3-4b8a-8b37-fd4000a0b0a3, userId=1, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-26T21:29:35.612366-05:00, expectedInterviewDate=2025-08-11, status=PENDING, tags=null),[]>
+2025-07-26 21:36:06.813 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 21:36:07.823 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-26 21:36:07.830 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 21:36:07.860 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-26 21:36:07.861 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-26 21:36:08.894 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 27807 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-07-26 21:36:08.894 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-07-26 21:36:08.894 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-26 21:36:09.066 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-26 21:36:09.091 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 7 JPA repository interfaces.
+2025-07-26 21:36:09.239 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-26 21:36:09.242 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-26 21:36:09.243 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-26 21:36:09.255 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-26 21:36:09.256 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 350 ms
+2025-07-26 21:36:09.302 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-26 21:36:09.313 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-07-26 21:36:09.321 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-26 21:36:09.379 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-26 21:36:09.386 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-26 21:36:09.411 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@631944d4
+2025-07-26 21:36:09.411 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-26 21:36:09.429 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-26 21:36:09.717 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-26 21:36:09.772 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 21:36:09.855 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-26 21:36:10.190 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-26 21:36:10.292 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-26 21:36:10.296 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.569 seconds (process running for 1.712)
+2025-07-26 21:36:48.039 [34mINFO [0;39m [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 21:36:48.039 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-26 21:36:48.040 [34mINFO [0;39m [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-26 21:36:48.055 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [c2e74385-0139-4766-84c7-e8bf7f025942, 2]
+2025-07-26 21:36:48.055 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [c2e74385-0139-4766-84c7-e8bf7f025942, 2]
+2025-07-26 21:36:48.064 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=c2e74385-0139-4766-84c7-e8bf7f025942, userId=2, title=Local Delivery Driver, description=Job Summary:
+Seeking a dedicated Local Delivery Driver to transport goods within a 150-mile radius. This role requires adherence to delivery schedules and safe operation of commercial vehicles.
+
+Duties & Responsibilities:
+*   Safely operate commercial truck (e.g., box truck, straight truck).
+*   Load and unload freight using appropriate equipment.
+*   Maintain accurate delivery logs and vehicle inspection reports.
+*   Communicate effectively with dispatch and customers.
+
+Requirements:
+*   Valid Class A or B CDL with clean driving record.
+*   Minimum 2 years commercial driving experience.
+*   Ability to lift up to 50 lbs.
+*   Knowledge of local delivery routes.
+, applicationDate=2025-07-27T02:36:10.562963Z, expectedInterviewDate=2025-08-02, status=COMPLETED, tags=null)
+2025-07-26 21:36:48.067 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=c2e74385-0139-4766-84c7-e8bf7f025942, userId=2, title=Local Delivery Driver, description=Job Summary:
+Seeking a dedicated Local Delivery Driver to transport goods within a 150-mile radius. This role requires adherence to delivery schedules and safe operation of commercial vehicles.
+
+Duties & Responsibilities:
+*   Safely operate commercial truck (e.g., box truck, straight truck).
+*   Load and unload freight using appropriate equipment.
+*   Maintain accurate delivery logs and vehicle inspection reports.
+*   Communicate effectively with dispatch and customers.
+
+Requirements:
+*   Valid Class A or B CDL with clean driving record.
+*   Minimum 2 years commercial driving experience.
+*   Ability to lift up to 50 lbs.
+*   Knowledge of local delivery routes.
+, applicationDate=2025-07-27T02:36:10.562963Z, expectedInterviewDate=2025-08-02, status=COMPLETED, tags=null),[]>
+2025-07-26 21:37:03.107 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 21:37:05.116 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-26 21:37:05.119 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-26 21:37:05.142 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-26 21:37:05.143 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
