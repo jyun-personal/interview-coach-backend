@@ -48,9 +48,9 @@ public class AuthService implements IAuthService {
         User savedUser = userRepository.save(newUser);
 
         // Create an initial profile for the new user
-        Profile initialProfile = new Profile(savedUser, authRequestDto.getUsername(), authRequestDto.getUsername()); // Using username as default for first/last name
+        Profile initialProfile = new Profile(savedUser, authRequestDto.getFirstName(), authRequestDto.getLastName());
         profileRepository.save(initialProfile);
-        savedUser.setProfile(initialProfile); // Link profile back to user
+        savedUser.setProfile(initialProfile);
 
         return AuthResponseDto.builder()
                 .success(true)
