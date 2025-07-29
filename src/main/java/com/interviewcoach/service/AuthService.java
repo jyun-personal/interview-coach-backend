@@ -2,6 +2,7 @@ package com.interviewcoach.service;
 
 import com.interviewcoach.dto.AuthRequestDto;
 import com.interviewcoach.dto.AuthResponseDto;
+import com.interviewcoach.dto.LoginRequestDto;
 import com.interviewcoach.enums.UserRole;
 import com.interviewcoach.exception.BadRequestException;
 import com.interviewcoach.exception.ResourceNotFoundException;
@@ -63,13 +64,13 @@ public class AuthService implements IAuthService {
     }
 
     @Override
-    public AuthResponseDto login(AuthRequestDto authRequestDto) {
-        // Allow login by either username or email
-        User user = userRepository.findByUsernameOrEmail(authRequestDto.getUsername(), authRequestDto.getEmail())
+    public AuthResponseDto login(LoginRequestDto loginRequestDto) {
+        // Login using email only (since LoginRequestDto only has email and password)
+        User user = userRepository.findByEmail(loginRequestDto.getEmail())
                 .orElseThrow(() -> new ResourceNotFoundException("User", "credentials", "provided")); // Use generic message for security
 
-        if (!passwordEncoder.matches(authRequestDto.getPassword(), user.getPasswordHash())) {
-            throw new BadRequestException("Invalid username/email or password.");
+        if (!passwordEncoder.matches(loginRequestDto.getPassword(), user.getPasswordHash())) {
+            throw new BadRequestException("Invalid email or password.");
         }
 
         return AuthResponseDto.builder()

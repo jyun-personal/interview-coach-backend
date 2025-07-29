@@ -1,21 +1,41 @@
-2025-07-28 14:39:50.739 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 6503 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
-2025-07-28 14:39:50.740 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
-2025-07-28 14:39:50.740 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
-2025-07-28 14:39:50.954 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-28 14:39:50.977 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 7 JPA repository interfaces.
-2025-07-28 14:39:51.151 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-07-28 14:39:51.156 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-07-28 14:39:51.156 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-07-28 14:39:51.173 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-07-28 14:39:51.173 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 420 ms
-2025-07-28 14:39:51.229 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-28 14:39:51.248 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
-2025-07-28 14:39:51.258 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-07-28 14:39:51.334 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-28 14:39:51.342 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-07-28 14:39:51.374 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6591f8ea
-2025-07-28 14:39:51.374 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-07-28 14:39:51.400 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-07-29 00:43:36.715 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m39s131ms).
+2025-07-29 01:44:33.800 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h57s85ms).
+2025-07-29 03:00:50.001 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h16m16s201ms).
+2025-07-29 04:21:15.861 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h20m25s860ms).
+2025-07-29 05:32:25.801 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11m9s940ms).
+2025-07-29 06:06:27.621 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m1s820ms).
+2025-07-29 07:22:24.470 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m56s849ms).
+2025-07-29 07:31:50.765 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m26s295ms).
+2025-07-29 08:44:16.732 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h12m25s967ms).
+2025-07-29 08:48:27.794 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m11s62ms).
+2025-07-29 08:54:58.148 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m30s354ms).
+2025-07-29 08:55:11.400 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [3, Page request [number: 0, size 10, sort: applicationDate: DESC]]
+2025-07-29 08:55:11.400 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [3, Page request [number: 0, size 10, sort: applicationDate: DESC]]
+2025-07-29 08:55:11.411 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-07-29 08:55:11.411 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-07-29 09:08:38.996 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 09:08:38.999 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-29 09:08:39.001 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-29 09:08:39.022 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-29 09:08:39.023 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-29 09:55:27.720 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 18952 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-07-29 09:55:27.721 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-07-29 09:55:27.721 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 09:55:27.954 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-29 09:55:27.984 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 7 JPA repository interfaces.
+2025-07-29 09:55:28.182 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-29 09:55:28.186 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-29 09:55:28.186 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 09:55:28.202 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-29 09:55:28.202 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 469 ms
+2025-07-29 09:55:28.255 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-29 09:55:28.269 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-07-29 09:55:28.278 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-29 09:55:28.346 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-29 09:55:28.354 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-29 09:55:28.381 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5273143e
+2025-07-29 09:55:28.382 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-29 09:55:28.410 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 15.13
@@ -23,46 +43,35 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-28 14:39:51.740 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-28 14:39:51.803 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-28 14:39:51.899 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-28 14:39:52.247 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-28 14:39:52.357 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-07-28 14:39:52.360 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.791 seconds (process running for 1.996)
-2025-07-28 14:55:25.259 [34mINFO [0;39m [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-28 14:55:25.260 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-07-28 14:55:25.260 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-07-28 15:00:18.419 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=janedoe, email=janedoe@example.com, password=password1234)]
-2025-07-28 15:00:18.420 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=janedoe, email=janedoe@example.com, password=password1234)]
-2025-07-28 15:00:18.500 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janedoe, email=janedoe@example.com, role=JOB_SEEKER)
-2025-07-28 15:00:18.503 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janedoe, email=janedoe@example.com, role=JOB_SEEKER),[]>
-2025-07-28 16:27:10.732 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=janetdoe, email=janetdoe@example.com, password=password1234)]
-2025-07-28 16:27:10.732 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=janetdoe, email=janetdoe@example.com, password=password1234)]
-2025-07-28 16:27:10.827 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=5, username=janetdoe, email=janetdoe@example.com, role=JOB_SEEKER)
-2025-07-28 16:27:10.831 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=5, username=janetdoe, email=janetdoe@example.com, role=JOB_SEEKER),[]>
-2025-07-28 16:34:44.653 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-28 16:34:44.656 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-07-28 16:34:44.657 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-28 16:34:44.680 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-07-28 16:34:44.680 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-07-28 16:34:46.374 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 10386 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
-2025-07-28 16:34:46.375 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
-2025-07-28 16:34:46.375 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
-2025-07-28 16:34:46.570 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-28 16:34:46.592 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
-2025-07-28 16:34:46.752 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-07-28 16:34:46.756 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-07-28 16:34:46.756 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-07-28 16:34:46.772 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-07-28 16:34:46.772 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 387 ms
-2025-07-28 16:34:46.826 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-28 16:34:46.841 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
-2025-07-28 16:34:46.849 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-07-28 16:34:46.919 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-28 16:34:46.927 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-07-28 16:34:46.965 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16e907b6
-2025-07-28 16:34:46.966 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-07-28 16:34:46.986 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-07-29 09:55:28.739 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-29 09:55:28.799 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-29 09:55:28.890 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-29 09:55:29.234 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-29 09:55:29.347 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-29 09:55:29.350 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.802 seconds (process running for 1.976)
+2025-07-29 10:32:04.855 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-29 10:32:04.860 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-29 10:32:04.862 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-29 10:32:04.886 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-29 10:32:04.886 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-29 10:32:06.392 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 20684 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-07-29 10:32:06.392 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-07-29 10:32:06.393 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-29 10:32:06.569 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-29 10:32:06.589 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 7 JPA repository interfaces.
+2025-07-29 10:32:06.758 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-29 10:32:06.762 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-29 10:32:06.762 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-07-29 10:32:06.776 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-29 10:32:06.776 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 373 ms
+2025-07-29 10:32:06.821 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-29 10:32:06.834 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-07-29 10:32:06.842 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-29 10:32:06.903 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-29 10:32:06.910 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-29 10:32:06.937 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23ec2bdc
+2025-07-29 10:32:06.938 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-29 10:32:06.958 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 15.13
@@ -70,122 +79,48 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-28 16:34:47.323 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-28 16:34:47.376 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-28 16:34:47.468 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-28 16:34:47.812 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-28 16:34:47.919 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-07-28 16:34:47.922 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.712 seconds (process running for 1.865)
-2025-07-28 16:35:38.131 [34mINFO [0;39m [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-28 16:35:38.132 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-07-28 16:35:38.132 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-07-28 16:35:38.181 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=johndoe, email=johndoe@example.com, password=password1234)]
-2025-07-28 16:35:38.182 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=johndoe, email=johndoe@example.com, password=password1234)]
-2025-07-28 16:35:38.253 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=johndoe, email=johndoe@example.com, role=JOB_SEEKER)
-2025-07-28 16:35:38.257 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=johndoe, email=johndoe@example.com, role=JOB_SEEKER),[]>
-2025-07-28 16:42:28.536 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=johndoe, email=johndoe@example.com, password=password1234)]
-2025-07-28 16:42:28.538 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=johndoe, email=johndoe@example.com, password=password1234)]
-2025-07-28 16:42:28.548 [1;31mERROR[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.AuthService.signup() with cause = 'NULL' and message = 'User with this email already exists.'
-2025-07-28 16:42:28.549 [1;31mERROR[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.AuthController.signup() with cause = 'NULL' and message = 'User with this email already exists.'
-2025-07-28 17:02:47.620 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-28 17:02:47.624 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-07-28 17:02:47.625 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-28 17:02:47.653 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-07-28 17:02:47.653 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-07-28 17:02:49.202 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 11109 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
-2025-07-28 17:02:49.202 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
-2025-07-28 17:02:49.203 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
-2025-07-28 17:02:49.400 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-28 17:02:49.423 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 7 JPA repository interfaces.
-2025-07-28 17:02:49.598 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-07-28 17:02:49.603 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-07-28 17:02:49.603 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-07-28 17:02:49.620 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-07-28 17:02:49.620 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 406 ms
-2025-07-28 17:02:49.669 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-28 17:02:49.683 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
-2025-07-28 17:02:49.691 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-07-28 17:02:49.758 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-28 17:02:49.765 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-07-28 17:02:49.790 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fa212df
-2025-07-28 17:02:49.791 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-07-28 17:02:49.812 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.13
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-28 17:02:50.154 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-28 17:02:50.196 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-28 17:02:50.297 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-28 17:02:50.648 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-28 17:02:50.751 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-07-28 17:02:50.754 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.716 seconds (process running for 1.867)
-2025-07-28 17:03:33.185 [34mINFO [0;39m [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-28 17:03:33.185 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-07-28 17:03:33.186 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-07-28 17:03:33.229 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
-2025-07-28 17:03:33.230 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
-2025-07-28 17:03:33.301 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janetlee, email=janetlee@example.com, role=JOB_SEEKER)
-2025-07-28 17:03:33.304 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janetlee, email=janetlee@example.com, role=JOB_SEEKER),[]>
-2025-07-28 17:07:39.760 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
-2025-07-28 17:07:39.761 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
-2025-07-28 17:07:39.770 [1;31mERROR[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.AuthService.signup() with cause = 'NULL' and message = 'User with this email already exists.'
-2025-07-28 17:07:39.771 [1;31mERROR[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.AuthController.signup() with cause = 'NULL' and message = 'User with this email already exists.'
-2025-07-28 17:07:43.179 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
-2025-07-28 17:07:43.180 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
-2025-07-28 17:07:43.184 [1;31mERROR[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.AuthService.signup() with cause = 'NULL' and message = 'User with this email already exists.'
-2025-07-28 17:07:43.184 [1;31mERROR[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.AuthController.signup() with cause = 'NULL' and message = 'User with this email already exists.'
-2025-07-28 17:21:34.380 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-28 17:21:34.383 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-07-28 17:21:34.385 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-28 17:21:34.402 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-07-28 17:21:34.403 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-07-28 17:21:35.469 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 11811 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
-2025-07-28 17:21:35.470 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
-2025-07-28 17:21:35.470 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
-2025-07-28 17:21:35.646 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-28 17:21:35.666 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
-2025-07-28 17:21:35.822 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-07-28 17:21:35.825 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-07-28 17:21:35.825 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-07-28 17:21:35.840 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-07-28 17:21:35.840 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 357 ms
-2025-07-28 17:21:35.885 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-28 17:21:35.896 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
-2025-07-28 17:21:35.904 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-07-28 17:21:35.961 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-28 17:21:35.968 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-07-28 17:21:35.993 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@279c4e3b
-2025-07-28 17:21:35.994 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-07-28 17:21:36.012 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.13
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-07-28 17:21:36.304 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-28 17:21:36.353 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-28 17:21:36.438 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-28 17:21:36.769 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-28 17:21:36.871 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-07-28 17:21:36.874 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.564 seconds (process running for 1.711)
-2025-07-28 17:22:41.838 [34mINFO [0;39m [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-28 17:22:41.839 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-07-28 17:22:41.839 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-07-28 17:22:41.885 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=janedavis24, email=janedavis24@example.com, password=Password1234!, firstName=Jane, lastName=Davis)]
-2025-07-28 17:22:41.886 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=janedavis24, email=janedavis24@example.com, password=Password1234!, firstName=Jane, lastName=Davis)]
-2025-07-28 17:22:41.958 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janedavis24, email=janedavis24@example.com, role=JOB_SEEKER)
-2025-07-28 17:22:41.961 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janedavis24, email=janedavis24@example.com, role=JOB_SEEKER),[]>
-2025-07-28 17:22:41.978 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [4]
-2025-07-28 17:22:41.978 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [4]
-2025-07-28 17:22:41.983 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=4, firstName=Jane, lastName=Davis, phone=null, bio=null, resumeText=null, username=janedavis24, email=janedavis24@example.com)
-2025-07-28 17:22:41.984 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=4, firstName=Jane, lastName=Davis, phone=null, bio=null, resumeText=null, username=janedavis24, email=janedavis24@example.com),[]>
-2025-07-28 17:28:54.885 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.login() with argument[s] = [AuthRequestDto(username=janedavis24, email=janedavis24@example.com, password=Password1234!, firstName=Jane, lastName=Davis)]
-2025-07-28 17:28:54.886 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.login() with argument[s] = [AuthRequestDto(username=janedavis24, email=janedavis24@example.com, password=Password1234!, firstName=Jane, lastName=Davis)]
-2025-07-28 17:28:54.972 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.login() with result = AuthResponseDto(success=true, message=Login Successful, id=4, username=janedavis24, email=janedavis24@example.com, role=JOB_SEEKER)
-2025-07-28 17:28:54.973 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.login() with result = <200 OK OK,AuthResponseDto(success=true, message=Login Successful, id=4, username=janedavis24, email=janedavis24@example.com, role=JOB_SEEKER),[]>
+2025-07-29 10:32:07.248 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-29 10:32:07.308 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-29 10:32:07.394 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-29 10:32:07.725 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-29 10:32:07.827 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-29 10:32:07.830 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 1.588 seconds (process running for 1.727)
+2025-07-29 10:33:42.384 [34mINFO [0;39m [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-29 10:33:42.385 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-29 10:33:42.386 [34mINFO [0;39m [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-29 10:33:42.431 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.login() with argument[s] = [LoginRequestDto(email=tina.brown@example.com, password=password123)]
+2025-07-29 10:33:42.431 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.login() with argument[s] = [LoginRequestDto(email=tina.brown@example.com, password=password123)]
+2025-07-29 10:33:42.504 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.login() with result = AuthResponseDto(success=true, message=Login Successful, id=1, username=tinabrown, email=tina.brown@example.com, role=JOB_SEEKER)
+2025-07-29 10:33:42.505 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.login() with result = <200 OK OK,AuthResponseDto(success=true, message=Login Successful, id=1, username=tinabrown, email=tina.brown@example.com, role=JOB_SEEKER),[]>
+2025-07-29 10:33:42.521 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [1]
+2025-07-29 10:33:42.521 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [1]
+2025-07-29 10:33:42.524 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com)
+2025-07-29 10:33:42.525 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=1, firstName=Tina, lastName=Brown, phone=null, bio=Passionate Software Developer with expertise in React, Spring Boot, and cloud technologies. Eager to contribute to innovative projects., resumeText=Frontend: React, TypeScript, Redux. Backend: Java, Spring Boot, REST APIs. Database: PostgreSQL, MongoDB. Cloud: AWS (EC2, S3, RDS). Tools: Git, Docker, Jira., username=tinabrown, email=tina.brown@example.com),[]>
+2025-07-29 10:33:42.548 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:33:42.548 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:33:42.557 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-07-29 10:33:42.557 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-07-29 10:33:42.559 [31mWARN [0;39m [http-nio-8080-exec-6] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-07-29 10:33:42.565 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:33:42.566 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:33:42.569 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-07-29 10:33:42.569 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-07-29 10:36:45.934 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:36:45.934 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:36:45.940 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-07-29 10:36:45.940 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-07-29 10:36:45.943 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:36:45.943 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:36:45.947 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-07-29 10:36:45.947 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-07-29 10:37:02.672 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:37:02.672 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:37:02.681 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-07-29 10:37:02.681 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-07-29 10:37:02.684 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:37:02.685 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [1, Page request [number: 0, size 20, sort: applicationDate: DESC]]
+2025-07-29 10:37:02.690 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-07-29 10:37:02.690 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>

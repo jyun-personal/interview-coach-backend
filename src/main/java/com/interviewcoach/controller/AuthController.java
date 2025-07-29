@@ -2,6 +2,7 @@ package com.interviewcoach.controller;
 
 import com.interviewcoach.dto.AuthRequestDto;
 import com.interviewcoach.dto.AuthResponseDto;
+import com.interviewcoach.dto.LoginRequestDto;
 import com.interviewcoach.service.IAuthService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +28,8 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AuthResponseDto> login(@Valid @RequestBody AuthRequestDto authRequestDto) {
-        AuthResponseDto authResponseDto = authService.login(authRequestDto);
+    public ResponseEntity<AuthResponseDto> login(@Valid @RequestBody LoginRequestDto loginRequestDto) {
+        AuthResponseDto authResponseDto = authService.login(loginRequestDto);
         return ResponseEntity.ok().body(authResponseDto);
     }
 }
