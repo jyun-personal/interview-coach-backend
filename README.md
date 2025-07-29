@@ -87,3 +87,7 @@
 
 ![AOP console log](./screenshots/bonus/01-AOP-Console-Log.png)
 ![AOP log file](./screenshots/bonus/01-AOP-Log-File.png)
+
+## Spring Actuator Health
+
+![actuator health](./screenshots/postman/14-actuator-health.png)
