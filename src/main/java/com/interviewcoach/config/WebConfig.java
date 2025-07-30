@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Apply CORS to all endpoints
-                .allowedOrigins("http://localhost:5173", "http://127.0.0.1:5173") // Allow the React app's dev server
+                .allowedOrigins("http://localhost:5173", "http://127.0.0.1:5173", "https://creative-babka-9faa2c.netlify.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true)

@@ -6,6 +6,8 @@
 
 https://interview-coach-backend-slvr.onrender.com
 
+![render log](./screenshots/render/14-render-log.png)
+
 ## List of all endpoints tested in Postman:
 
 ### Authentication Endpoints (Render.com Deployment)
