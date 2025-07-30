@@ -20,7 +20,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"username\": \"jasonyun\",\n    \"email\": \"jasonyun@example.com\",\n    \"password\": \"password1234\"\n}",
+									"raw": "{\n    \"username\": \"janetlee\",\n    \"email\": \"janetlee@example.com\",\n    \"password\": \"12345678\",\n    \"firstName\": \"Janet\",\n    \"lastName\": \"Lee\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -50,7 +50,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"username\": \"jasonyun\",\n    \"email\": \"jasonyun@gmail.com\",\n    \"password\": \"password1234\"\n}",
+									"raw": "{\n    \"username\": \"janetlee\",\n    \"email\": \"janedavis24@example.com\",\n    \"password\": \"Password1234!\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -231,7 +231,7 @@
 								"header": [
 									{
 										"key": "X-User-ID",
-										"value": "2",
+										"value": "1",
 										"type": "text"
 									}
 								],
@@ -387,7 +387,7 @@
 									}
 								],
 								"url": {
-									"raw": "http://localhost:8080/api/job-applications/81d91faf-e32b-4778-b997-98f59f8267ff/questions/generate",
+									"raw": "http://localhost:8080/api/job-applications/a3529fd3-1120-4d57-8edc-0bcc9c887295/questions/generate",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -396,7 +396,7 @@
 									"path": [
 										"api",
 										"job-applications",
-										"81d91faf-e32b-4778-b997-98f59f8267ff",
+										"a3529fd3-1120-4d57-8edc-0bcc9c887295",
 										"questions",
 										"generate"
 									]
@@ -466,6 +466,551 @@
 										"questions",
 										"ccae61db-ff51-4101-9ea0-94f404b0cb78",
 										"respond"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Health",
+					"item": [
+						{
+							"name": "Actuator Health",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"janetlee\",\n    \"email\": \"janetlee@example.com\",\n    \"password\": \"12345678\",\n    \"firstName\": \"Janet\",\n    \"lastName\": \"Lee\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/actuator/health",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"actuator",
+										"health"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Prod",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Sign up",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Holly\",\n    \"lastName\": \"Thompson\",\n    \"username\": \"hollythompson\",\n    \"email\": \"hollythompson@example.com\",\n    \"password\": \"password123\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/auth/signup",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"hollythompson@example.com\",\n    \"password\": \"password123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/auth/login",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "[IGNORE] Create Profile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Jason\",\n    \"lastName\": \"Yun\",\n    \"phone\": \"777-888-9999\",\n    \"bio\": \"Software Engineer in training\",\n    \"resumeText\": \"Results-driven Software Engineer with 3 months of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/4/profile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"4",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Profile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/users/3/profile",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"users",
+										"3",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Holly\",\n    \"lastName\": \"Thompson\",\n    \"phone\": \"777-333-9999\",\n    \"bio\": \"Certified Public Accountant\",\n    \"resumeText\": \"A highly accomplished Certified Public Accountant with over a decade of experience in financial reporting, tax planning, and regulatory compliance. Proven track record of guiding businesses through complex audits and driving operational efficiency through data-driven strategies. Adept at building client trust, resolving financial discrepancies, and delivering tailored solutions that maximize long-term value. Known for meticulous attention to detail, collaborative leadership, and an unwavering commitment to ethical standards.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/users/4/profile",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"users",
+										"4",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job Applications",
+					"item": [
+						{
+							"name": "Create Job Application",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Managerial Accountant\",\n    \"description\": \"About Us: We're a dynamic organization seeking a Managerial Accountant to lead budgeting, forecasting, and financial analysis efforts. You will play a key role in supporting strategic decisions, maintaining cost controls, and delivering clear performance insights to leadership. Responsibilities: Develop and monitor departmental budgets and financial plans. Analyze cost structures and identify opportunities for operational efficiency. Prepare financial reports and dashboards for senior management review. Collaborate with cross-functional teams to align financial goals with business objectives. Requirements: Bachelor's degree in Accounting or Finance; CPA or CMA certification preferred. Strong proficiency in financial modeling and Excel. Experience with ERP systems such as SAP or Oracle. Exceptional analytical skills and attention to detail.\",\n    \"applicationDate\": \"2025-07-29T21:02:00.000000Z\",\n    \"expectedInterviewDate\": \"2025-08-15\",\n    \"status\": \"IN-PROGRESS\",\n    \"tags\": null\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Job Application For User",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "3",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Job Application By UUID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"bio\": \"Software Engineer with a passion for open source\",\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications/39138cf5-0c6a-4d6a-96ad-ceae1b181cea",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications",
+										"39138cf5-0c6a-4d6a-96ad-ceae1b181cea"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Job Application",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Senior Managerial Accountant\",\n    \"description\": \"Company Intro: We're a dynamic organization seeking a Managerial Accountant to lead budgeting, forecasting, and financial analysis efforts. You will play a key role in supporting strategic decisions, maintaining cost controls, and delivering clear performance insights to leadership. Responsibilities: Develop and monitor departmental budgets and financial plans. Analyze cost structures and identify opportunities for operational efficiency. Prepare financial reports and dashboards for senior management review. Collaborate with cross-functional teams to align financial goals with business objectives. Requirements: Bachelor's degree in Accounting or Finance; CPA or CMA certification preferred. Strong proficiency in financial modeling and Excel. Experience with ERP systems such as SAP or Oracle. Exceptional analytical skills and attention to detail.\",\n    \"applicationDate\": \"2025-07-28T21:02:00.000000Z\",\n    \"expectedInterviewDate\": \"2025-08-16\",\n    \"status\": \"IN-PROGRESS\",\n    \"tags\": null\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications/39138cf5-0c6a-4d6a-96ad-ceae1b181cea",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications",
+										"39138cf5-0c6a-4d6a-96ad-ceae1b181cea"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Job Application By UUID",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Frontend Engineer II\",\n    \"description\": \"About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.\\n\\nResponsibilities:\\n*   Develop high-performance, fault-tolerant backend services in Java.\\n*   Design and manage database schemas for new and existing features.\\n*   Implement secure and efficient authentication and authorization mechanisms.\\n*   Participate in the full software development lifecycle, from design to deployment.\\n\\nRequirements:\\n*   Extensive experience with Java and Spring Boot.\\n*   Proficiency in designing and consuming RESTful APIs.\\n*   Strong knowledge of relational databases (e.g., PostgreSQL).\\n*   Experience with unit and integration testing.\\n*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.\\n\",\n    \"applicationDate\": \"2025-07-25T02:02:02.064442Z\",\n    \"expectedInterviewDate\": \"2025-10-11\",\n    \"status\": \"COMPLETED\",\n    \"tags\": null\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications/129e8295-bc18-47d1-a36d-08b50a5b6a19",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications",
+										"129e8295-bc18-47d1-a36d-08b50a5b6a19"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Interview Questions",
+					"item": [
+						{
+							"name": "Generate Questions",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "3",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications/aa38c73a-06b3-4b6d-8333-c0f80e75fd69/questions/generate",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications",
+										"aa38c73a-06b3-4b6d-8333-c0f80e75fd69",
+										"questions",
+										"generate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Questions For Job Application",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "3",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications/aa38c73a-06b3-4b6d-8333-c0f80e75fd69/questions",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications",
+										"aa38c73a-06b3-4b6d-8333-c0f80e75fd69",
+										"questions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit User Response",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-User-ID",
+										"value": "3",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"responseText\": \"While conducting a home visit, I encountered a patient who appeared unusually fatigued and disoriented, with limited mobility and poor medication adherence. I conducted a thorough physical assessment, reviewed their medication regimen, and spoke with family members to gather additional context. Based on my evaluation, I implemented a care plan focused on fall prevention, medication management, and scheduled a follow-up with their primary provider. The patient’s condition improved significantly over the next few weeks, validating the approach and reinforcing the value of comprehensive in-home assessments.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/api/job-applications/aa38c73a-06b3-4b6d-8333-c0f80e75fd69/questions/b867556c-3797-4f59-937a-938889b22adf/respond",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"api",
+										"job-applications",
+										"aa38c73a-06b3-4b6d-8333-c0f80e75fd69",
+										"questions",
+										"b867556c-3797-4f59-937a-938889b22adf",
+										"respond"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Health",
+					"item": [
+						{
+							"name": "Actuator Health",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"janetlee\",\n    \"email\": \"janetlee@example.com\",\n    \"password\": \"12345678\",\n    \"firstName\": \"Janet\",\n    \"lastName\": \"Lee\"\n}"
+								},
+								"url": {
+									"raw": "https://interview-coach-backend-slvr.onrender.com/actuator/health",
+									"protocol": "https",
+									"host": [
+										"interview-coach-backend-slvr",
+										"onrender",
+										"com"
+									],
+									"path": [
+										"actuator",
+										"health"
 									]
 								}
 							},

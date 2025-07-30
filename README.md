@@ -2,9 +2,59 @@
 
 ![ERD](./ERD.png)
 
+## Render.com Deployment
+
+https://interview-coach-backend-slvr.onrender.com
+
 ## List of all endpoints tested in Postman:
 
-### Authentication Endpoints
+### Authentication Endpoints (Render.com Deployment)
+
+1. POST /api/auth/signup - User registration
+   ![auth signup](./screenshots/render/01-render-auth-signup.png)
+
+2. POST /api/auth/login - User login
+   ![auth login](./screenshots/render/02-render-auth-login.png)
+
+3. GET /api/users/{userId}/profile - Get user profile
+   ![get profile](./screenshots/render/03-profile-get-profile.png)
+
+4. PUT /api/users/{userId}/profile - Update user profile
+   ![update profile](./screenshots/render/04-render-update-profile.png)
+
+5. POST /api/job-applications - Create job application
+   ![create job app](./screenshots/render/05-render-add-job-application.png)
+
+6. GET /api/job-applications - Get all job applications for user (user ID provided via X-User-ID in header)
+   ![get all job apps for user](./screenshots/render/06-render-get-all-job-application-for-user.png)
+
+7. GET /api/job-applications/{jobAppId} - Get specific job application by its UUID and X-User-ID through header (each
+   user can only view their own job applications)
+   ![get job app by UUID](./screenshots/render/07-render-get-job-application-by-uuid.png)
+
+8. PUT /api/job-applications/{jobAppId} - Update job application with UUID and X-User-ID
+   ![update job application](./screenshots/render/08-render-update-job-application.png)
+
+9. DELETE /api/job-applications/{jobAppId} - Delete job application (X-User-ID provided in header to ensure each user
+   can only delete their own job applications)
+   ![delete job application](./screenshots/render/09-render-delete-job-application.png)
+
+10. POST /api/job-applications/{jobAppId}/questions/generate - Use the power of AI to generate practice interview
+    questions
+    ![generate questions](./screenshots/render/10-render-generate-questions.png)
+
+11. GET /api/job-applications/{jobAppId}/questions - Get questions for a specific job application that belongs to the
+    current user (X-User-ID)
+    ![get question for job](./screenshots/render/11-render-get-questions-for-job.png)
+
+12. PATCH /api/job-applications/{jobAppId}/questions/{questionId}/respond - User submits their response to an interview
+    question in a specific job application and get AI feedback (X-User-ID to verify user identity)
+    ![respond feedback](./screenshots/render/12-render-response-aifeedback.png)
+
+13. Actuator Health
+    ![actuator health](./screenshots/render/13-render-actuator-health.png)
+
+### Authentication Endpoints (Localhost)
 
 1. POST /api/auth/signup - User registration
    ![user signup](./screenshots/postman/01-user-signup.png)
@@ -88,6 +138,10 @@
 ![AOP console log](./screenshots/bonus/01-AOP-Console-Log.png)
 ![AOP log file](./screenshots/bonus/01-AOP-Log-File.png)
 
-## Spring Actuator Health
+## Spring Actuator Health (Localhost)
 
 ![actuator health](./screenshots/postman/14-actuator-health.png)
+
+## Spring Actuator Health (Render.com deployment)
+
+![render actuator health](./screenshots/render/13-render-actuator-health.png)
