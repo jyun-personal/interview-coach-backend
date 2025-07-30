@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Service
@@ -160,13 +162,13 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         try {
             // Placeholder: If Gemini were integrated, this would be: feedbackText = aiService.generateTextFromGeminiAI(prompt, geminiApiKey);
             feedbackText = aiService.generateTextFromGeminiAI(prompt, geminiApiKey); // This will throw error for MVP
-            score = 8; // Mock score if Gemini worked
+            score = parseScoreFromFeedback(feedbackText);
         } catch (IOException | InterruptedException e) {
             System.err.println("Gemini AI feedback failed/not integrated: " + e.getMessage() + ". Falling back to Pollinations.ai.");
             // 2. Fallback to Pollinations.ai
             try {
                 feedbackText = aiService.generateTextFromPollinationsAI(prompt);
-                score = 7; // Mock score if Pollinations worked
+                score = parseScoreFromFeedback(feedbackText);
             } catch (IOException | InterruptedException ex) {
                 System.err.println("Pollinations.ai feedback failed: " + ex.getMessage() + ". Falling back to mock data.");
                 feedbackText = generateMockFeedback(userResponseSubmitDto.getResponseText()); // Mock feedback
@@ -265,5 +267,25 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             dto.setAiFeedbackId(aiFeedback.getId());
         }
         return dto;
+    }
+
+    // Function to parse the score from the AI feedback message string
+    private int parseScoreFromFeedback(String feedbackText) {
+        try {
+            // Look for "Score: X/10" pattern in the feedback
+            Pattern pattern = Pattern.compile("Score: (\\d+)/10");
+            Matcher matcher = pattern.matcher(feedbackText);
+
+            if (matcher.find()) {
+                int score = Integer.parseInt(matcher.group(1));
+                // Ensure score is between 1-10
+                return Math.max(1, Math.min(10, score));
+            }
+        } catch (NumberFormatException e) {
+            System.err.println("Could not parse score from feedback: " + e.getMessage());
+        }
+
+        // Fallback: generate random score if parsing fails
+        return 6 + (int) (Math.random() * 4); // 6-9
     }
 }
