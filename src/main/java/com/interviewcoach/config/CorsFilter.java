@@ -18,7 +18,8 @@ public class CorsFilter implements Filter {
     private final List<String> allowedOrigins = Arrays.asList(
             "http://localhost:5173",
             "http://localhost:3000",
-            "https://creative-babka-9faa2c.netlify.app"
+            "https://creative-babka-9faa2c.netlify.app",
+            "https://pages.git.generalassemb.ly"
     );
 
     @Override
