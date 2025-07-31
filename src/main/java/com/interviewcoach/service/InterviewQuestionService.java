@@ -193,7 +193,7 @@ public class InterviewQuestionService implements IInterviewQuestionService {
 
     private String buildPromptForQuestionGeneration(String jobTitle, String jobDescription) {
         return String.format("As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question for a \"%s\" role based on this job description: \"%s\". " +
-                        "Provide only the questions, each on a new line.",
+                        "Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?",
                 jobTitle, jobDescription.substring(0, Math.min(jobDescription.length(), 2000))); // Truncate JD for prompt length
     }
 

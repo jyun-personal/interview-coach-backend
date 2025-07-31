@@ -1,3 +1,13 @@
+# Interview Coach - Backend
+
+## Application Name and Description
+
+**Interview Coach** is a comprehensive full-stack interview preparation application that helps job seekers excel in
+their job
+search. Users can paste job descriptions, receive AI-generated mock interview questions tailored to specific roles,
+practice their
+responses, and get AI-powered feedback from a virtual career coach to improve their interview performance.
+
 ## Entity-Relationship-Diagram
 
 ![ERD](./ERD.png)
@@ -7,6 +17,72 @@
 https://interview-coach-backend-slvr.onrender.com
 
 ![render log](./screenshots/render/14-render-log.png)
+
+## Features
+
+- **User Authentication**: Secure signup/login with password hashing using BCrypt
+- **Profile Management**: Users can create and update their professional profiles
+- **Job Application Tracking**: Full CRUD operations for managing job applications
+- **AI-Powered Question Generation**: Integration with Pollinations.ai to generate role-specific interview questions
+- **Intelligent Feedback System**: AI analyzes user responses and provides constructive feedback with scoring
+- **Fallback Mechanisms**: Pre-seeded questions ensure functionality even when AI services are unavailable
+- **Data Seeding**: Realistic test data with 3 complete user personas
+- **Robust Error Handling**: Global exception handler with custom exceptions
+- **Logging**: AOP-based logging for all API calls (console logs + external log files)
+- **CORS Configuration**: Secure cross-origin resource sharing setup
+
+## Technologies Used
+
+- **Java 17**: Core programming language
+- **Spring Boot 3.2.3**: Framework for building the REST API
+- **Spring Data JPA**: ORM for database operations
+- **PostgreSQL**: Primary database for production
+- **Spring Security**: Password encryption and security configurations
+- **Spring Validation**: Request validation
+- **Spring AOP**: Aspect-oriented programming for logging
+- **Lombok**: Reduces boilerplate code
+- **ModelMapper**: DTO-Entity mapping
+- **Maven**: Build and dependency management
+- **JUnit & Mockito**: Unit testing framework
+- **Logback**: Logging framework
+
+## Bonus Requirements Met
+
+### ✅ Deployment
+
+- Both frontend and backend are deployed (Netlify + Render)
+
+### ✅ Data Seeding
+
+- Implemented comprehensive data seeding in `DataSeeder.java`
+
+### ✅ Aspect-Oriented Programming - AOP
+
+- Implemented `LoggingAspect.java` using Spring AOP
+- Logs all controller and service method calls with execution time
+- Configured external file logging via Logback (`application.log` and daily rolling files)
+- Captures method entry, exit, and performance metrics
+
+### ✅ Enums
+
+- Implemented multiple enums for type-safe fields:
+    - `UserRole` enum for user roles (JOBSEEKER, EMPLOYER)
+    - `Gender` enum for profile gender field
+    - `QuestionType` enum for interview question types (BEHAVIORAL, TECHNICAL, SITUATIONAL, CASE_STUDY)
+- Used throughout entities and DTOs for better code quality
+
+### ✅ Pagination
+
+- Implemented pagination for job applications endpoint
+- `GET /api/job-applications` returns paginated results
+- Supports page number, size, and sorting parameters
+- Returns proper pagination metadata in response
+
+### ✅ Testing
+
+- Comprehensive unit tests for service and controller layers
+- `JobApplicationServiceTest` and `JobApplicationControllerTest` with Mockito
+- Tests both happy and sad paths with proper mocking
 
 ## List of all endpoints tested in Postman:
 
@@ -53,7 +129,7 @@ https://interview-coach-backend-slvr.onrender.com
     question in a specific job application and get AI feedback (X-User-ID to verify user identity)
     ![respond feedback](./screenshots/render/12-render-response-aifeedback.png)
 
-13. Actuator Health
+13. GET /actuator/health - Actuator Health
     ![actuator health](./screenshots/render/13-render-actuator-health.png)
 
 ### Authentication Endpoints (Localhost)
