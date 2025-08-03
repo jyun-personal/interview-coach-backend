@@ -10,7 +10,6 @@ import com.interviewcoach.repository.*;
 import jakarta.transaction.Transactional;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -30,19 +29,17 @@ public class InterviewQuestionService implements IInterviewQuestionService {
     @Autowired
     private InterviewQuestionRepository interviewQuestionRepository;
     @Autowired
-    private JobApplicationQuestionRepository jobApplicationQuestionRepository; // For associative entity
+    private JobApplicationQuestionRepository jobApplicationQuestionRepository;
     @Autowired
     private UserResponseRepository userResponseRepository;
     @Autowired
     private AiFeedbackRepository aiFeedbackRepository;
     @Autowired
-    private IAIService aiService; // Inject our AI service
+    private IAIService aiService; // For Pollinations.ai fallback
+    @Autowired
+    private GeminiService geminiService; // For Gemini API
     @Autowired
     private ModelMapper modelMapper;
-
-    @Value("${gemini.api.key:}") // Use @Value for Gemini API key
-    private String geminiApiKey;
-
 
     @Override
     @Transactional
@@ -57,14 +54,14 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         String prompt = buildPromptForQuestionGeneration(jobApplication.getTitle(), jobApplication.getDescription());
         String aiResponse = "";
 
-        // 1. Try Google Gemini (if API key is configured and service integrated)
-        // FOR MVP: Gemini is noted as a future integration, so this will currently throw an IOException from AIService
+        // === AI API Integration Logic (Gemini -> Pollinations -> Mock) ===
         try {
-            // Placeholder: If Gemini were integrated, this would be: aiResponse = aiService.generateTextFromGeminiAI(prompt, geminiApiKey);
-            aiResponse = aiService.generateTextFromGeminiAI(prompt, geminiApiKey); // This will throw error for MVP
-        } catch (IOException | InterruptedException e) {
-            System.err.println("Gemini AI failed/not integrated: " + e.getMessage() + ". Falling back to Pollinations.ai.");
-            // 2. Fallback to Pollinations.ai
+            // 1. Try Google Gemini API first
+            aiResponse = geminiService.generateText(prompt);
+            // If successful, proceed with parsing aiResponse
+        } catch (IOException | InterruptedException | BadRequestException e) { // Catch custom exceptions too
+            System.err.println("Gemini AI failed: " + e.getMessage() + ". Falling back to Pollinations.ai.");
+            // 2. Fallback to Pollinations.ai if Gemini fails
             try {
                 aiResponse = aiService.generateTextFromPollinationsAI(prompt);
             } catch (IOException | InterruptedException ex) {
@@ -72,12 +69,15 @@ public class InterviewQuestionService implements IInterviewQuestionService {
                 aiResponse = "MOCK_FALLBACK_QUESTIONS"; // Sentinel value for mock data
             }
         }
+        // === End AI API Integration Logic ===
 
         List<InterviewQuestion> newQuestions = new ArrayList<>();
         if ("MOCK_FALLBACK_QUESTIONS".equals(aiResponse) || aiResponse.isEmpty()) {
             newQuestions = generateMockQuestions(jobApplication);
         } else {
-            // Attempt to parse AI response (Pollinations.ai)
+            // Attempt to parse AI response (Pollinations.ai or Gemini)
+            // Note: If Gemini provides structured output, this parsing might need adjustment
+            // For simplicity, we assume Pollinations.ai's text format or a similar one.
             newQuestions = parsePollinationsAIQuestions(aiResponse, jobApplication);
             if (newQuestions.isEmpty()) { // If parsing failed for some reason
                 System.err.println("Failed to parse AI response. Falling back to mock questions.");
@@ -111,12 +111,9 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             throw new BadRequestException("Access denied: Job application does not belong to user.");
         }
 
-        // Fetch questions using the custom query
         List<InterviewQuestion> questions = interviewQuestionRepository.findByJobApplicationId(jobApplicationId);
 
-        // Populate UserResponse and AiFeedback into DTOs
         return questions.stream().map(question -> {
-            // Find UserResponse for this question and job application
             Optional<UserResponse> userResponseOpt = userResponseRepository.findByInterviewQuestionIdAndJobApplicationId(question.getId(), jobApplicationId);
             UserResponse userResponse = userResponseOpt.orElse(null);
 
@@ -140,56 +137,49 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             throw new BadRequestException("Access denied: Job application does not belong to user.");
         }
 
-        // Check if the question is actually linked to the job application (via JobApplicationQuestion)
-        // Optional: Add a check here using jobApplicationQuestionRepository if you want to be super strict
-        // (e.g., jobApplicationQuestionRepository.findByJobApplicationAndInterviewQuestion(jobApplication, question).isEmpty())
-
-        // Save UserResponse
         UserResponse userResponse = userResponseRepository.findByInterviewQuestionIdAndJobApplicationId(questionId, jobApplicationId)
-                .orElse(new UserResponse()); // Create new if not exists
+                .orElse(new UserResponse());
         userResponse.setResponseText(userResponseSubmitDto.getResponseText());
         userResponse.setInterviewQuestion(question);
         userResponse.setJobApplication(jobApplication);
         UserResponse savedUserResponse = userResponseRepository.save(userResponse);
 
-        // Generate AI Feedback
         String feedbackText = "";
         Integer score = null;
         String prompt = buildPromptForFeedbackGeneration(question.getQuestionText(), savedUserResponse.getResponseText());
 
-        // 1. Try Google Gemini (if integrated)
-        // FOR MVP: Gemini is noted as a future integration, so this will currently throw an IOException from AIService
+        // === AI API Integration Logic for Feedback (Gemini -> Pollinations -> Mock) ===
         try {
-            // Placeholder: If Gemini were integrated, this would be: feedbackText = aiService.generateTextFromGeminiAI(prompt, geminiApiKey);
-            feedbackText = aiService.generateTextFromGeminiAI(prompt, geminiApiKey); // This will throw error for MVP
-            score = parseScoreFromFeedback(feedbackText);
-        } catch (IOException | InterruptedException e) {
-            System.err.println("Gemini AI feedback failed/not integrated: " + e.getMessage() + ". Falling back to Pollinations.ai.");
-            // 2. Fallback to Pollinations.ai
+            // 1. Try Google Gemini API first for feedback
+            feedbackText = geminiService.generateText(prompt);
+            score = parseScoreFromFeedback(feedbackText); // Extract score from Gemini's response
+        } catch (IOException | InterruptedException | BadRequestException e) {
+            System.err.println("Gemini AI feedback failed: " + e.getMessage() + ". Falling back to Pollinations.ai.");
+            // 2. Fallback to Pollinations.ai if Gemini fails
             try {
                 feedbackText = aiService.generateTextFromPollinationsAI(prompt);
-                score = parseScoreFromFeedback(feedbackText);
+                score = parseScoreFromFeedback(feedbackText); // Extract score from Pollinations.ai's response
             } catch (IOException | InterruptedException ex) {
                 System.err.println("Pollinations.ai feedback failed: " + ex.getMessage() + ". Falling back to mock data.");
-                feedbackText = generateMockFeedback(userResponseSubmitDto.getResponseText()); // Mock feedback
-                score = 6; // Mock score for mock feedback
+                feedbackText = generateMockFeedback(userResponseSubmitDto.getResponseText());
+                score = 6; // Default mock score
             }
         }
+        // === End AI API Integration Logic ===
 
         // Save/Update AiFeedback
         AiFeedback aiFeedback = aiFeedbackRepository.findByUserResponseId(savedUserResponse.getId())
-                .orElse(new AiFeedback()); // Create new if not exists
-        aiFeedback.setUserResponse(savedUserResponse); // Set the relationship
+                .orElse(new AiFeedback());
+        aiFeedback.setUserResponse(savedUserResponse);
         aiFeedback.setFeedbackText(feedbackText);
         aiFeedback.setScore(score);
         AiFeedback savedAiFeedback = aiFeedbackRepository.save(aiFeedback);
 
-        // Return updated question DTO with latest response and feedback
         return mapToDto(question, savedUserResponse, savedAiFeedback);
     }
 
 
-    // --- Helper Methods ---
+    // --- Helper Methods for building prompts, etc
 
     private String buildPromptForQuestionGeneration(String jobTitle, String jobDescription) {
         return String.format("As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question for a \"%s\" role based on this job description: \"%s\". " +
@@ -203,28 +193,35 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             return questions;
         }
 
+        // Regex to parse "[QuestionType] Question Text ?" format
+        Pattern pattern = Pattern.compile("^\\[(BEHAVIORAL|TECHNICAL|SITUATIONAL|CASE_STUDY)]\\s*(.*)\\?$", Pattern.CASE_INSENSITIVE);
         String[] lines = aiResponse.split("\n");
         for (String line : lines) {
             String trimmedLine = line.trim();
             if (trimmedLine.isEmpty()) continue;
 
-            QuestionType type = null; // Default to null, or try to infer from line content
-
-            // Simple inference, can be expanded
-            if (trimmedLine.toLowerCase().contains("behavioral")) type = QuestionType.BEHAVIORAL;
-            else if (trimmedLine.toLowerCase().contains("technical")) type = QuestionType.TECHNICAL;
-            else if (trimmedLine.toLowerCase().contains("situational")) type = QuestionType.SITUATIONAL;
-            else if (trimmedLine.toLowerCase().contains("case study")) type = QuestionType.CASE_STUDY;
-
-            questions.add(InterviewQuestion.builder()
-                    .questionText(trimmedLine.replaceAll("^\\d+[.)\\s]*", "").trim()) // Remove leading numbers/dots
-                    .questionType(type)
-                    .build());
+            Matcher matcher = pattern.matcher(trimmedLine);
+            if (matcher.matches()) {
+                QuestionType type = QuestionType.valueOf(matcher.group(1).toUpperCase());
+                String questionText = matcher.group(2).trim() + "?"; // Add back the question mark
+                questions.add(InterviewQuestion.builder()
+                        .questionText(questionText)
+                        .questionType(type)
+                        .build());
+            } else {
+                // Fallback for less structured responses (e.g., old Pollinations.ai or unexpected Gemini format)
+                // Try to just take the line as a behavioral question if format isn't strictly matched
+                questions.add(InterviewQuestion.builder()
+                        .questionText(trimmedLine.replaceAll("^\\d+[.)\\s]*", "").trim()) // Remove leading numbers/dots
+                        .questionType(QuestionType.BEHAVIORAL) // Default to behavioral if type not parsed
+                        .build());
+            }
         }
         return questions;
     }
 
     private List<InterviewQuestion> generateMockQuestions(JobApplication jobApplication) {
+        // Backup questions
         return List.of(
                 InterviewQuestion.builder().questionText("Tell me about a time you faced a challenge and how you overcame it.").questionType(QuestionType.BEHAVIORAL).build(),
                 InterviewQuestion.builder().questionText("Explain the concept of polymorphism in object-oriented programming.").questionType(QuestionType.TECHNICAL).build(),
@@ -252,7 +249,6 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         }
     }
 
-    // Helper method to map InterviewQuestion entity to DTO, including UserResponse and AiFeedback
     private InterviewQuestionDto mapToDto(InterviewQuestion question, UserResponse userResponse, AiFeedback aiFeedback) {
         InterviewQuestionDto dto = modelMapper.map(question, InterviewQuestionDto.class);
 
@@ -269,23 +265,18 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         return dto;
     }
 
-    // Function to parse the score from the AI feedback message string
     private int parseScoreFromFeedback(String feedbackText) {
         try {
-            // Look for "Score: X/10" pattern in the feedback
             Pattern pattern = Pattern.compile("Score: (\\d+)/10");
             Matcher matcher = pattern.matcher(feedbackText);
 
             if (matcher.find()) {
                 int score = Integer.parseInt(matcher.group(1));
-                // Ensure score is between 1-10
-                return Math.max(1, Math.min(10, score));
+                return Math.max(1, Math.min(10, score)); // Ensure score is between 1-10
             }
         } catch (NumberFormatException e) {
             System.err.println("Could not parse score from feedback: " + e.getMessage());
         }
-
-        // Fallback: generate random score if parsing fails
-        return 6 + (int) (Math.random() * 4); // 6-9
+        return 6 + (int) (Math.random() * 4); // Fallback to a random score between 6-9
     }
 }

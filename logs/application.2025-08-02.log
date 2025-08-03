@@ -1,0 +1,278 @@
+2025-08-02 23:53:56.858 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 26469 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-08-02 23:53:56.859 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-02 23:53:56.860 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-02 23:53:57.194 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02 23:53:57.217 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 7 JPA repository interfaces.
+2025-08-02 23:53:57.395 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-02 23:53:57.401 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-02 23:53:57.401 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02 23:53:57.419 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-02 23:53:57.419 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 547 ms
+2025-08-02 23:53:57.499 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02 23:53:57.521 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02 23:53:57.532 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-02 23:53:57.619 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02 23:53:57.631 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-02 23:53:57.671 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7614378d
+2025-08-02 23:53:57.672 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-02 23:53:57.712 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02 23:53:58.065 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02 23:53:58.168 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02 23:53:58.275 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-02 23:53:58.643 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02 23:53:58.810 [34mINFO [0;39m [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-02 23:53:58.833 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-02 23:53:58.839 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 2.163 seconds (process running for 2.335)
+2025-08-02 23:53:59.636 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02 23:53:59.637 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-02 23:53:59.637 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-08-02 23:54:54.479 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
+2025-08-02 23:54:54.480 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=janetlee, email=janetlee@example.com, password=12345678, firstName=Janet, lastName=Lee)]
+2025-08-02 23:54:54.560 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janetlee, email=janetlee@example.com, role=JOB_SEEKER)
+2025-08-02 23:54:54.563 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=janetlee, email=janetlee@example.com, role=JOB_SEEKER),[]>
+2025-08-02 23:55:08.752 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.login() with argument[s] = [LoginRequestDto(email=janedavis24@example.com, password=Password1234!)]
+2025-08-02 23:55:08.752 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.login() with argument[s] = [LoginRequestDto(email=janedavis24@example.com, password=Password1234!)]
+2025-08-02 23:55:08.756 [1;31mERROR[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.AuthService.login() with cause = 'NULL' and message = 'User not found with credentials : 'provided''
+2025-08-02 23:55:08.756 [1;31mERROR[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.AuthController.login() with cause = 'NULL' and message = 'User not found with credentials : 'provided''
+2025-08-02 23:55:33.121 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.login() with argument[s] = [LoginRequestDto(email=janetlee@example.com, password=12345678)]
+2025-08-02 23:55:33.122 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.login() with argument[s] = [LoginRequestDto(email=janetlee@example.com, password=12345678)]
+2025-08-02 23:55:33.211 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.login() with result = AuthResponseDto(success=true, message=Login Successful, id=4, username=janetlee, email=janetlee@example.com, role=JOB_SEEKER)
+2025-08-02 23:55:33.211 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.login() with result = <200 OK OK,AuthResponseDto(success=true, message=Login Successful, id=4, username=janetlee, email=janetlee@example.com, role=JOB_SEEKER),[]>
+2025-08-02 23:55:45.060 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [4]
+2025-08-02 23:55:45.060 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [4]
+2025-08-02 23:55:45.068 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=4, firstName=Janet, lastName=Lee, phone=null, bio=null, resumeText=null, username=janetlee, email=janetlee@example.com)
+2025-08-02 23:55:45.069 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=4, firstName=Janet, lastName=Lee, phone=null, bio=null, resumeText=null, username=janetlee, email=janetlee@example.com),[]>
+2025-08-02 23:56:08.219 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=Janet, lastName=Li, phone=777-888-9999, bio=Software Engineer in training, resumeText=Results-driven Software Engineer with 3 months of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.)]
+2025-08-02 23:56:08.219 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=Janet, lastName=Li, phone=777-888-9999, bio=Software Engineer in training, resumeText=Results-driven Software Engineer with 3 months of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments.)]
+2025-08-02 23:56:08.222 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.updateProfile() with result = ProfileResponseDto(id=4, firstName=Janet, lastName=Li, phone=777-888-9999, bio=Software Engineer in training, resumeText=Results-driven Software Engineer with 3 months of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments., username=janetlee, email=janetlee@example.com)
+2025-08-02 23:56:08.227 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.updateProfile() with result = <202 ACCEPTED Accepted,ProfileResponseDto(id=4, firstName=Janet, lastName=Li, phone=777-888-9999, bio=Software Engineer in training, resumeText=Results-driven Software Engineer with 3 months of experience in backend development, cloud architecture, and scalable systems design. Proficient in Java, Spring Boot, Docker, and PostgreSQL, with hands-on expertise in building secure RESTful APIs and deploying microservices on AWS. Passionate about solving complex problems, optimizing performance, and delivering clean, maintainable code in agile environments., username=janetlee, email=janetlee@example.com),[]>
+2025-08-02 23:56:54.107 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-08-11, status=IN-PROGRESS, tags=null)]
+2025-08-02 23:56:54.108 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-08-11, status=IN-PROGRESS, tags=null)]
+2025-08-02 23:56:54.111 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.createJobApplication() with result = JobApplicationDto(id=ba22d82b-0dec-448a-9833-3ad475a6b267, userId=4, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-08-02T23:56:54.110684-05:00, expectedInterviewDate=2025-08-11, status=PENDING, tags=null)
+2025-08-02 23:56:54.114 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.createJobApplication() with result = <201 CREATED Created,JobApplicationDto(id=ba22d82b-0dec-448a-9833-3ad475a6b267, userId=4, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-08-02T23:56:54.110684-05:00, expectedInterviewDate=2025-08-11, status=PENDING, tags=null),[]>
+2025-08-02 23:57:15.776 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with argument[s] = [4, Page request [number: 0, size 10, sort: applicationDate: DESC]]
+2025-08-02 23:57:15.777 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with argument[s] = [4, Page request [number: 0, size 10, sort: applicationDate: DESC]]
+2025-08-02 23:57:15.788 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getAllJobApplicationsForUser() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-02 23:57:15.788 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getAllJobApplicationsForUser() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-02 23:57:15.790 [31mWARN [0;39m [http-nio-8080-exec-8] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-02 23:57:44.978 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 4]
+2025-08-02 23:57:44.978 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 4]
+2025-08-02 23:57:44.985 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=ba22d82b-0dec-448a-9833-3ad475a6b267, userId=4, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-08-03T04:56:54.111775Z, expectedInterviewDate=2025-08-11, status=PENDING, tags=null)
+2025-08-02 23:57:44.986 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=ba22d82b-0dec-448a-9833-3ad475a6b267, userId=4, title=Frontend Engineer, description=About Us:
+We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-08-03T04:56:54.111775Z, expectedInterviewDate=2025-08-11, status=PENDING, tags=null),[]>
+2025-08-02 23:58:26.262 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.updateJobApplication() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 1, JobApplicationDto(id=null, userId=null, title=Frontend Engineer II, description=About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-10-11, status=COMPLETED, tags=null)]
+2025-08-02 23:58:26.264 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.updateJobApplication() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 1, JobApplicationDto(id=null, userId=null, title=Frontend Engineer II, description=About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-10-11, status=COMPLETED, tags=null)]
+2025-08-02 23:58:26.267 [1;31mERROR[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.JobApplicationService.updateJobApplication() with cause = 'NULL' and message = 'Access denied: Job application does not belong to user.'
+2025-08-02 23:58:26.268 [1;31mERROR[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.JobApplicationController.updateJobApplication() with cause = 'NULL' and message = 'Access denied: Job application does not belong to user.'
+2025-08-02 23:58:35.870 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.updateJobApplication() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 4, JobApplicationDto(id=null, userId=null, title=Frontend Engineer II, description=About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-10-11, status=COMPLETED, tags=null)]
+2025-08-02 23:58:35.871 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.updateJobApplication() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 4, JobApplicationDto(id=null, userId=null, title=Frontend Engineer II, description=About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-07-25T02:02:02.064442Z, expectedInterviewDate=2025-10-11, status=COMPLETED, tags=null)]
+2025-08-02 23:58:35.873 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.updateJobApplication() with result = JobApplicationDto(id=ba22d82b-0dec-448a-9833-3ad475a6b267, userId=4, title=Frontend Engineer II, description=About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-08-03T04:56:54.111775Z, expectedInterviewDate=2025-10-11, status=COMPLETED, tags=null)
+2025-08-02 23:58:35.876 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.updateJobApplication() with result = <200 OK OK,JobApplicationDto(id=ba22d82b-0dec-448a-9833-3ad475a6b267, userId=4, title=Frontend Engineer II, description=About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+, applicationDate=2025-08-03T04:56:54.111775Z, expectedInterviewDate=2025-10-11, status=COMPLETED, tags=null),[]>
+2025-08-02 23:59:14.025 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 4]
+2025-08-02 23:59:14.026 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [ba22d82b-0dec-448a-9833-3ad475a6b267, 4]
+2025-08-02 23:59:14.031 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question for a "Frontend Engineer II" role based on this job description: "About Us: We're a fast-growing tech company seeking a skilled Backend Engineer to build and scale our core services. You will be responsible for designing robust APIs, ensuring data integrity, and optimizing system performance.
+
+Responsibilities:
+*   Develop high-performance, fault-tolerant backend services in Java.
+*   Design and manage database schemas for new and existing features.
+*   Implement secure and efficient authentication and authorization mechanisms.
+*   Participate in the full software development lifecycle, from design to deployment.
+
+Requirements:
+*   Extensive experience with Java and Spring Boot.
+*   Proficiency in designing and consuming RESTful APIs.
+*   Strong knowledge of relational databases (e.g., PostgreSQL).
+*   Experience with unit and integration testing.
+*   Familiarity with message queues (Kafka, RabbitMQ) is a plus.
+". Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-02 23:59:14.073 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - GeminiService initialized with model: gemini-2.5-flash-lite
+2025-08-02 23:59:14.073 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question f
+2025-08-02 23:59:14.965 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-02 23:59:14.965 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to collaborate with a backend team on an API integration. What challenges did you face, and how did you overcome them to ensure a successful integration?
+[Technical] Explain the process of designing and implementing a new RESTful API endpoint in Spring Boot, including considerations for request validation, error handling, and database interaction.
+[Situational] Imagine you've identified a performance bottleneck in a critical backend service that is impacting user experience. How would you approach diagnosing and resolving this issue, and what steps would you take to prevent recurrence?
+2025-08-02 23:59:14.971 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=b2fa9c3d-8a22-482f-adac-e2621a90629c, questionText=Describe a time you had to collaborate with a backend team on an API integration. What challenges did you face, and how did you overcome them to ensure a successful integration?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=2d5289d6-7212-4edf-99da-b2667f163b07, questionText=[Technical] Explain the process of designing and implementing a new RESTful API endpoint in Spring Boot, including considerations for request validation, error handling, and database interaction., questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=f0443c61-9727-4faa-b2ba-f7354d796d9f, questionText=Imagine you've identified a performance bottleneck in a critical backend service that is impacting user experience. How would you approach diagnosing and resolving this issue, and what steps would you take to prevent recurrence?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-02 23:59:14.978 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=b2fa9c3d-8a22-482f-adac-e2621a90629c, questionText=Describe a time you had to collaborate with a backend team on an API integration. What challenges did you face, and how did you overcome them to ensure a successful integration?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=2d5289d6-7212-4edf-99da-b2667f163b07, questionText=[Technical] Explain the process of designing and implementing a new RESTful API endpoint in Spring Boot, including considerations for request validation, error handling, and database interaction., questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=f0443c61-9727-4faa-b2ba-f7354d796d9f, questionText=Imagine you've identified a performance bottleneck in a critical backend service that is impacting user experience. How would you approach diagnosing and resolving this issue, and what steps would you take to prevent recurrence?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
