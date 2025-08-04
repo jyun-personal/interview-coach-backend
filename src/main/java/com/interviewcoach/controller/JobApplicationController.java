@@ -6,8 +6,6 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -28,19 +26,29 @@ public class JobApplicationController {
         return new ResponseEntity<>(createdJobApplication, HttpStatus.CREATED);
     }
 
-    @GetMapping
-    public ResponseEntity<Page<JobApplicationDto>> getAllJobApplicationsForUser(
-            @RequestHeader("X-User-ID") Long userId,
-            @PageableDefault(size = 10, sort = "applicationDate", direction = Sort.Direction.DESC) Pageable pageable) {
-        Page<JobApplicationDto> jobApplicationsPage = jobApplicationService.getAllJobApplicationsForUser(userId, pageable);
-        return ResponseEntity.ok(jobApplicationsPage);
-    }
+//    @GetMapping
+//    public ResponseEntity<Page<JobApplicationDto>> getAllJobApplicationsForUser(
+//            @RequestHeader("X-User-ID") Long userId,
+//            @PageableDefault(size = 10, sort = "applicationDate", direction = Sort.Direction.DESC) Pageable pageable) {
+//        Page<JobApplicationDto> jobApplicationsPage = jobApplicationService.getAllJobApplicationsForUser(userId, pageable);
+//        return ResponseEntity.ok(jobApplicationsPage);
+//    }
 
     @GetMapping("/{id}")
     public ResponseEntity<JobApplicationDto> getJobApplicationById(@PathVariable UUID id,
                                                                    @RequestHeader("X-User-ID") Long userId) {
         JobApplicationDto jobApplication = jobApplicationService.getJobApplicationById(id, userId);
         return ResponseEntity.ok(jobApplication);
+    }
+
+    @GetMapping
+    public ResponseEntity<Page<JobApplicationDto>> getJobApplications(
+            @RequestHeader("X-User-ID") Long userId,
+            @RequestParam(required = false) String search,
+            Pageable pageable) {
+        Page<JobApplicationDto> applications = jobApplicationService.searchJobApplications(userId, search,
+                pageable);
+        return ResponseEntity.ok(applications);
     }
 
     @PutMapping("/{id}")

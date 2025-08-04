@@ -98,6 +98,15 @@ public class JobApplicationService implements IJobApplicationService {
         jobApplicationRepository.delete(jobApplication);
     }
 
+    @Override
+    @Transactional
+    public Page<JobApplicationDto> searchJobApplications(Long userId, String searchTerm, Pageable pageable) {
+        Page<JobApplication> applications = searchTerm == null || searchTerm.isEmpty()
+                ? jobApplicationRepository.findByUserId(userId, pageable)
+                : jobApplicationRepository.searchByUserIdAndTerm(userId, searchTerm, pageable);
+        return applications.map(this::mapToDto);
+    }
+
     private JobApplicationDto mapToDto(JobApplication jobApplication) {
         JobApplicationDto dto = modelMapper.map(jobApplication, JobApplicationDto.class);
         dto.setUserId(jobApplication.getUser().getId());

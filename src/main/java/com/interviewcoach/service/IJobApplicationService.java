@@ -13,6 +13,8 @@ public interface IJobApplicationService {
 
     JobApplicationDto getJobApplicationById(UUID jobApplicationId, Long userId);
 
+    Page<JobApplicationDto> searchJobApplications(Long userId, String searchTerm, Pageable pageable);
+
     JobApplicationDto updateJobApplication(UUID jobApplicationId, Long userId, JobApplicationDto jobApplicationDto);
 
     void deleteJobApplication(UUID jobApplicationId, Long userId);

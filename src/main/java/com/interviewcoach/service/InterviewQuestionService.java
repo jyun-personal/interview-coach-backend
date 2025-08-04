@@ -233,7 +233,7 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         return String.format("As a career coach, evaluate the following user response to the question: '%s'. " +
                         "User's response: '%s'. Provide constructive feedback and a suggested score out of 10. " +
                         "Focus on clarity, completeness, relevance, and communication style. " +
-                        "Acknowledge what the user did well in their response first, and then start giving suggestion. " +
+                        "Acknowledge what the user did well in their response first, and then start giving suggestions. " +
                         "Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. " +
                         "Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. " +
                         "In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. " +

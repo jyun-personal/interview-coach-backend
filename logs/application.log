@@ -1962,3 +1962,1025 @@ Safety: Follow safety procedures and practices to maintain a safe working enviro
 2025-08-03 07:20:51.935 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-08-03 07:20:51.958 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-08-03 07:20:51.960 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-03 21:21:40.040 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 17005 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-08-03 21:21:40.041 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-03 21:21:40.041 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-03 21:21:40.372 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-03 21:21:40.396 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 7 JPA repository interfaces.
+2025-08-03 21:21:40.582 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-03 21:21:40.589 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-03 21:21:40.589 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-03 21:21:40.605 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-03 21:21:40.605 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 552 ms
+2025-08-03 21:21:40.687 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-03 21:21:40.708 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-03 21:21:40.720 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-03 21:21:40.811 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-03 21:21:40.823 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-03 21:21:40.862 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4604e051
+2025-08-03 21:21:40.863 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-03 21:21:40.906 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-03 21:21:41.264 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-03 21:21:41.324 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 21:21:41.424 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-03 21:21:42.180 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-03 21:21:42.353 [34mINFO [0;39m [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-03 21:21:42.386 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-03 21:21:42.393 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 2.532 seconds (process running for 2.722)
+2025-08-03 21:21:42.856 [34mINFO [0;39m [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-03 21:21:42.856 [34mINFO [0;39m [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-03 21:21:42.857 [34mINFO [0;39m [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-03 21:22:12.044 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:22:12.045 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:22:12.062 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-03 21:22:12.062 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-03 21:22:12.064 [31mWARN [0;39m [http-nio-8080-exec-3] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-03 21:22:19.429 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [3, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:22:19.434 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [3, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:22:19.456 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:22:19.457 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:22:33.571 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [4]
+2025-08-03 21:22:33.571 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [4]
+2025-08-03 21:22:33.578 [1;31mERROR[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.service.ProfileService.getProfileByUserId() with cause = 'NULL' and message = 'User not found with ID : '4''
+2025-08-03 21:22:33.578 [1;31mERROR[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exception in com.interviewcoach.controller.ProfileController.getProfile() with cause = 'NULL' and message = 'User not found with ID : '4''
+2025-08-03 21:22:40.910 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [3]
+2025-08-03 21:22:40.910 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [3]
+2025-08-03 21:22:40.916 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com)
+2025-08-03 21:22:40.918 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=3, firstName=Lisa, lastName=Jones, phone=null, bio=Compassionate Registered Nurse with 5+ years of experience in critical care. Dedicated to patient advocacy and delivering high-quality, holistic care., resumeText=RN, BSN. Certifications: BLS, ACLS. Experience in ICU, ER, Telemetry. Proficient in EMR systems (Epic, Cerner). Strong IV skills, medication administration, patient assessment., username=lisajones, email=lisa.jones@example.com),[]>
+2025-08-03 21:52:14.174 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-03 21:52:15.186 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-03 21:52:15.195 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 21:52:15.222 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-03 21:52:15.223 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-03 21:52:16.731 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 20174 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-08-03 21:52:16.732 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-03 21:52:16.732 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-03 21:52:17.025 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-03 21:52:17.056 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 7 JPA repository interfaces.
+2025-08-03 21:52:17.235 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-03 21:52:17.239 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-03 21:52:17.240 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-03 21:52:17.258 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-03 21:52:17.258 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 514 ms
+2025-08-03 21:52:17.337 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-03 21:52:17.353 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-03 21:52:17.362 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-03 21:52:17.435 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-03 21:52:17.444 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-03 21:52:17.472 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c0ff7a0
+2025-08-03 21:52:17.473 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-03 21:52:17.495 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-03 21:52:17.831 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-03 21:52:17.885 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 21:52:17.980 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-03 21:52:18.716 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-03 21:52:18.868 [34mINFO [0;39m [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-03 21:52:18.890 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-03 21:52:18.896 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 2.33 seconds (process running for 2.483)
+2025-08-03 21:52:19.483 [34mINFO [0;39m [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-03 21:52:19.484 [34mINFO [0;39m [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-03 21:52:19.484 [34mINFO [0;39m [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-08-03 21:53:22.051 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=peterl, email=peterl@example.com, password=password789, firstName=Peter, lastName=Lincoln)]
+2025-08-03 21:53:22.052 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=peterl, email=peterl@example.com, password=password789, firstName=Peter, lastName=Lincoln)]
+2025-08-03 21:53:22.125 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=peterl, email=peterl@example.com, role=JOB_SEEKER)
+2025-08-03 21:53:22.128 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=peterl, email=peterl@example.com, role=JOB_SEEKER),[]>
+2025-08-03 21:53:33.648 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.login() with argument[s] = [LoginRequestDto(email=peterl@example.com, password=password789)]
+2025-08-03 21:53:33.648 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.login() with argument[s] = [LoginRequestDto(email=peterl@example.com, password=password789)]
+2025-08-03 21:53:33.737 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.login() with result = AuthResponseDto(success=true, message=Login Successful, id=4, username=peterl, email=peterl@example.com, role=JOB_SEEKER)
+2025-08-03 21:53:33.737 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.login() with result = <200 OK OK,AuthResponseDto(success=true, message=Login Successful, id=4, username=peterl, email=peterl@example.com, role=JOB_SEEKER),[]>
+2025-08-03 21:53:33.747 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [4]
+2025-08-03 21:53:33.747 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [4]
+2025-08-03 21:53:33.750 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=4, firstName=Peter, lastName=Lincoln, phone=null, bio=null, resumeText=null, username=peterl, email=peterl@example.com)
+2025-08-03 21:53:33.752 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=4, firstName=Peter, lastName=Lincoln, phone=null, bio=null, resumeText=null, username=peterl, email=peterl@example.com),[]>
+2025-08-03 21:53:33.775 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:53:33.775 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:53:33.779 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-03 21:53:33.780 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-03 21:53:33.781 [31mWARN [0;39m [http-nio-8080-exec-9] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-03 21:53:33.784 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:53:33.784 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:53:33.785 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-03 21:53:33.786 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-03 21:54:39.277 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Business Analyst, description=Full job description
+Position Description:
+Join CGI Federal as a Mid-Senior Business Analyst and be part of an exciting initiative to transform the financial legacy system for a major US Federal government agency with the advanced Momentum ERP. This full-time role offers a unique opportunity to work in a fast-paced, innovative team environment where collaboration and creativity are key. If you're curious and growth-minded, you'll thrive here!
+Engage with a dynamic team, seize opportunities to learn and grow, and play a pivotal role in delivering impactful solutions to our client. This position is available at the Austin, TX office with the flexibility of a hybrid working model. (Must be a US Citizen or GC / Permanent Resident) Embrace the challenge and make a difference!
+
+Your future duties and responsibilities:
+Collaborate with client stakeholders to gain insights into their current business processes, define requirements, and explore innovative solutions to be configured in the new system.
+Conduct independent analysis on challenges, take ownership of research, recommend effective solutions, and execute resolution steps to address client issues.
+Offer functional support for testing by developing test scenarios, creating comprehensive documentation, and performing validation testing to ensure system excellence.
+Provide functional support for implementation activities, including requirements analysis and the development of design and configuration documentation.
+Engage directly with clients at their sites to support and enhance their experience with the new system, ensuring seamless integration and optimal use.
+
+Required qualifications to be successful in this role:
+At least 2 years of experience in a professional environment, demonstrating strong analytical skills in requirements analysis, business process improvements, and planning, while interacting with customers or senior managers in a team setting.
+Bachelor's degree from a four-year college.
+Understanding of and familiarity with basic accounting practices and principles
+Strong analytical thinking and problem-solving skills, with a passion for researching, developing, articulating, and documenting solutions to process and system challenges.
+A genuine enthusiasm for engaging with customers, with the ability to build positive relationships and deliver exceptional service that energizes both you and the clients.
+Confidence in speaking up in group settings, asking insightful questions to deepen understanding.
+Ability to effectively communicate and engage with senior-level management and clients.
+Exceptional written, oral communication, and presentation skills.
+Remarkable ability to set priorities and meet deadlines.
+Eagerness to collaborate in a team environment to resolve issues and deliver solutions.
+
+Desired qualifications/non-essential skills required:
+Experience with Federal Financial and/or Acquisitions ERP system (e.g., Momentum)
+Familiarity with Agile working environments.
+Prior experience as a Business Analyst in system implementation efforts, encompassing requirements analysis, process design, validation, testing, and implementation planning.
+Willingness and ability to travel within the US
+CGI is required by law in some jurisdictions to include a reasonable estimate of the compensation range for this role. The determination of this range includes various factors not limited to skill set, level, experience, relevant training, and licensure and certifications. To support the ability to reward for merit-based performance, CGI typically does not hire individuals at or near the top of the range for their role. Compensation decisions are dependent on the facts and circumstances of each case. A reasonable estimate of the current range for this role in the U.S. is $68100-$150800
+CGI Federals benefits are offered to eligible professionals on their first day of employment to include:
+Eligibility to participate in an attractive Share Purchase Plan (SPP) in which the company matches dollar-for-dollar contributions made by eligible employees, up to a maximum, for their job category
+
+401(k) Plan and Profit Participation for eligible professionals
+
+Additional benefits determined by your Service Contract Act:
+Paid Time Off (PTO)
+Paid Federal Holidays
+Health & Welfare Benefits
+
+#CGIFederalJob
+##LI-RT1
+
+Skills:
+Analytical Thinking
+Detail-oriented
+Functional Testing
+Requirements Analysis
+SAFe Agilist, applicationDate=2025-08-04T02:54:39.256Z, expectedInterviewDate=2025-09-06, status=Applied, tags=null)]
+2025-08-03 21:54:39.278 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Business Analyst, description=Full job description
+Position Description:
+Join CGI Federal as a Mid-Senior Business Analyst and be part of an exciting initiative to transform the financial legacy system for a major US Federal government agency with the advanced Momentum ERP. This full-time role offers a unique opportunity to work in a fast-paced, innovative team environment where collaboration and creativity are key. If you're curious and growth-minded, you'll thrive here!
+Engage with a dynamic team, seize opportunities to learn and grow, and play a pivotal role in delivering impactful solutions to our client. This position is available at the Austin, TX office with the flexibility of a hybrid working model. (Must be a US Citizen or GC / Permanent Resident) Embrace the challenge and make a difference!
+
+Your future duties and responsibilities:
+Collaborate with client stakeholders to gain insights into their current business processes, define requirements, and explore innovative solutions to be configured in the new system.
+Conduct independent analysis on challenges, take ownership of research, recommend effective solutions, and execute resolution steps to address client issues.
+Offer functional support for testing by developing test scenarios, creating comprehensive documentation, and performing validation testing to ensure system excellence.
+Provide functional support for implementation activities, including requirements analysis and the development of design and configuration documentation.
+Engage directly with clients at their sites to support and enhance their experience with the new system, ensuring seamless integration and optimal use.
+
+Required qualifications to be successful in this role:
+At least 2 years of experience in a professional environment, demonstrating strong analytical skills in requirements analysis, business process improvements, and planning, while interacting with customers or senior managers in a team setting.
+Bachelor's degree from a four-year college.
+Understanding of and familiarity with basic accounting practices and principles
+Strong analytical thinking and problem-solving skills, with a passion for researching, developing, articulating, and documenting solutions to process and system challenges.
+A genuine enthusiasm for engaging with customers, with the ability to build positive relationships and deliver exceptional service that energizes both you and the clients.
+Confidence in speaking up in group settings, asking insightful questions to deepen understanding.
+Ability to effectively communicate and engage with senior-level management and clients.
+Exceptional written, oral communication, and presentation skills.
+Remarkable ability to set priorities and meet deadlines.
+Eagerness to collaborate in a team environment to resolve issues and deliver solutions.
+
+Desired qualifications/non-essential skills required:
+Experience with Federal Financial and/or Acquisitions ERP system (e.g., Momentum)
+Familiarity with Agile working environments.
+Prior experience as a Business Analyst in system implementation efforts, encompassing requirements analysis, process design, validation, testing, and implementation planning.
+Willingness and ability to travel within the US
+CGI is required by law in some jurisdictions to include a reasonable estimate of the compensation range for this role. The determination of this range includes various factors not limited to skill set, level, experience, relevant training, and licensure and certifications. To support the ability to reward for merit-based performance, CGI typically does not hire individuals at or near the top of the range for their role. Compensation decisions are dependent on the facts and circumstances of each case. A reasonable estimate of the current range for this role in the U.S. is $68100-$150800
+CGI Federals benefits are offered to eligible professionals on their first day of employment to include:
+Eligibility to participate in an attractive Share Purchase Plan (SPP) in which the company matches dollar-for-dollar contributions made by eligible employees, up to a maximum, for their job category
+
+401(k) Plan and Profit Participation for eligible professionals
+
+Additional benefits determined by your Service Contract Act:
+Paid Time Off (PTO)
+Paid Federal Holidays
+Health & Welfare Benefits
+
+#CGIFederalJob
+##LI-RT1
+
+Skills:
+Analytical Thinking
+Detail-oriented
+Functional Testing
+Requirements Analysis
+SAFe Agilist, applicationDate=2025-08-04T02:54:39.256Z, expectedInterviewDate=2025-09-06, status=Applied, tags=null)]
+2025-08-03 21:54:39.284 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.createJobApplication() with result = JobApplicationDto(id=13e9da59-aa3e-413d-ba7d-3ee0f597358b, userId=4, title=Business Analyst, description=Full job description
+Position Description:
+Join CGI Federal as a Mid-Senior Business Analyst and be part of an exciting initiative to transform the financial legacy system for a major US Federal government agency with the advanced Momentum ERP. This full-time role offers a unique opportunity to work in a fast-paced, innovative team environment where collaboration and creativity are key. If you're curious and growth-minded, you'll thrive here!
+Engage with a dynamic team, seize opportunities to learn and grow, and play a pivotal role in delivering impactful solutions to our client. This position is available at the Austin, TX office with the flexibility of a hybrid working model. (Must be a US Citizen or GC / Permanent Resident) Embrace the challenge and make a difference!
+
+Your future duties and responsibilities:
+Collaborate with client stakeholders to gain insights into their current business processes, define requirements, and explore innovative solutions to be configured in the new system.
+Conduct independent analysis on challenges, take ownership of research, recommend effective solutions, and execute resolution steps to address client issues.
+Offer functional support for testing by developing test scenarios, creating comprehensive documentation, and performing validation testing to ensure system excellence.
+Provide functional support for implementation activities, including requirements analysis and the development of design and configuration documentation.
+Engage directly with clients at their sites to support and enhance their experience with the new system, ensuring seamless integration and optimal use.
+
+Required qualifications to be successful in this role:
+At least 2 years of experience in a professional environment, demonstrating strong analytical skills in requirements analysis, business process improvements, and planning, while interacting with customers or senior managers in a team setting.
+Bachelor's degree from a four-year college.
+Understanding of and familiarity with basic accounting practices and principles
+Strong analytical thinking and problem-solving skills, with a passion for researching, developing, articulating, and documenting solutions to process and system challenges.
+A genuine enthusiasm for engaging with customers, with the ability to build positive relationships and deliver exceptional service that energizes both you and the clients.
+Confidence in speaking up in group settings, asking insightful questions to deepen understanding.
+Ability to effectively communicate and engage with senior-level management and clients.
+Exceptional written, oral communication, and presentation skills.
+Remarkable ability to set priorities and meet deadlines.
+Eagerness to collaborate in a team environment to resolve issues and deliver solutions.
+
+Desired qualifications/non-essential skills required:
+Experience with Federal Financial and/or Acquisitions ERP system (e.g., Momentum)
+Familiarity with Agile working environments.
+Prior experience as a Business Analyst in system implementation efforts, encompassing requirements analysis, process design, validation, testing, and implementation planning.
+Willingness and ability to travel within the US
+CGI is required by law in some jurisdictions to include a reasonable estimate of the compensation range for this role. The determination of this range includes various factors not limited to skill set, level, experience, relevant training, and licensure and certifications. To support the ability to reward for merit-based performance, CGI typically does not hire individuals at or near the top of the range for their role. Compensation decisions are dependent on the facts and circumstances of each case. A reasonable estimate of the current range for this role in the U.S. is $68100-$150800
+CGI Federals benefits are offered to eligible professionals on their first day of employment to include:
+Eligibility to participate in an attractive Share Purchase Plan (SPP) in which the company matches dollar-for-dollar contributions made by eligible employees, up to a maximum, for their job category
+
+401(k) Plan and Profit Participation for eligible professionals
+
+Additional benefits determined by your Service Contract Act:
+Paid Time Off (PTO)
+Paid Federal Holidays
+Health & Welfare Benefits
+
+#CGIFederalJob
+##LI-RT1
+
+Skills:
+Analytical Thinking
+Detail-oriented
+Functional Testing
+Requirements Analysis
+SAFe Agilist, applicationDate=2025-08-03T21:54:39.283372-05:00, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)
+2025-08-03 21:54:39.287 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.createJobApplication() with result = <201 CREATED Created,JobApplicationDto(id=13e9da59-aa3e-413d-ba7d-3ee0f597358b, userId=4, title=Business Analyst, description=Full job description
+Position Description:
+Join CGI Federal as a Mid-Senior Business Analyst and be part of an exciting initiative to transform the financial legacy system for a major US Federal government agency with the advanced Momentum ERP. This full-time role offers a unique opportunity to work in a fast-paced, innovative team environment where collaboration and creativity are key. If you're curious and growth-minded, you'll thrive here!
+Engage with a dynamic team, seize opportunities to learn and grow, and play a pivotal role in delivering impactful solutions to our client. This position is available at the Austin, TX office with the flexibility of a hybrid working model. (Must be a US Citizen or GC / Permanent Resident) Embrace the challenge and make a difference!
+
+Your future duties and responsibilities:
+Collaborate with client stakeholders to gain insights into their current business processes, define requirements, and explore innovative solutions to be configured in the new system.
+Conduct independent analysis on challenges, take ownership of research, recommend effective solutions, and execute resolution steps to address client issues.
+Offer functional support for testing by developing test scenarios, creating comprehensive documentation, and performing validation testing to ensure system excellence.
+Provide functional support for implementation activities, including requirements analysis and the development of design and configuration documentation.
+Engage directly with clients at their sites to support and enhance their experience with the new system, ensuring seamless integration and optimal use.
+
+Required qualifications to be successful in this role:
+At least 2 years of experience in a professional environment, demonstrating strong analytical skills in requirements analysis, business process improvements, and planning, while interacting with customers or senior managers in a team setting.
+Bachelor's degree from a four-year college.
+Understanding of and familiarity with basic accounting practices and principles
+Strong analytical thinking and problem-solving skills, with a passion for researching, developing, articulating, and documenting solutions to process and system challenges.
+A genuine enthusiasm for engaging with customers, with the ability to build positive relationships and deliver exceptional service that energizes both you and the clients.
+Confidence in speaking up in group settings, asking insightful questions to deepen understanding.
+Ability to effectively communicate and engage with senior-level management and clients.
+Exceptional written, oral communication, and presentation skills.
+Remarkable ability to set priorities and meet deadlines.
+Eagerness to collaborate in a team environment to resolve issues and deliver solutions.
+
+Desired qualifications/non-essential skills required:
+Experience with Federal Financial and/or Acquisitions ERP system (e.g., Momentum)
+Familiarity with Agile working environments.
+Prior experience as a Business Analyst in system implementation efforts, encompassing requirements analysis, process design, validation, testing, and implementation planning.
+Willingness and ability to travel within the US
+CGI is required by law in some jurisdictions to include a reasonable estimate of the compensation range for this role. The determination of this range includes various factors not limited to skill set, level, experience, relevant training, and licensure and certifications. To support the ability to reward for merit-based performance, CGI typically does not hire individuals at or near the top of the range for their role. Compensation decisions are dependent on the facts and circumstances of each case. A reasonable estimate of the current range for this role in the U.S. is $68100-$150800
+CGI Federals benefits are offered to eligible professionals on their first day of employment to include:
+Eligibility to participate in an attractive Share Purchase Plan (SPP) in which the company matches dollar-for-dollar contributions made by eligible employees, up to a maximum, for their job category
+
+401(k) Plan and Profit Participation for eligible professionals
+
+Additional benefits determined by your Service Contract Act:
+Paid Time Off (PTO)
+Paid Federal Holidays
+Health & Welfare Benefits
+
+#CGIFederalJob
+##LI-RT1
+
+Skills:
+Analytical Thinking
+Detail-oriented
+Functional Testing
+Requirements Analysis
+SAFe Agilist, applicationDate=2025-08-03T21:54:39.283372-05:00, expectedInterviewDate=2025-09-06, status=PENDING, tags=null),[]>
+2025-08-03 21:55:02.040 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Product Support Analyst, description=Full job description
+Position Title:
+Product Support Analyst (Transit Editor)
+
+Job Description:
+As a Transit Editor Agent, you will play a vital role in ensuring the accuracy and relevance of transit-related data that influences public transportation systems worldwide. You will collaborate with cross-functional teams to identify, curate, and research transit-related entities, ultimately supporting key decisions on a wide range of topics. In this position, you will also develop a deep understanding of our client's policies and requirements to ensure alignment.
+
+Key Responsibilities:
+
+Data Curation: Identify, curate, and maintain transit-related data, including routes, schedules, pricing, and other critical information to enhance the quality and reliability of public transportation systems.
+Research and Analysis: Utilize reporting tools and conduct research using various online sources to gather and analyze data related to transit entities and trends.
+Cross-Functional Collaboration: Work closely with internal teams to ensure that transit data aligns with client needs and project goals.
+Policy Understanding: Develop a deep understanding of our client's policies and requirements to ensure data accuracy and compliance.
+Quality Assurance: Perform quality checks and promptly resolve any data discrepancies.
+Communication: Maintain clear, professional communication with internal teams and stakeholders.
+Adaptability: Be open to continuous learning, working on diverse projects, and adapting to evolving tools and workflows.
+Qualifications:
+
+Bilingual proficiency (second language) preferred.
+Proficiency in English is required as all tools, documentation, communication, and training are conducted in English.
+Strong research and analytical skills.
+Demonstrated critical and logical thinking abilities.
+Excellent communication skills and a collaborative, team-oriented mindset.
+High school diploma required; higher education is a plus.
+Detail-oriented and self-motivated, with the ability to work independently.
+Familiarity with Mac OS X is preferred.
+Technical problem-solving experience (1 year preferred).
+Technical skills such as SQL and Python are a plus., applicationDate=2025-08-04T02:55:02.033Z, expectedInterviewDate=2025-09-06, status=Applied, tags=null)]
+2025-08-03 21:55:02.043 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Product Support Analyst, description=Full job description
+Position Title:
+Product Support Analyst (Transit Editor)
+
+Job Description:
+As a Transit Editor Agent, you will play a vital role in ensuring the accuracy and relevance of transit-related data that influences public transportation systems worldwide. You will collaborate with cross-functional teams to identify, curate, and research transit-related entities, ultimately supporting key decisions on a wide range of topics. In this position, you will also develop a deep understanding of our client's policies and requirements to ensure alignment.
+
+Key Responsibilities:
+
+Data Curation: Identify, curate, and maintain transit-related data, including routes, schedules, pricing, and other critical information to enhance the quality and reliability of public transportation systems.
+Research and Analysis: Utilize reporting tools and conduct research using various online sources to gather and analyze data related to transit entities and trends.
+Cross-Functional Collaboration: Work closely with internal teams to ensure that transit data aligns with client needs and project goals.
+Policy Understanding: Develop a deep understanding of our client's policies and requirements to ensure data accuracy and compliance.
+Quality Assurance: Perform quality checks and promptly resolve any data discrepancies.
+Communication: Maintain clear, professional communication with internal teams and stakeholders.
+Adaptability: Be open to continuous learning, working on diverse projects, and adapting to evolving tools and workflows.
+Qualifications:
+
+Bilingual proficiency (second language) preferred.
+Proficiency in English is required as all tools, documentation, communication, and training are conducted in English.
+Strong research and analytical skills.
+Demonstrated critical and logical thinking abilities.
+Excellent communication skills and a collaborative, team-oriented mindset.
+High school diploma required; higher education is a plus.
+Detail-oriented and self-motivated, with the ability to work independently.
+Familiarity with Mac OS X is preferred.
+Technical problem-solving experience (1 year preferred).
+Technical skills such as SQL and Python are a plus., applicationDate=2025-08-04T02:55:02.033Z, expectedInterviewDate=2025-09-06, status=Applied, tags=null)]
+2025-08-03 21:55:02.046 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.createJobApplication() with result = JobApplicationDto(id=5495ede5-b516-4db0-9240-97b74fddfa7c, userId=4, title=Product Support Analyst, description=Full job description
+Position Title:
+Product Support Analyst (Transit Editor)
+
+Job Description:
+As a Transit Editor Agent, you will play a vital role in ensuring the accuracy and relevance of transit-related data that influences public transportation systems worldwide. You will collaborate with cross-functional teams to identify, curate, and research transit-related entities, ultimately supporting key decisions on a wide range of topics. In this position, you will also develop a deep understanding of our client's policies and requirements to ensure alignment.
+
+Key Responsibilities:
+
+Data Curation: Identify, curate, and maintain transit-related data, including routes, schedules, pricing, and other critical information to enhance the quality and reliability of public transportation systems.
+Research and Analysis: Utilize reporting tools and conduct research using various online sources to gather and analyze data related to transit entities and trends.
+Cross-Functional Collaboration: Work closely with internal teams to ensure that transit data aligns with client needs and project goals.
+Policy Understanding: Develop a deep understanding of our client's policies and requirements to ensure data accuracy and compliance.
+Quality Assurance: Perform quality checks and promptly resolve any data discrepancies.
+Communication: Maintain clear, professional communication with internal teams and stakeholders.
+Adaptability: Be open to continuous learning, working on diverse projects, and adapting to evolving tools and workflows.
+Qualifications:
+
+Bilingual proficiency (second language) preferred.
+Proficiency in English is required as all tools, documentation, communication, and training are conducted in English.
+Strong research and analytical skills.
+Demonstrated critical and logical thinking abilities.
+Excellent communication skills and a collaborative, team-oriented mindset.
+High school diploma required; higher education is a plus.
+Detail-oriented and self-motivated, with the ability to work independently.
+Familiarity with Mac OS X is preferred.
+Technical problem-solving experience (1 year preferred).
+Technical skills such as SQL and Python are a plus., applicationDate=2025-08-03T21:55:02.046091-05:00, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)
+2025-08-03 21:55:02.049 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.createJobApplication() with result = <201 CREATED Created,JobApplicationDto(id=5495ede5-b516-4db0-9240-97b74fddfa7c, userId=4, title=Product Support Analyst, description=Full job description
+Position Title:
+Product Support Analyst (Transit Editor)
+
+Job Description:
+As a Transit Editor Agent, you will play a vital role in ensuring the accuracy and relevance of transit-related data that influences public transportation systems worldwide. You will collaborate with cross-functional teams to identify, curate, and research transit-related entities, ultimately supporting key decisions on a wide range of topics. In this position, you will also develop a deep understanding of our client's policies and requirements to ensure alignment.
+
+Key Responsibilities:
+
+Data Curation: Identify, curate, and maintain transit-related data, including routes, schedules, pricing, and other critical information to enhance the quality and reliability of public transportation systems.
+Research and Analysis: Utilize reporting tools and conduct research using various online sources to gather and analyze data related to transit entities and trends.
+Cross-Functional Collaboration: Work closely with internal teams to ensure that transit data aligns with client needs and project goals.
+Policy Understanding: Develop a deep understanding of our client's policies and requirements to ensure data accuracy and compliance.
+Quality Assurance: Perform quality checks and promptly resolve any data discrepancies.
+Communication: Maintain clear, professional communication with internal teams and stakeholders.
+Adaptability: Be open to continuous learning, working on diverse projects, and adapting to evolving tools and workflows.
+Qualifications:
+
+Bilingual proficiency (second language) preferred.
+Proficiency in English is required as all tools, documentation, communication, and training are conducted in English.
+Strong research and analytical skills.
+Demonstrated critical and logical thinking abilities.
+Excellent communication skills and a collaborative, team-oriented mindset.
+High school diploma required; higher education is a plus.
+Detail-oriented and self-motivated, with the ability to work independently.
+Familiarity with Mac OS X is preferred.
+Technical problem-solving experience (1 year preferred).
+Technical skills such as SQL and Python are a plus., applicationDate=2025-08-03T21:55:02.046091-05:00, expectedInterviewDate=2025-09-06, status=PENDING, tags=null),[]>
+2025-08-03 21:55:14.722 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:14.723 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:14.729 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:55:14.730 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:55:14.733 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:14.734 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:14.737 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:55:14.737 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:55:38.533 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, ERP, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:38.535 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, ERP, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:38.542 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:55:38.543 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:55:43.509 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:43.509 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:43.513 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:55:43.514 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:55:55.856 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, Quality Assurance, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:55.857 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, Quality Assurance, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:55:55.863 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:55:55.864 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:56:00.154 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:00.156 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:00.162 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:56:00.163 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:56:05.338 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, Product Support Analyst, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:05.338 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, Product Support Analyst, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:05.342 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:56:05.343 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:56:08.597 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:08.598 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:08.605 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:56:08.606 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:56:51.120 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:51.121 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:51.126 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:56:51.126 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:56:51.128 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:51.128 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:56:51.130 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:56:51.131 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:57:37.738 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:57:37.739 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:57:37.743 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:57:37.743 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:57:37.746 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:57:37.746 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:57:37.748 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:57:37.748 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 21:59:17.210 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, fdsfsfsd, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:59:17.211 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, fdsfsfsd, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:59:17.213 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-03 21:59:17.214 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-03 21:59:20.638 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:59:20.640 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 21:59:20.643 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 21:59:20.643 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:00:48.005 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:00:48.005 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:00:48.009 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:00:48.010 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:00:48.012 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:00:48.012 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:00:48.014 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:00:48.015 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:01:13.722 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-04T03:01:13.714Z, expectedInterviewDate=null, status=Applied, tags=null)]
+2025-08-03 22:01:13.724 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-04T03:01:13.714Z, expectedInterviewDate=null, status=Applied, tags=null)]
+2025-08-03 22:01:13.728 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.createJobApplication() with result = JobApplicationDto(id=de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, userId=4, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-03T22:01:13.727470-05:00, expectedInterviewDate=null, status=PENDING, tags=null)
+2025-08-03 22:01:13.731 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.createJobApplication() with result = <201 CREATED Created,JobApplicationDto(id=de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, userId=4, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-03T22:01:13.727470-05:00, expectedInterviewDate=null, status=PENDING, tags=null),[]>
+2025-08-03 22:01:20.450 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, apple, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:01:20.452 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, apple, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:01:20.459 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:01:20.460 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:01:40.369 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:01:40.369 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:01:40.373 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:01:40.373 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:03:11.234 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, Machine learning, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:03:11.236 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, Machine learning, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:03:11.241 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:03:11.241 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:04:28.863 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:28.865 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:28.870 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:04:28.871 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:04:38.405 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, four-year college, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:38.407 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, four-year college, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:38.411 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:04:38.413 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:04:48.948 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:48.949 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:48.954 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:04:48.955 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:04:59.751 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, enthusiasm, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:59.753 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, enthusiasm, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:04:59.759 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:04:59.760 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:05:08.950 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:05:08.951 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:05:08.957 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:05:08.958 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:09:13.135 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, human annotation, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:09:13.136 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, human annotation, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:09:13.139 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:09:13.140 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:09:21.604 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:09:21.605 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:09:21.610 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:09:21.611 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:11:30.224 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, dialect, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:11:30.225 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, dialect, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:11:30.230 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:11:30.232 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:11:36.006 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:11:36.007 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:11:36.012 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:11:36.013 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:11:42.642 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.642 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.645 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, userId=4, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-04T03:01:13.729071Z, expectedInterviewDate=null, status=PENDING, tags=null)
+2025-08-03 22:11:42.646 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, userId=4, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-04T03:01:13.729071Z, expectedInterviewDate=null, status=PENDING, tags=null),[]>
+2025-08-03 22:11:42.648 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.648 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.650 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.650 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.650 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, userId=4, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-04T03:01:13.729071Z, expectedInterviewDate=null, status=PENDING, tags=null)
+2025-08-03 22:11:42.650 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, userId=4, title=AIML Data Operations Annotation Analyst, Chilean Spanish language, description=Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and use this knowledge for improvements. Because we believe our individual backgrounds, perspectives, and passions help us build the ideas that move all of us forward. We'll train you to be an expert in understanding, supporting and improving the customer experience. This position is required to work Monday through Friday with work hours starting between 7am-9am and ending between 4pm-6pm local time with scheduling and work flexibility based on business needs.
+
+Minimum Qualifications
+Chilean Spanish language reading, writing, and comprehension skills to support the language specific market
+Fluency in English reading, writing and comprehension skills
+Excellent active listening skills with the ability to understand verbal nuances
+Understanding of the local region and cultural variations
+Demonstrates integrity and focuses on customer privacy
+Bachelor’s degree or equivalent job-related experience
+
+Preferred Qualifications
+Demonstrates attention to detail and critical thinking skills in evaluation of language usage and dialect
+Highly organized with strong attention to detail
+Ability to independently navigate systems and tools
+Experience in content review or a similar environment, prior testing experience preferred
+Demonstrates flexibility and adaptability to changing work-flows and responsibilities
+Grows with a team where expertise is shared and feedback is welcomed
+Excels at working independently to make timely decisions and take appropriate actions
+Experience as an end user of Siri, similar Intelligent Personal Assistants, or other AI
+Successfully meets or exceeds targets, working within tight deadlines
+Ability to identify business process solutions that increase efficiencies
+Ability to maintain focus and aim for high results through large volumes of tasks
+Ability to work on safety data which could include offensive material
+Thrives in repetitive work and ambiguous scenarios
+
+Apple is an equal opportunity employer that is committed to inclusion and diversity. We seek to promote equal opportunity for all applicants without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or other legally protected characteristics. Learn more about your EEO rights as an applicant ., applicationDate=2025-08-04T03:01:13.729071Z, expectedInterviewDate=null, status=PENDING, tags=null),[]>
+2025-08-03 22:11:42.656 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with result = []
+2025-08-03 22:11:42.656 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with result = <200 OK OK,[],[]>
+2025-08-03 22:11:42.658 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.658 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.659 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.659 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.661 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with result = []
+2025-08-03 22:11:42.661 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with result = <200 OK OK,[],[]>
+2025-08-03 22:11:42.662 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question for a "AIML Data Operations Annotation Analyst, Chilean Spanish language" role based on this job description: "Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and us". Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-03 22:11:42.663 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.663 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 4]
+2025-08-03 22:11:42.664 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question for a "AIML Data Operations Annotation Analyst, Chilean Spanish language" role based on this job description: "Full job description
+Imagine what you could do here. At Apple, new ideas have a way of becoming extraordinary products, services, and customer experiences very quickly. The people here at Apple donʼt just craft products - they build the kind of wonder that revolutionized entire industries. Itʼs the diversity of those people and their ideas that inspires the innovation that runs through everything we do, from amazing technology to industry-leading environmental efforts. Join Apple, and help us leave the world better than we found it. Are you interested in being part of a team that continues to innovate the way people and machines interact? The world of Artificial Intelligence and Machine Learning (AIML) is rapidly growing and the human annotation team is a big part of it. Siri is powered by Apple Intelligence and offers a faster, easier way to get things done on your Apple devices, even before you ask. The Data Operations team is passionate about technology with a focus on enriching the customer experience. We are looking for a motivated Annotation Analyst that demonstrates active listening, integrity and acute attention to detail. Bring passion and dedication to your job and there's no telling what you could accomplish.
+
+Description
+
+Our team is comprised of very talented individuals, who are passionate about AIML and ensuring Apple services are at their best. As part of the Data Operations team you'll play a central role in enhancing the user experience. We work in a fast paced, dynamic, technology focused environment. As an Annotation Analyst, you'll annotate data which can be both audio and visual and evaluate data from customers who have opted in to the grading program. You'll use your language and cultural knowledge, along with analytical skills, to evaluate responses and information against guidelines. Your flexibility and the ability to prioritize tasks is essential. We focus on the user experience, thinking creatively on how customers use our products and us". Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-03 22:11:42.711 [34mINFO [0;39m [http-nio-8080-exec-2] c.i.service.GeminiService - GeminiService initialized with model: gemini-2.5-flash-lite
+2025-08-03 22:11:42.712 [34mINFO [0;39m [http-nio-8080-exec-2] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question f
+2025-08-03 22:11:42.712 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - GeminiService initialized with model: gemini-2.5-flash-lite
+2025-08-03 22:11:42.712 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question f
+2025-08-03 22:11:43.841 [34mINFO [0;39m [http-nio-8080-exec-2] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-03 22:11:43.841 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-03 22:11:43.841 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to meticulously check a large volume of data for accuracy. How did you ensure attention to detail and what was the outcome?
+[Technical] Given a hypothetical audio recording of a Chilean Spanish speaker interacting with a voice assistant, how would you approach annotating the utterance for intent, entities, and sentiment, referencing specific cultural nuances or idiomatic expressions relevant to Chile?
+[Situational] Imagine you are given a new set of annotation guidelines that are slightly ambiguous regarding a common Chilean colloquialism. How would you proceed to ensure consistent and accurate annotations while seeking clarification?
+2025-08-03 22:11:43.841 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to meticulously follow a complex set of guidelines to complete a task. How did you ensure accuracy and what steps did you take to avoid errors?
+[Technical] How would you approach annotating a piece of audio data in Chilean Spanish where the speaker uses slang or colloquialisms not explicitly covered in the annotation guidelines?
+[Situational] Imagine you are working on a large dataset of customer interactions in Chilean Spanish and discover an ambiguity in the annotation guidelines that could lead to inconsistent labeling. How would you address this situation to ensure data quality and inform your team?
+2025-08-03 22:11:43.846 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=82dcfafa-f671-418c-b61e-9cc1e6464838, questionText=Describe a time you had to meticulously follow a complex set of guidelines to complete a task. How did you ensure accuracy and what steps did you take to avoid errors?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=6a09f7ab-d70f-45f9-80f5-9c4459a1cc10, questionText=How would you approach annotating a piece of audio data in Chilean Spanish where the speaker uses slang or colloquialisms not explicitly covered in the annotation guidelines?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=edbd48f7-3672-4093-94d3-de9f3ecbdd15, questionText=Imagine you are working on a large dataset of customer interactions in Chilean Spanish and discover an ambiguity in the annotation guidelines that could lead to inconsistent labeling. How would you address this situation to ensure data quality and inform your team?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-03 22:11:43.846 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=1931d8dc-936b-41fb-9c35-b39d83b0bea2, questionText=Describe a time you had to meticulously check a large volume of data for accuracy. How did you ensure attention to detail and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=33fadd78-168c-4228-bca5-fe85ca451140, questionText=Given a hypothetical audio recording of a Chilean Spanish speaker interacting with a voice assistant, how would you approach annotating the utterance for intent, entities, and sentiment, referencing specific cultural nuances or idiomatic expressions relevant to Chile?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=139af412-1f9b-4e34-b1de-6710fae22142, questionText=Imagine you are given a new set of annotation guidelines that are slightly ambiguous regarding a common Chilean colloquialism. How would you proceed to ensure consistent and accurate annotations while seeking clarification?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-03 22:11:43.851 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=82dcfafa-f671-418c-b61e-9cc1e6464838, questionText=Describe a time you had to meticulously follow a complex set of guidelines to complete a task. How did you ensure accuracy and what steps did you take to avoid errors?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=6a09f7ab-d70f-45f9-80f5-9c4459a1cc10, questionText=How would you approach annotating a piece of audio data in Chilean Spanish where the speaker uses slang or colloquialisms not explicitly covered in the annotation guidelines?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=edbd48f7-3672-4093-94d3-de9f3ecbdd15, questionText=Imagine you are working on a large dataset of customer interactions in Chilean Spanish and discover an ambiguity in the annotation guidelines that could lead to inconsistent labeling. How would you address this situation to ensure data quality and inform your team?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-03 22:11:43.852 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=1931d8dc-936b-41fb-9c35-b39d83b0bea2, questionText=Describe a time you had to meticulously check a large volume of data for accuracy. How did you ensure attention to detail and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=33fadd78-168c-4228-bca5-fe85ca451140, questionText=Given a hypothetical audio recording of a Chilean Spanish speaker interacting with a voice assistant, how would you approach annotating the utterance for intent, entities, and sentiment, referencing specific cultural nuances or idiomatic expressions relevant to Chile?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=139af412-1f9b-4e34-b1de-6710fae22142, questionText=Imagine you are given a new set of annotation guidelines that are slightly ambiguous regarding a common Chilean colloquialism. How would you proceed to ensure consistent and accurate annotations while seeking clarification?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-03 22:12:34.311 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 1931d8dc-936b-41fb-9c35-b39d83b0bea2, 4, UserResponseSubmitDto(responseText=I would first develop a structured plan to go through the data in a systematic manner and then carry out that plan with the data analysts.)]
+2025-08-03 22:12:34.313 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 1931d8dc-936b-41fb-9c35-b39d83b0bea2, 4, UserResponseSubmitDto(responseText=I would first develop a structured plan to go through the data in a systematic manner and then carry out that plan with the data analysts.)]
+2025-08-03 22:12:34.319 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Describe a time you had to meticulously check a large volume of data for accuracy. How did you ensure attention to detail and what was the outcome?'. User's response: 'I would first develop a structured plan to go through the data in a systematic manner and then carry out that plan with the data analysts.'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-03 22:12:34.319 [34mINFO [0;39m [http-nio-8080-exec-5] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Describe a time you had to
+2025-08-03 22:12:36.238 [34mINFO [0;39m [http-nio-8080-exec-5] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-03 22:12:36.238 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback: That's a good start to your answer, highlighting the importance of a structured plan and collaboration, which are key elements for handling large data sets. You've touched on the initial strategy and who you'd involve. However, to make this response truly SHINE in an interview, we need to add more detail and demonstrate your OWN active role in ensuring accuracy. Think about using a method like STAR, where you describe the Situation, the Task you faced, the Action you took, and the Result. For instance, what specific steps would be in that structured plan? Would you use any particular tools or software? How would you define "systematic manner" in this context?
+
+To really impress, I'd suggest elaborating on your personal actions. Instead of just saying you'd develop a plan, describe *how* you'd ensure attention to detail within that plan. Perhaps you'd create checklists, implement cross-verification steps, or set specific quality control points. When you mention working with data analysts, explain *your* specific role in that collaboration. Were you setting the parameters for their checks, reviewing their findings, or identifying discrepancies yourself? The outcome also needs to be more concrete. What was the specific benefit of ensuring the data's accuracy? Did it lead to a better decision, prevent an error, or improve a process?
+
+For future interviews, aim for responses that showcase your direct contributions and the impact of your actions. Consider the CAR method too, focusing on the Context, Action, and Result. Always think about demonstrating specific skills and behaviors. If you can quantify the "large volume of data" or the positive outcome, that's even better. For example, "I reviewed over 10,000 customer records" or "This accuracy improvement reduced our error rate by 15%." Remember, interviewers want to understand *your* capabilities and how you solve problems, not just the general process.
+
+Score: 6/10
+2025-08-03 22:12:36.247 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=1931d8dc-936b-41fb-9c35-b39d83b0bea2, questionText=Describe a time you had to meticulously check a large volume of data for accuracy. How did you ensure attention to detail and what was the outcome?, questionType=BEHAVIORAL, createdAt=2025-08-04T03:11:43.848763Z, jobApplicationId=null, userResponseText=I would first develop a structured plan to go through the data in a systematic manner and then carry out that plan with the data analysts., aiFeedbackText=Feedback: That's a good start to your answer, highlighting the importance of a structured plan and collaboration, which are key elements for handling large data sets. You've touched on the initial strategy and who you'd involve. However, to make this response truly SHINE in an interview, we need to add more detail and demonstrate your OWN active role in ensuring accuracy. Think about using a method like STAR, where you describe the Situation, the Task you faced, the Action you took, and the Result. For instance, what specific steps would be in that structured plan? Would you use any particular tools or software? How would you define "systematic manner" in this context?
+
+To really impress, I'd suggest elaborating on your personal actions. Instead of just saying you'd develop a plan, describe *how* you'd ensure attention to detail within that plan. Perhaps you'd create checklists, implement cross-verification steps, or set specific quality control points. When you mention working with data analysts, explain *your* specific role in that collaboration. Were you setting the parameters for their checks, reviewing their findings, or identifying discrepancies yourself? The outcome also needs to be more concrete. What was the specific benefit of ensuring the data's accuracy? Did it lead to a better decision, prevent an error, or improve a process?
+
+For future interviews, aim for responses that showcase your direct contributions and the impact of your actions. Consider the CAR method too, focusing on the Context, Action, and Result. Always think about demonstrating specific skills and behaviors. If you can quantify the "large volume of data" or the positive outcome, that's even better. For example, "I reviewed over 10,000 customer records" or "This accuracy improvement reduced our error rate by 15%." Remember, interviewers want to understand *your* capabilities and how you solve problems, not just the general process.
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=b6b52f5b-c0b0-4de4-8f0a-9ab121eac407, aiFeedbackId=77f33a8c-8a35-4003-9ee0-6dad9ff72092)
+2025-08-03 22:12:36.250 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=1931d8dc-936b-41fb-9c35-b39d83b0bea2, questionText=Describe a time you had to meticulously check a large volume of data for accuracy. How did you ensure attention to detail and what was the outcome?, questionType=BEHAVIORAL, createdAt=2025-08-04T03:11:43.848763Z, jobApplicationId=null, userResponseText=I would first develop a structured plan to go through the data in a systematic manner and then carry out that plan with the data analysts., aiFeedbackText=Feedback: That's a good start to your answer, highlighting the importance of a structured plan and collaboration, which are key elements for handling large data sets. You've touched on the initial strategy and who you'd involve. However, to make this response truly SHINE in an interview, we need to add more detail and demonstrate your OWN active role in ensuring accuracy. Think about using a method like STAR, where you describe the Situation, the Task you faced, the Action you took, and the Result. For instance, what specific steps would be in that structured plan? Would you use any particular tools or software? How would you define "systematic manner" in this context?
+
+To really impress, I'd suggest elaborating on your personal actions. Instead of just saying you'd develop a plan, describe *how* you'd ensure attention to detail within that plan. Perhaps you'd create checklists, implement cross-verification steps, or set specific quality control points. When you mention working with data analysts, explain *your* specific role in that collaboration. Were you setting the parameters for their checks, reviewing their findings, or identifying discrepancies yourself? The outcome also needs to be more concrete. What was the specific benefit of ensuring the data's accuracy? Did it lead to a better decision, prevent an error, or improve a process?
+
+For future interviews, aim for responses that showcase your direct contributions and the impact of your actions. Consider the CAR method too, focusing on the Context, Action, and Result. Always think about demonstrating specific skills and behaviors. If you can quantify the "large volume of data" or the positive outcome, that's even better. For example, "I reviewed over 10,000 customer records" or "This accuracy improvement reduced our error rate by 15%." Remember, interviewers want to understand *your* capabilities and how you solve problems, not just the general process.
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=b6b52f5b-c0b0-4de4-8f0a-9ab121eac407, aiFeedbackId=77f33a8c-8a35-4003-9ee0-6dad9ff72092),[]>
+2025-08-03 22:15:31.935 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 33fadd78-168c-4228-bca5-fe85ca451140, 4, UserResponseSubmitDto(responseText=I would pay attention to the accent and dialect to make sure any cultural nuances are taken into consideration.)]
+2025-08-03 22:15:31.936 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 33fadd78-168c-4228-bca5-fe85ca451140, 4, UserResponseSubmitDto(responseText=I would pay attention to the accent and dialect to make sure any cultural nuances are taken into consideration.)]
+2025-08-03 22:15:31.945 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Given a hypothetical audio recording of a Chilean Spanish speaker interacting with a voice assistant, how would you approach annotating the utterance for intent, entities, and sentiment, referencing specific cultural nuances or idiomatic expressions relevant to Chile?'. User's response: 'I would pay attention to the accent and dialect to make sure any cultural nuances are taken into consideration.'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-03 22:15:31.945 [34mINFO [0;39m [http-nio-8080-exec-9] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Given a hypothetical audio
+2025-08-03 22:15:33.740 [34mINFO [0;39m [http-nio-8080-exec-9] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-03 22:15:33.740 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback: That's a good starting point, recognizing the importance of accent and dialect.  You correctly identified that these elements are key to understanding cultural nuances.  To really elevate your answer, try to be more specific about *how* you'd pay attention and what you'd be looking for.  Think about the different components of annotation.
+
+For example, when you mention cultural nuances, consider what those might actually *be*. This is where you can demonstrate deeper understanding. Instead of just saying you'll pay attention, you could say you'd listen for specific Chilean Spanish colloquialisms or phrases that might indicate a particular intent or sentiment that wouldn't be obvious in a more generic Spanish utterance.
+
+To make your response more complete, you could imagine yourself actually doing the annotation. For instance, if the speaker said something like "cachai" or "al tiro," how would those specific words influence your intent or sentiment annotation? You might also consider how Chilean cultural norms around politeness or directness could impact how you label sentiment. Think of it as a mini-case study.
+
+In the future, when answering questions like this, try to use a structure like the STAR method, though perhaps adapted. You could think of it as Situation (the hypothetical recording), Task (annotating intent, entities, sentiment), Action (what you would do specifically), and Result (what your annotation would achieve). This helps ensure you cover all aspects of the question clearly and logically. A simple way to frame your action would be to list the steps you'd take, such as first identifying standard Spanish intent markers, and then layering on the Chilean nuances.
+
+Score: 6/10
+2025-08-03 22:15:33.748 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=33fadd78-168c-4228-bca5-fe85ca451140, questionText=Given a hypothetical audio recording of a Chilean Spanish speaker interacting with a voice assistant, how would you approach annotating the utterance for intent, entities, and sentiment, referencing specific cultural nuances or idiomatic expressions relevant to Chile?, questionType=TECHNICAL, createdAt=2025-08-04T03:11:43.850303Z, jobApplicationId=null, userResponseText=I would pay attention to the accent and dialect to make sure any cultural nuances are taken into consideration., aiFeedbackText=Feedback: That's a good starting point, recognizing the importance of accent and dialect.  You correctly identified that these elements are key to understanding cultural nuances.  To really elevate your answer, try to be more specific about *how* you'd pay attention and what you'd be looking for.  Think about the different components of annotation.
+
+For example, when you mention cultural nuances, consider what those might actually *be*. This is where you can demonstrate deeper understanding. Instead of just saying you'll pay attention, you could say you'd listen for specific Chilean Spanish colloquialisms or phrases that might indicate a particular intent or sentiment that wouldn't be obvious in a more generic Spanish utterance.
+
+To make your response more complete, you could imagine yourself actually doing the annotation. For instance, if the speaker said something like "cachai" or "al tiro," how would those specific words influence your intent or sentiment annotation? You might also consider how Chilean cultural norms around politeness or directness could impact how you label sentiment. Think of it as a mini-case study.
+
+In the future, when answering questions like this, try to use a structure like the STAR method, though perhaps adapted. You could think of it as Situation (the hypothetical recording), Task (annotating intent, entities, sentiment), Action (what you would do specifically), and Result (what your annotation would achieve). This helps ensure you cover all aspects of the question clearly and logically. A simple way to frame your action would be to list the steps you'd take, such as first identifying standard Spanish intent markers, and then layering on the Chilean nuances.
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=6e914802-c018-4524-9198-e99b99a1c55b, aiFeedbackId=4ec7f998-d10d-4a83-9a25-0f9960276e5e)
+2025-08-03 22:15:33.751 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=33fadd78-168c-4228-bca5-fe85ca451140, questionText=Given a hypothetical audio recording of a Chilean Spanish speaker interacting with a voice assistant, how would you approach annotating the utterance for intent, entities, and sentiment, referencing specific cultural nuances or idiomatic expressions relevant to Chile?, questionType=TECHNICAL, createdAt=2025-08-04T03:11:43.850303Z, jobApplicationId=null, userResponseText=I would pay attention to the accent and dialect to make sure any cultural nuances are taken into consideration., aiFeedbackText=Feedback: That's a good starting point, recognizing the importance of accent and dialect.  You correctly identified that these elements are key to understanding cultural nuances.  To really elevate your answer, try to be more specific about *how* you'd pay attention and what you'd be looking for.  Think about the different components of annotation.
+
+For example, when you mention cultural nuances, consider what those might actually *be*. This is where you can demonstrate deeper understanding. Instead of just saying you'll pay attention, you could say you'd listen for specific Chilean Spanish colloquialisms or phrases that might indicate a particular intent or sentiment that wouldn't be obvious in a more generic Spanish utterance.
+
+To make your response more complete, you could imagine yourself actually doing the annotation. For instance, if the speaker said something like "cachai" or "al tiro," how would those specific words influence your intent or sentiment annotation? You might also consider how Chilean cultural norms around politeness or directness could impact how you label sentiment. Think of it as a mini-case study.
+
+In the future, when answering questions like this, try to use a structure like the STAR method, though perhaps adapted. You could think of it as Situation (the hypothetical recording), Task (annotating intent, entities, sentiment), Action (what you would do specifically), and Result (what your annotation would achieve). This helps ensure you cover all aspects of the question clearly and logically. A simple way to frame your action would be to list the steps you'd take, such as first identifying standard Spanish intent markers, and then layering on the Chilean nuances.
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=6e914802-c018-4524-9198-e99b99a1c55b, aiFeedbackId=4ec7f998-d10d-4a83-9a25-0f9960276e5e),[]>
+2025-08-03 22:16:50.355 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 139af412-1f9b-4e34-b1de-6710fae22142, 4, UserResponseSubmitDto(responseText=I would be very careful and make sure to seek clarification along the way.)]
+2025-08-03 22:16:50.356 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [de46aeca-7b96-47bd-9ef2-ab0f3bfb59bd, 139af412-1f9b-4e34-b1de-6710fae22142, 4, UserResponseSubmitDto(responseText=I would be very careful and make sure to seek clarification along the way.)]
+2025-08-03 22:16:50.368 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Imagine you are given a new set of annotation guidelines that are slightly ambiguous regarding a common Chilean colloquialism. How would you proceed to ensure consistent and accurate annotations while seeking clarification?'. User's response: 'I would be very careful and make sure to seek clarification along the way.'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-03 22:16:50.369 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Imagine you are given a ne
+2025-08-03 22:16:52.237 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-03 22:16:52.237 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback:  That's a great starting point, you absolutely nailed the core of what's needed: being careful and seeking clarification. That shows you're thoughtful and proactive, which are SUPER important qualities for an annotator.  It's good that you recognize the need to address ambiguity.
+
+However, to really shine in an interview setting, you'll want to flesh this out a bit more. Think about *how* you'd seek clarification. Would you go straight to your manager, or would you first consult with colleagues? Consider mentioning if you'd document your understanding before seeking clarification. Being specific about your process makes your answer much stronger and demonstrates a deeper understanding of workflow.
+
+For future answers, try to think about the STAR method, or Situation, Task, Action, Result. Even though this isn't a past experience, you can frame it as a hypothetical situation. So, the situation is the ambiguous guidelines. The task is to annotate consistently and accurately. Your action would be the steps you take to clarify. The result would be accurate and consistent annotations. This structure helps you provide a comprehensive and compelling answer.
+
+For instance, a more detailed approach could be: "First, I'd carefully read the guideline and the examples provided, paying close attention to the specific colloquialism and how it's used in context. If ambiguity remained, I'd consult with a more experienced colleague who might have encountered similar situations. If that didn't resolve it, I'd then reach out to my manager or the project lead with specific examples and my proposed interpretation, asking for their guidance. I'd also consider creating a brief internal note with my understanding and the clarification received, to ensure consistency for future annotations. This way, I'm not just waiting for an answer, but actively trying to solve the problem myself while ensuring alignment with the team's goals." This kind of detailed, actionable response shows real initiative and problem-solving skills.
+
+Score: 6/10.
+2025-08-03 22:16:52.247 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=139af412-1f9b-4e34-b1de-6710fae22142, questionText=Imagine you are given a new set of annotation guidelines that are slightly ambiguous regarding a common Chilean colloquialism. How would you proceed to ensure consistent and accurate annotations while seeking clarification?, questionType=SITUATIONAL, createdAt=2025-08-04T03:11:43.851062Z, jobApplicationId=null, userResponseText=I would be very careful and make sure to seek clarification along the way., aiFeedbackText=Feedback:  That's a great starting point, you absolutely nailed the core of what's needed: being careful and seeking clarification. That shows you're thoughtful and proactive, which are SUPER important qualities for an annotator.  It's good that you recognize the need to address ambiguity.
+
+However, to really shine in an interview setting, you'll want to flesh this out a bit more. Think about *how* you'd seek clarification. Would you go straight to your manager, or would you first consult with colleagues? Consider mentioning if you'd document your understanding before seeking clarification. Being specific about your process makes your answer much stronger and demonstrates a deeper understanding of workflow.
+
+For future answers, try to think about the STAR method, or Situation, Task, Action, Result. Even though this isn't a past experience, you can frame it as a hypothetical situation. So, the situation is the ambiguous guidelines. The task is to annotate consistently and accurately. Your action would be the steps you take to clarify. The result would be accurate and consistent annotations. This structure helps you provide a comprehensive and compelling answer.
+
+For instance, a more detailed approach could be: "First, I'd carefully read the guideline and the examples provided, paying close attention to the specific colloquialism and how it's used in context. If ambiguity remained, I'd consult with a more experienced colleague who might have encountered similar situations. If that didn't resolve it, I'd then reach out to my manager or the project lead with specific examples and my proposed interpretation, asking for their guidance. I'd also consider creating a brief internal note with my understanding and the clarification received, to ensure consistency for future annotations. This way, I'm not just waiting for an answer, but actively trying to solve the problem myself while ensuring alignment with the team's goals." This kind of detailed, actionable response shows real initiative and problem-solving skills.
+
+Score: 6/10., aiFeedbackScore=6, userResponseId=f75346f3-fd24-43a2-89e7-afec11b87149, aiFeedbackId=97d75f2b-224a-486f-804e-18ffa743d508)
+2025-08-03 22:16:52.251 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=139af412-1f9b-4e34-b1de-6710fae22142, questionText=Imagine you are given a new set of annotation guidelines that are slightly ambiguous regarding a common Chilean colloquialism. How would you proceed to ensure consistent and accurate annotations while seeking clarification?, questionType=SITUATIONAL, createdAt=2025-08-04T03:11:43.851062Z, jobApplicationId=null, userResponseText=I would be very careful and make sure to seek clarification along the way., aiFeedbackText=Feedback:  That's a great starting point, you absolutely nailed the core of what's needed: being careful and seeking clarification. That shows you're thoughtful and proactive, which are SUPER important qualities for an annotator.  It's good that you recognize the need to address ambiguity.
+
+However, to really shine in an interview setting, you'll want to flesh this out a bit more. Think about *how* you'd seek clarification. Would you go straight to your manager, or would you first consult with colleagues? Consider mentioning if you'd document your understanding before seeking clarification. Being specific about your process makes your answer much stronger and demonstrates a deeper understanding of workflow.
+
+For future answers, try to think about the STAR method, or Situation, Task, Action, Result. Even though this isn't a past experience, you can frame it as a hypothetical situation. So, the situation is the ambiguous guidelines. The task is to annotate consistently and accurately. Your action would be the steps you take to clarify. The result would be accurate and consistent annotations. This structure helps you provide a comprehensive and compelling answer.
+
+For instance, a more detailed approach could be: "First, I'd carefully read the guideline and the examples provided, paying close attention to the specific colloquialism and how it's used in context. If ambiguity remained, I'd consult with a more experienced colleague who might have encountered similar situations. If that didn't resolve it, I'd then reach out to my manager or the project lead with specific examples and my proposed interpretation, asking for their guidance. I'd also consider creating a brief internal note with my understanding and the clarification received, to ensure consistency for future annotations. This way, I'm not just waiting for an answer, but actively trying to solve the problem myself while ensuring alignment with the team's goals." This kind of detailed, actionable response shows real initiative and problem-solving skills.
+
+Score: 6/10., aiFeedbackScore=6, userResponseId=f75346f3-fd24-43a2-89e7-afec11b87149, aiFeedbackId=97d75f2b-224a-486f-804e-18ffa743d508),[]>
+2025-08-03 22:17:05.636 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:05.638 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:05.643 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:17:05.643 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:17:05.645 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:05.645 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:05.648 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:17:05.648 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:17:18.433 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, schedules, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:18.434 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, schedules, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:18.437 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:17:18.438 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:17:22.581 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:22.582 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:17:22.588 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:17:22.590 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:21.955 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, spanish, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:21.957 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, spanish, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:21.963 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:21.964 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:28.210 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:28.211 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:28.215 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:28.216 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:39.428 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, hy, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:39.430 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, hy, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:39.435 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:39.435 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:42.772 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, hyb, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:42.774 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, hyb, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:42.778 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:42.779 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:45.901 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, hybrid, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:45.903 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, hybrid, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:45.908 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:45.909 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:52.796 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:52.797 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:52.802 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:52.804 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:56.396 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, s, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:56.399 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, s, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:56.406 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:56.407 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:26:59.248 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, sql, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:59.249 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, sql, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:26:59.252 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:26:59.253 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:27:04.169 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:04.170 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:04.176 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:27:04.177 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:27:11.000 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, austin, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:11.001 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, austin, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:11.005 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:27:11.006 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:27:18.495 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:18.496 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:18.501 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:27:18.502 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:27:30.828 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, transi, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:30.830 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, transi, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:30.835 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:27:30.836 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:27:32.846 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, ttransi, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:32.848 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, ttransi, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:32.852 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-03 22:27:32.853 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-03 22:27:37.523 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, transit, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:37.524 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, transit, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:37.528 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:27:37.529 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:27:55.261 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:55.263 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:27:55.268 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:27:55.269 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:28:25.509 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=Peter, lastName=Lincoln, phone=888-999-1012, bio=Experienced data analyst, resumeText=10 years of data analysis experience)]
+2025-08-03 22:28:25.509 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=Peter, lastName=Lincoln, phone=888-999-1012, bio=Experienced data analyst, resumeText=10 years of data analysis experience)]
+2025-08-03 22:28:25.514 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.updateProfile() with result = ProfileResponseDto(id=4, firstName=Peter, lastName=Lincoln, phone=888-999-1012, bio=Experienced data analyst, resumeText=10 years of data analysis experience, username=peterl, email=peterl@example.com)
+2025-08-03 22:28:25.523 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.updateProfile() with result = <202 ACCEPTED Accepted,ProfileResponseDto(id=4, firstName=Peter, lastName=Lincoln, phone=888-999-1012, bio=Experienced data analyst, resumeText=10 years of data analysis experience, username=peterl, email=peterl@example.com),[]>
+2025-08-03 22:28:33.902 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:33.910 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:33.913 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:28:33.914 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:28:33.916 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:33.916 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:33.918 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:28:33.918 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:28:43.303 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, austin, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:43.303 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, austin, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:43.307 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:28:43.308 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:28:47.893 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:47.894 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-03 22:28:47.900 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-03 22:28:47.901 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-03 22:29:44.643 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-03 22:29:45.651 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-03 22:29:45.660 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-03 22:29:45.684 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-03 22:29:45.685 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
