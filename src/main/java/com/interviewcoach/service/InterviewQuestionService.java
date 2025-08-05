@@ -193,8 +193,8 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             return questions;
         }
 
-        // Regex to parse "[QuestionType] Question Text ?" format
-        Pattern pattern = Pattern.compile("^\\[(BEHAVIORAL|TECHNICAL|SITUATIONAL|CASE_STUDY)]\\s*(.*)\\?$", Pattern.CASE_INSENSITIVE);
+        // Regex to parse "[QuestionType] Question Text" format (with or without punctuation at the end)
+        Pattern pattern = Pattern.compile("^\\[(BEHAVIORAL|TECHNICAL|SITUATIONAL|CASE_STUDY)]\\s*(.*)$", Pattern.CASE_INSENSITIVE);
         String[] lines = aiResponse.split("\n");
         for (String line : lines) {
             String trimmedLine = line.trim();
@@ -203,7 +203,11 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             Matcher matcher = pattern.matcher(trimmedLine);
             if (matcher.matches()) {
                 QuestionType type = QuestionType.valueOf(matcher.group(1).toUpperCase());
-                String questionText = matcher.group(2).trim() + "?"; // Add back the question mark
+                String questionText = matcher.group(2).trim();
+                // Ensure the question ends with a question mark
+                if (!questionText.endsWith("?") && !questionText.endsWith(".")) {
+                    questionText += "?";
+                }
                 questions.add(InterviewQuestion.builder()
                         .questionText(questionText)
                         .questionType(type)
