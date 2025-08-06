@@ -43,7 +43,12 @@ public class InterviewQuestionService implements IInterviewQuestionService {
 
     @Override
     @Transactional
-    public List<InterviewQuestionDto> generateAndSaveQuestions(UUID jobApplicationId, Long userId) {
+    public List<InterviewQuestionDto> generateAndSaveQuestions(
+            UUID jobApplicationId,
+            Long userId,
+            int numberOfQuestions,
+            List<QuestionType> questionTypes
+    ) {
         JobApplication jobApplication = jobApplicationRepository.findById(jobApplicationId)
                 .orElseThrow(() -> new ResourceNotFoundException("JobApplication", "ID", jobApplicationId));
 
@@ -51,7 +56,12 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             throw new BadRequestException("Access denied: Job application does not belong to user.");
         }
 
-        String prompt = buildPromptForQuestionGeneration(jobApplication.getTitle(), jobApplication.getDescription());
+        String prompt = buildPromptForQuestionGeneration(
+                jobApplication.getTitle(),
+                jobApplication.getDescription(),
+                numberOfQuestions,
+                questionTypes
+        );
         String aiResponse = "";
 
         // === AI API Integration Logic (Gemini -> Pollinations -> Mock) ===
@@ -72,16 +82,19 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         // === End AI API Integration Logic ===
 
         List<InterviewQuestion> newQuestions = new ArrayList<>();
+
         if ("MOCK_FALLBACK_QUESTIONS".equals(aiResponse) || aiResponse.isEmpty()) {
-            newQuestions = generateMockQuestions(jobApplication);
+            // Use updated generateMockQuestions with parameters
+            newQuestions = generateMockQuestions(jobApplication, numberOfQuestions, questionTypes);
         } else {
-            // Attempt to parse AI response (Pollinations.ai or Gemini)
-            // Note: If Gemini provides structured output, this parsing might need adjustment
-            // For simplicity, we assume Pollinations.ai's text format or a similar one.
             newQuestions = parsePollinationsAIQuestions(aiResponse, jobApplication);
-            if (newQuestions.isEmpty()) { // If parsing failed for some reason
-                System.err.println("Failed to parse AI response. Falling back to mock questions.");
-                newQuestions = generateMockQuestions(jobApplication);
+
+            // Filter and limit questions based on requested criteria
+            newQuestions = filterAndLimitQuestions(newQuestions, numberOfQuestions, questionTypes);
+
+            if (newQuestions.isEmpty()) {
+                System.err.println("AI response did not yield questions matching criteria. Falling back to generic mock questions.");
+                newQuestions = generateMockQuestions(jobApplication, numberOfQuestions, questionTypes);
             }
         }
 
@@ -181,10 +194,26 @@ public class InterviewQuestionService implements IInterviewQuestionService {
 
     // --- Helper Methods for building prompts, etc
 
-    private String buildPromptForQuestionGeneration(String jobTitle, String jobDescription) {
-        return String.format("As a career coach, please generate 1 behavioral, 1 technical, and 1 situational interview question for a \"%s\" role based on this job description: \"%s\". " +
-                        "Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?",
-                jobTitle, jobDescription.substring(0, Math.min(jobDescription.length(), 2000))); // Truncate JD for prompt length
+    private String buildPromptForQuestionGeneration(
+            String jobTitle,
+            String jobDescription,
+            int numberOfQuestions,
+            List<QuestionType> questionTypes
+    ) {
+        String typesString = questionTypes.stream()
+                .map(Enum::name)
+                .collect(Collectors.joining(", "));
+
+        return String.format(
+                "As a career coach, please generate %d interview questions for a \"%s\" role based on this job description: \"%s\". " +
+                        "Focus on the following types: %s. " +
+                        "Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. " +
+                        "Only provide the clean questions in the format specified. [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?",
+                numberOfQuestions,
+                jobTitle,
+                jobDescription.substring(0, Math.min(jobDescription.length(), 2000)),
+                typesString
+        );
     }
 
     private List<InterviewQuestion> parsePollinationsAIQuestions(String aiResponse, JobApplication jobApplication) {
@@ -224,13 +253,103 @@ public class InterviewQuestionService implements IInterviewQuestionService {
         return questions;
     }
 
-    private List<InterviewQuestion> generateMockQuestions(JobApplication jobApplication) {
-        // Backup questions
-        return List.of(
-                InterviewQuestion.builder().questionText("Tell me about a time you faced a challenge and how you overcame it.").questionType(QuestionType.BEHAVIORAL).build(),
-                InterviewQuestion.builder().questionText("Explain the concept of polymorphism in object-oriented programming.").questionType(QuestionType.TECHNICAL).build(),
-                InterviewQuestion.builder().questionText("Imagine you discovered a critical bug right before a major product launch. What would you do?").questionType(QuestionType.SITUATIONAL).build()
-        );
+    private List<InterviewQuestion> generateMockQuestions(
+            JobApplication jobApplication,
+            int numberOfQuestions,
+            List<QuestionType> questionTypes
+    ) {
+        List<InterviewQuestion> allMockQuestions = new ArrayList<>();
+
+        // Behavioral questions
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("Tell me about a time you faced a challenge and how you overcame it.")
+                .questionType(QuestionType.BEHAVIORAL)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("How do you handle disagreements within your team regarding technical approaches?")
+                .questionType(QuestionType.BEHAVIORAL)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("Describe a situation where you had to meet a tight deadline.")
+                .questionType(QuestionType.BEHAVIORAL)
+                .build());
+
+        // Technical questions
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("Explain the concept of polymorphism in object-oriented programming.")
+                .questionType(QuestionType.TECHNICAL)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("Describe the difference between SQL and NoSQL databases.")
+                .questionType(QuestionType.TECHNICAL)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("What are the advantages of using a microservices architecture?")
+                .questionType(QuestionType.TECHNICAL)
+                .build());
+
+        // Situational questions
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("Imagine you discovered a critical bug right before a major product launch. What would you do?")
+                .questionType(QuestionType.SITUATIONAL)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("How would you respond if a project deadline was unexpectedly moved up?")
+                .questionType(QuestionType.SITUATIONAL)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("What would you do if you disagreed with your manager's technical decision?")
+                .questionType(QuestionType.SITUATIONAL)
+                .build());
+
+        // Case study questions
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("You have 100 ping pong balls and 100 dollars. How do you maximize your earnings by selling ping pong balls?")
+                .questionType(QuestionType.CASE_STUDY)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("Your client wants to launch a new streaming service. Walk me through how you would determine the pricing strategy.")
+                .questionType(QuestionType.CASE_STUDY)
+                .build());
+        allMockQuestions.add(InterviewQuestion.builder()
+                .questionText("Estimate how many coffee shops are in New York City.")
+                .questionType(QuestionType.CASE_STUDY)
+                .build());
+
+        // Filter by requested types and limit the number
+        List<InterviewQuestion> filteredAndLimitedQuestions = allMockQuestions.stream()
+                .filter(q -> questionTypes.contains(q.getQuestionType()))
+                .limit(numberOfQuestions)
+                .collect(Collectors.toList());
+
+        // If we don't have enough questions of the requested types,
+        // add more from common types (BEHAVIORAL, TECHNICAL, SITUATIONAL)
+        if (filteredAndLimitedQuestions.size() < numberOfQuestions) {
+            List<QuestionType> fallbackTypes = List.of(
+                    QuestionType.BEHAVIORAL,
+                    QuestionType.TECHNICAL,
+                    QuestionType.SITUATIONAL
+            );
+
+            long needed = numberOfQuestions - filteredAndLimitedQuestions.size();
+
+            allMockQuestions.stream()
+                    .filter(q -> fallbackTypes.contains(q.getQuestionType()) &&
+                            !filteredAndLimitedQuestions.contains(q))
+                    .limit(needed)
+                    .forEach(filteredAndLimitedQuestions::add);
+        }
+
+        // If still not enough questions, add any remaining questions
+        while (filteredAndLimitedQuestions.size() < numberOfQuestions &&
+                filteredAndLimitedQuestions.size() < allMockQuestions.size()) {
+            Optional<InterviewQuestion> randomQuestion = allMockQuestions.stream()
+                    .filter(q -> !filteredAndLimitedQuestions.contains(q))
+                    .findAny();
+            randomQuestion.ifPresent(filteredAndLimitedQuestions::add);
+        }
+
+        return filteredAndLimitedQuestions;
     }
 
     private String buildPromptForFeedbackGeneration(String questionText, String userResponseText) {
@@ -289,5 +408,16 @@ public class InterviewQuestionService implements IInterviewQuestionService {
             System.err.println("Could not parse score from feedback: " + e.getMessage());
         }
         return 6 + (int) (Math.random() * 4); // Fallback to a random score between 6-9
+    }
+
+    private List<InterviewQuestion> filterAndLimitQuestions(
+            List<InterviewQuestion> questions,
+            int numberOfQuestions,
+            List<QuestionType> questionTypes
+    ) {
+        return questions.stream()
+                .filter(q -> questionTypes.contains(q.getQuestionType()))
+                .limit(numberOfQuestions)
+                .collect(Collectors.toList());
     }
 }
