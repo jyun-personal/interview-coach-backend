@@ -1,0 +1,1355 @@
+2025-08-05 20:19:11.900 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 25628 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-08-05 20:19:11.902 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-05 20:19:11.902 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-05 20:19:12.238 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 20:19:12.264 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 7 JPA repository interfaces.
+2025-08-05 20:19:12.467 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-05 20:19:12.472 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-05 20:19:12.472 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-05 20:19:12.487 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-05 20:19:12.488 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 573 ms
+2025-08-05 20:19:12.570 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 20:19:12.593 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-05 20:19:12.604 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-05 20:19:12.693 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 20:19:12.705 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-05 20:19:12.744 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df87ffd
+2025-08-05 20:19:12.745 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-05 20:19:12.787 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 20:19:13.143 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 20:19:13.211 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 20:19:13.314 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-05 20:19:14.072 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-05 20:19:14.238 [34mINFO [0;39m [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-05 20:19:14.262 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-05 20:19:14.268 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 2.566 seconds (process running for 2.758)
+2025-08-05 20:19:14.859 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 20:19:14.859 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-05 20:19:14.860 [34mINFO [0;39m [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-05 20:20:01.101 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=johndoe, email=johndoe@example.com, password=password123, firstName=John, lastName=Doe)]
+2025-08-05 20:20:01.102 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=johndoe, email=johndoe@example.com, password=password123, firstName=John, lastName=Doe)]
+2025-08-05 20:20:01.177 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=johndoe, email=johndoe@example.com, role=JOB_SEEKER)
+2025-08-05 20:20:01.181 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=johndoe, email=johndoe@example.com, role=JOB_SEEKER),[]>
+2025-08-05 20:20:19.860 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.login() with argument[s] = [LoginRequestDto(email=johndoe@example.com, password=password123)]
+2025-08-05 20:20:19.861 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.login() with argument[s] = [LoginRequestDto(email=johndoe@example.com, password=password123)]
+2025-08-05 20:20:19.952 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.login() with result = AuthResponseDto(success=true, message=Login Successful, id=4, username=johndoe, email=johndoe@example.com, role=JOB_SEEKER)
+2025-08-05 20:20:19.952 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.login() with result = <200 OK OK,AuthResponseDto(success=true, message=Login Successful, id=4, username=johndoe, email=johndoe@example.com, role=JOB_SEEKER),[]>
+2025-08-05 20:20:19.960 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [4]
+2025-08-05 20:20:19.960 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [4]
+2025-08-05 20:20:19.964 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=4, firstName=John, lastName=Doe, phone=null, bio=null, resumeText=null, username=johndoe, email=johndoe@example.com)
+2025-08-05 20:20:19.965 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=4, firstName=John, lastName=Doe, phone=null, bio=null, resumeText=null, username=johndoe, email=johndoe@example.com),[]>
+2025-08-05 20:20:19.987 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:19.987 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:19.991 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-05 20:20:19.992 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-05 20:20:19.993 [31mWARN [0;39m [http-nio-8080-exec-9] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-05 20:20:19.996 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:19.996 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:19.997 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-05 20:20:19.998 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-05 20:20:40.726 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:20:40.727 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:20:40.738 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null)
+2025-08-05 20:20:40.743 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null),[]>
+2025-08-05 20:20:40.747 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:20:40.748 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:20:40.752 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null)
+2025-08-05 20:20:40.753 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null),[]>
+2025-08-05 20:20:44.362 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:44.363 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:44.368 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-05 20:20:44.368 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-05 20:20:44.371 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:44.371 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:20:44.373 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-05 20:20:44.374 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-05 20:21:25.738 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.724Z, expectedInterviewDate=2025-09-04, status=Applied, tags=null)]
+2025-08-05 20:21:25.739 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.724Z, expectedInterviewDate=2025-09-04, status=Applied, tags=null)]
+2025-08-05 20:21:25.744 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.createJobApplication() with result = JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-05T20:21:25.743778-05:00, expectedInterviewDate=2025-09-04, status=PENDING, tags=null)
+2025-08-05 20:21:25.747 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.createJobApplication() with result = <201 CREATED Created,JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-05T20:21:25.743778-05:00, expectedInterviewDate=2025-09-04, status=PENDING, tags=null),[]>
+2025-08-05 20:21:32.462 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, fdsfs, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:32.464 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, fdsfs, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:32.472 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-05 20:21:32.472 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-05 20:21:34.229 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:34.230 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:34.237 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:21:34.238 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:21:36.676 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, stag, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:36.678 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, stag, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:36.682 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-05 20:21:36.683 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-05 20:21:40.200 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, staff, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:40.203 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, staff, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:40.208 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:21:40.210 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:21:44.189 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:44.191 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:21:44.197 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:21:44.197 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:35:24.243 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:35:24.244 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:35:24.248 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:35:24.248 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:35:24.252 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:35:24.252 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:35:24.255 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:35:24.256 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:35:57.575 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.575 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.579 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null)
+2025-08-05 20:35:57.579 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null),[]>
+2025-08-05 20:35:57.582 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.583 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.585 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.585 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.584 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null)
+2025-08-05 20:35:57.585 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null),[]>
+2025-08-05 20:35:57.593 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with result = []
+2025-08-05 20:35:57.593 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with result = <200 OK OK,[],[]>
+2025-08-05 20:35:57.594 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.594 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:35:57.597 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, {numberOfQuestions=5, questionTypes=[BEHAVIORAL, TECHNICAL, CASE_STUDY]}]
+2025-08-05 20:35:57.597 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with result = []
+2025-08-05 20:35:57.597 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with result = <200 OK OK,[],[]>
+2025-08-05 20:35:57.597 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, 5, [BEHAVIORAL, TECHNICAL, CASE_STUDY]]
+2025-08-05 20:35:57.598 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 5 interview questions for a "Staff Software Engineer, Backend Web Development" role based on this job description: "Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices,". Focus on the following types: BEHAVIORAL, TECHNICAL, CASE_STUDY. Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format specified. [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-05 20:35:57.599 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, {numberOfQuestions=5, questionTypes=[BEHAVIORAL, TECHNICAL, CASE_STUDY]}]
+2025-08-05 20:35:57.599 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, 5, [BEHAVIORAL, TECHNICAL, CASE_STUDY]]
+2025-08-05 20:35:57.600 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 5 interview questions for a "Staff Software Engineer, Backend Web Development" role based on this job description: "Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices,". Focus on the following types: BEHAVIORAL, TECHNICAL, CASE_STUDY. Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format specified. [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-05 20:35:57.647 [34mINFO [0;39m [http-nio-8080-exec-9] c.i.service.GeminiService - GeminiService initialized with model: gemini-2.5-flash-lite
+2025-08-05 20:35:57.647 [34mINFO [0;39m [http-nio-8080-exec-9] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 5 interview questions for a "Staff Software Engineer, Backend Web
+2025-08-05 20:35:57.647 [34mINFO [0;39m [http-nio-8080-exec-10] c.i.service.GeminiService - GeminiService initialized with model: gemini-2.5-flash-lite
+2025-08-05 20:35:57.647 [34mINFO [0;39m [http-nio-8080-exec-10] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 5 interview questions for a "Staff Software Engineer, Backend Web
+2025-08-05 20:35:59.015 [34mINFO [0;39m [http-nio-8080-exec-9] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:35:59.015 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to mentor a less experienced engineer. What challenges did you face, and how did you overcome them to ensure their growth and the team's success?
+[Behavioral] Tell me about a situation where you identified and resolved a significant performance bottleneck in a backend web application. What was your process, and what was the impact?
+[Technical] Given that this role involves working with APIs, content management, edge, and cloud systems, how would you approach designing a scalable and robust backend service that supports a global content delivery platform, considering potential regional differences and high traffic loads?
+[Technical] We prioritize high-quality software, unit testing, and code reviews. How do you ensure your code is maintainable, well-tested, and adheres to best practices, especially when working in a fast-paced environment with a hybrid team structure?
+[Case_Study] Imagine we are launching a new campaign feature for GM's marketing websites that requires dynamic content personalization based on user segments. Outline the key backend architectural considerations, technology choices, and potential challenges you would anticipate for building this feature, from API design to data management and integration with existing systems.
+2025-08-05 20:35:59.023 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=caab2587-2fd9-4ecb-9bfc-3ce3a61f9ce8, questionText=Describe a time you had to mentor a less experienced engineer. What challenges did you face, and how did you overcome them to ensure their growth and the team's success?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=2dc49715-7923-4447-aa6b-6d1852ca57bd, questionText=Tell me about a situation where you identified and resolved a significant performance bottleneck in a backend web application. What was your process, and what was the impact?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5a944eac-f632-4fdf-8e29-e5c38d73635a, questionText=Given that this role involves working with APIs, content management, edge, and cloud systems, how would you approach designing a scalable and robust backend service that supports a global content delivery platform, considering potential regional differences and high traffic loads?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=1dcccc59-58f4-4c9e-93eb-3259ca8d83eb, questionText=We prioritize high-quality software, unit testing, and code reviews. How do you ensure your code is maintainable, well-tested, and adheres to best practices, especially when working in a fast-paced environment with a hybrid team structure?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=7c537f5b-07f6-4d22-a7ae-6d55f6a6a3d5, questionText=Imagine we are launching a new campaign feature for GM's marketing websites that requires dynamic content personalization based on user segments. Outline the key backend architectural considerations, technology choices, and potential challenges you would anticipate for building this feature, from API design to data management and integration with existing systems., questionType=CASE_STUDY, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-05 20:35:59.031 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=caab2587-2fd9-4ecb-9bfc-3ce3a61f9ce8, questionText=Describe a time you had to mentor a less experienced engineer. What challenges did you face, and how did you overcome them to ensure their growth and the team's success?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=2dc49715-7923-4447-aa6b-6d1852ca57bd, questionText=Tell me about a situation where you identified and resolved a significant performance bottleneck in a backend web application. What was your process, and what was the impact?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5a944eac-f632-4fdf-8e29-e5c38d73635a, questionText=Given that this role involves working with APIs, content management, edge, and cloud systems, how would you approach designing a scalable and robust backend service that supports a global content delivery platform, considering potential regional differences and high traffic loads?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=1dcccc59-58f4-4c9e-93eb-3259ca8d83eb, questionText=We prioritize high-quality software, unit testing, and code reviews. How do you ensure your code is maintainable, well-tested, and adheres to best practices, especially when working in a fast-paced environment with a hybrid team structure?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=7c537f5b-07f6-4d22-a7ae-6d55f6a6a3d5, questionText=Imagine we are launching a new campaign feature for GM's marketing websites that requires dynamic content personalization based on user segments. Outline the key backend architectural considerations, technology choices, and potential challenges you would anticipate for building this feature, from API design to data management and integration with existing systems., questionType=CASE_STUDY, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-05 20:35:59.070 [34mINFO [0;39m [http-nio-8080-exec-10] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:35:59.070 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to mentor a less experienced engineer on a complex technical concept. How did you approach it, and what was the outcome?
+[Behavioral] Tell me about a situation where you had to collaborate with technical leaders from other teams to achieve a common goal. What challenges did you face, and how did you overcome them?
+[Technical] How would you approach investigating and resolving performance bottlenecks in a backend web service, particularly in a distributed cloud environment?
+[Technical] You're tasked with building a new API for content management. What are the key considerations you'd have for designing this API, ensuring scalability, maintainability, and security?
+[Case Study] Imagine our team is migrating a legacy content management system to a new cloud-native architecture. Outline your approach to this migration, including key technical decisions, potential risks, and how you would ensure minimal disruption to existing services.
+2025-08-05 20:35:59.076 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=b80f5231-30bf-4c76-b784-0ff1232685b7, questionText=Describe a time you had to mentor a less experienced engineer on a complex technical concept. How did you approach it, and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5992f469-ee60-42d1-a22f-6bb740269105, questionText=Tell me about a situation where you had to collaborate with technical leaders from other teams to achieve a common goal. What challenges did you face, and how did you overcome them?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=bafb5744-c605-48b6-8fa2-070f9ff0f939, questionText=How would you approach investigating and resolving performance bottlenecks in a backend web service, particularly in a distributed cloud environment?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=3aa3652a-6033-471e-b176-6dfb2782c705, questionText=You're tasked with building a new API for content management. What are the key considerations you'd have for designing this API, ensuring scalability, maintainability, and security?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=08a1bae1-5cc1-44cb-ae33-1ba0b3c4f5af, questionText=[Case Study] Imagine our team is migrating a legacy content management system to a new cloud-native architecture. Outline your approach to this migration, including key technical decisions, potential risks, and how you would ensure minimal disruption to existing services., questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-05 20:35:59.079 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=b80f5231-30bf-4c76-b784-0ff1232685b7, questionText=Describe a time you had to mentor a less experienced engineer on a complex technical concept. How did you approach it, and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5992f469-ee60-42d1-a22f-6bb740269105, questionText=Tell me about a situation where you had to collaborate with technical leaders from other teams to achieve a common goal. What challenges did you face, and how did you overcome them?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=bafb5744-c605-48b6-8fa2-070f9ff0f939, questionText=How would you approach investigating and resolving performance bottlenecks in a backend web service, particularly in a distributed cloud environment?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=3aa3652a-6033-471e-b176-6dfb2782c705, questionText=You're tasked with building a new API for content management. What are the key considerations you'd have for designing this API, ensuring scalability, maintainability, and security?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=08a1bae1-5cc1-44cb-ae33-1ba0b3c4f5af, questionText=[Case Study] Imagine our team is migrating a legacy content management system to a new cloud-native architecture. Outline your approach to this migration, including key technical decisions, potential risks, and how you would ensure minimal disruption to existing services., questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-05 20:39:16.332 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:39:16.332 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:39:16.340 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null)
+2025-08-05 20:39:16.341 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, Backend Web Development, description=Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null),[]>
+2025-08-05 20:39:16.344 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:39:16.344 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4]
+2025-08-05 20:39:16.360 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with result = [InterviewQuestionDto(id=caab2587-2fd9-4ecb-9bfc-3ce3a61f9ce8, questionText=Describe a time you had to mentor a less experienced engineer. What challenges did you face, and how did you overcome them to ensure their growth and the team's success?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.025734Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=2dc49715-7923-4447-aa6b-6d1852ca57bd, questionText=Tell me about a situation where you identified and resolved a significant performance bottleneck in a backend web application. What was your process, and what was the impact?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.027305Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5a944eac-f632-4fdf-8e29-e5c38d73635a, questionText=Given that this role involves working with APIs, content management, edge, and cloud systems, how would you approach designing a scalable and robust backend service that supports a global content delivery platform, considering potential regional differences and high traffic loads?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.027995Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=1dcccc59-58f4-4c9e-93eb-3259ca8d83eb, questionText=We prioritize high-quality software, unit testing, and code reviews. How do you ensure your code is maintainable, well-tested, and adheres to best practices, especially when working in a fast-paced environment with a hybrid team structure?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.028736Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=7c537f5b-07f6-4d22-a7ae-6d55f6a6a3d5, questionText=Imagine we are launching a new campaign feature for GM's marketing websites that requires dynamic content personalization based on user segments. Outline the key backend architectural considerations, technology choices, and potential challenges you would anticipate for building this feature, from API design to data management and integration with existing systems., questionType=CASE_STUDY, createdAt=2025-08-06T01:35:59.029362Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=b80f5231-30bf-4c76-b784-0ff1232685b7, questionText=Describe a time you had to mentor a less experienced engineer on a complex technical concept. How did you approach it, and what was the outcome?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.077061Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5992f469-ee60-42d1-a22f-6bb740269105, questionText=Tell me about a situation where you had to collaborate with technical leaders from other teams to achieve a common goal. What challenges did you face, and how did you overcome them?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.077663Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=bafb5744-c605-48b6-8fa2-070f9ff0f939, questionText=How would you approach investigating and resolving performance bottlenecks in a backend web service, particularly in a distributed cloud environment?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.078082Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=3aa3652a-6033-471e-b176-6dfb2782c705, questionText=You're tasked with building a new API for content management. What are the key considerations you'd have for designing this API, ensuring scalability, maintainability, and security?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.078453Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=08a1bae1-5cc1-44cb-ae33-1ba0b3c4f5af, questionText=[Case Study] Imagine our team is migrating a legacy content management system to a new cloud-native architecture. Outline your approach to this migration, including key technical decisions, potential risks, and how you would ensure minimal disruption to existing services., questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.078792Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-05 20:39:16.360 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with result = <200 OK OK,[InterviewQuestionDto(id=caab2587-2fd9-4ecb-9bfc-3ce3a61f9ce8, questionText=Describe a time you had to mentor a less experienced engineer. What challenges did you face, and how did you overcome them to ensure their growth and the team's success?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.025734Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=2dc49715-7923-4447-aa6b-6d1852ca57bd, questionText=Tell me about a situation where you identified and resolved a significant performance bottleneck in a backend web application. What was your process, and what was the impact?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.027305Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5a944eac-f632-4fdf-8e29-e5c38d73635a, questionText=Given that this role involves working with APIs, content management, edge, and cloud systems, how would you approach designing a scalable and robust backend service that supports a global content delivery platform, considering potential regional differences and high traffic loads?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.027995Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=1dcccc59-58f4-4c9e-93eb-3259ca8d83eb, questionText=We prioritize high-quality software, unit testing, and code reviews. How do you ensure your code is maintainable, well-tested, and adheres to best practices, especially when working in a fast-paced environment with a hybrid team structure?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.028736Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=7c537f5b-07f6-4d22-a7ae-6d55f6a6a3d5, questionText=Imagine we are launching a new campaign feature for GM's marketing websites that requires dynamic content personalization based on user segments. Outline the key backend architectural considerations, technology choices, and potential challenges you would anticipate for building this feature, from API design to data management and integration with existing systems., questionType=CASE_STUDY, createdAt=2025-08-06T01:35:59.029362Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=b80f5231-30bf-4c76-b784-0ff1232685b7, questionText=Describe a time you had to mentor a less experienced engineer on a complex technical concept. How did you approach it, and what was the outcome?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.077061Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5992f469-ee60-42d1-a22f-6bb740269105, questionText=Tell me about a situation where you had to collaborate with technical leaders from other teams to achieve a common goal. What challenges did you face, and how did you overcome them?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.077663Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=bafb5744-c605-48b6-8fa2-070f9ff0f939, questionText=How would you approach investigating and resolving performance bottlenecks in a backend web service, particularly in a distributed cloud environment?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.078082Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=3aa3652a-6033-471e-b176-6dfb2782c705, questionText=You're tasked with building a new API for content management. What are the key considerations you'd have for designing this API, ensuring scalability, maintainability, and security?, questionType=TECHNICAL, createdAt=2025-08-06T01:35:59.078453Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=08a1bae1-5cc1-44cb-ae33-1ba0b3c4f5af, questionText=[Case Study] Imagine our team is migrating a legacy content management system to a new cloud-native architecture. Outline your approach to this migration, including key technical decisions, potential risks, and how you would ensure minimal disruption to existing services., questionType=BEHAVIORAL, createdAt=2025-08-06T01:35:59.078792Z, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-05 20:39:16.364 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, {numberOfQuestions=5, questionTypes=[BEHAVIORAL, TECHNICAL, CASE_STUDY]}]
+2025-08-05 20:39:16.364 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, 5, [BEHAVIORAL, TECHNICAL, CASE_STUDY]]
+2025-08-05 20:39:16.365 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 5 interview questions for a "Staff Software Engineer, Backend Web Development" role based on this job description: "Job Description
+Staff Software Engineer, Backend Web Development
+
+Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices,". Focus on the following types: BEHAVIORAL, TECHNICAL, CASE_STUDY. Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format specified. [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-05 20:39:16.365 [34mINFO [0;39m [http-nio-8080-exec-4] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 5 interview questions for a "Staff Software Engineer, Backend Web
+2025-08-05 20:39:17.919 [34mINFO [0;39m [http-nio-8080-exec-4] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:39:17.919 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to influence a team or stakeholders to adopt a new technology or approach. What was your process, and what was the outcome?
+[Technical] Given a scenario where a critical API endpoint is experiencing intermittent latency issues under moderate load, what steps would you take to diagnose and resolve the performance bottleneck?
+[Case Study] Imagine you're tasked with designing a new content management system for marketing campaigns that needs to support multiple brands, localized content, and A/B testing capabilities. Outline the key architectural considerations, technologies you might leverage, and potential challenges you anticipate.
+[Behavioral] Tell me about a time you mentored a less experienced engineer. What approach did you take, and how did you measure their growth?
+[Technical] How do you approach ensuring code quality and adherence to engineering best practices across a backend web development team, especially when dealing with continuous integration and different levels of experience?
+2025-08-05 20:39:17.932 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=d83670e4-74ff-41d3-9aaa-c9c45b0e4fc0, questionText=Describe a time you had to influence a team or stakeholders to adopt a new technology or approach. What was your process, and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=952db83e-5159-4a82-936d-c6b84b3307fc, questionText=Given a scenario where a critical API endpoint is experiencing intermittent latency issues under moderate load, what steps would you take to diagnose and resolve the performance bottleneck?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=a6ebc419-c958-4f9b-a1e1-4806a8e780ac, questionText=[Case Study] Imagine you're tasked with designing a new content management system for marketing campaigns that needs to support multiple brands, localized content, and A/B testing capabilities. Outline the key architectural considerations, technologies you might leverage, and potential challenges you anticipate., questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=19930336-9440-4952-8da2-4379efa5e7b8, questionText=Tell me about a time you mentored a less experienced engineer. What approach did you take, and how did you measure their growth?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=162bf51b-14d5-4923-b25c-d0049545c828, questionText=How do you approach ensuring code quality and adherence to engineering best practices across a backend web development team, especially when dealing with continuous integration and different levels of experience?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-05 20:39:17.939 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=d83670e4-74ff-41d3-9aaa-c9c45b0e4fc0, questionText=Describe a time you had to influence a team or stakeholders to adopt a new technology or approach. What was your process, and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=952db83e-5159-4a82-936d-c6b84b3307fc, questionText=Given a scenario where a critical API endpoint is experiencing intermittent latency issues under moderate load, what steps would you take to diagnose and resolve the performance bottleneck?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=a6ebc419-c958-4f9b-a1e1-4806a8e780ac, questionText=[Case Study] Imagine you're tasked with designing a new content management system for marketing campaigns that needs to support multiple brands, localized content, and A/B testing capabilities. Outline the key architectural considerations, technologies you might leverage, and potential challenges you anticipate., questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=19930336-9440-4952-8da2-4379efa5e7b8, questionText=Tell me about a time you mentored a less experienced engineer. What approach did you take, and how did you measure their growth?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=162bf51b-14d5-4923-b25c-d0049545c828, questionText=How do you approach ensuring code quality and adherence to engineering best practices across a backend web development team, especially when dealing with continuous integration and different levels of experience?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-05 20:45:16.599 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, d83670e4-74ff-41d3-9aaa-c9c45b0e4fc0, 4, UserResponseSubmitDto(responseText=I encouraged them to learn)]
+2025-08-05 20:45:16.600 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, d83670e4-74ff-41d3-9aaa-c9c45b0e4fc0, 4, UserResponseSubmitDto(responseText=I encouraged them to learn)]
+2025-08-05 20:45:16.609 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Describe a time you had to influence a team or stakeholders to adopt a new technology or approach. What was your process, and what was the outcome?'. User's response: 'I encouraged them to learn'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-05 20:45:16.609 [34mINFO [0;39m [http-nio-8080-exec-7] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Describe a time you had to
+2025-08-05 20:45:18.552 [34mINFO [0;39m [http-nio-8080-exec-7] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:45:18.552 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback: That's a very concise start, and it shows you understand the core action involved: encouraging learning, which is crucial for adopting new things. It’s good that you've identified the fundamental step of getting people to learn.
+
+However, to truly impress in an interview, you need to flesh this out significantly. Think about using a structured approach like the STAR method. STAR stands for Situation, Task, Action, and Result. You've hinted at the action, but we need to understand the situation you were in, what your specific task was, and what the concrete results were. For instance, what was the specific technology or approach? What was the team or stakeholder group like, and what was their initial resistance or lack of knowledge?
+
+Your "action" part needs to detail the steps you took to encourage learning. Did you provide training sessions, create documentation, offer one-on-one support, or highlight the BENEFITS of the new approach? Simply saying you "encouraged them to learn" doesn't convey the effort or strategy involved. Also, what was the OUTCOME? Did the adoption succeed? What were the quantifiable improvements or positive changes?
+
+To make your answer more impactful, consider these tips: Be SPECIFIC. Instead of "new technology," say "a new CRM system." Instead of "team," mention "the sales team of ten people." Quantify results whenever possible. Did adoption increase efficiency by 15%? Did it reduce errors by a certain amount? Using the CAR method (Context, Action, Result) or PAR (Problem, Action, Result) can also be helpful frameworks for organizing your thoughts. The key is to tell a complete story that demonstrates your problem-solving and influencing skills.
+
+Score: 3/10.
+2025-08-05 20:45:18.565 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=d83670e4-74ff-41d3-9aaa-c9c45b0e4fc0, questionText=Describe a time you had to influence a team or stakeholders to adopt a new technology or approach. What was your process, and what was the outcome?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:39:17.933084Z, jobApplicationId=null, userResponseText=I encouraged them to learn, aiFeedbackText=Feedback: That's a very concise start, and it shows you understand the core action involved: encouraging learning, which is crucial for adopting new things. It’s good that you've identified the fundamental step of getting people to learn.
+
+However, to truly impress in an interview, you need to flesh this out significantly. Think about using a structured approach like the STAR method. STAR stands for Situation, Task, Action, and Result. You've hinted at the action, but we need to understand the situation you were in, what your specific task was, and what the concrete results were. For instance, what was the specific technology or approach? What was the team or stakeholder group like, and what was their initial resistance or lack of knowledge?
+
+Your "action" part needs to detail the steps you took to encourage learning. Did you provide training sessions, create documentation, offer one-on-one support, or highlight the BENEFITS of the new approach? Simply saying you "encouraged them to learn" doesn't convey the effort or strategy involved. Also, what was the OUTCOME? Did the adoption succeed? What were the quantifiable improvements or positive changes?
+
+To make your answer more impactful, consider these tips: Be SPECIFIC. Instead of "new technology," say "a new CRM system." Instead of "team," mention "the sales team of ten people." Quantify results whenever possible. Did adoption increase efficiency by 15%? Did it reduce errors by a certain amount? Using the CAR method (Context, Action, Result) or PAR (Problem, Action, Result) can also be helpful frameworks for organizing your thoughts. The key is to tell a complete story that demonstrates your problem-solving and influencing skills.
+
+Score: 3/10., aiFeedbackScore=3, userResponseId=912f03eb-a361-443c-bf6b-9d5580e2035c, aiFeedbackId=c39ea4d8-9ee9-49f3-8edb-39b6477b2cbd)
+2025-08-05 20:45:18.570 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=d83670e4-74ff-41d3-9aaa-c9c45b0e4fc0, questionText=Describe a time you had to influence a team or stakeholders to adopt a new technology or approach. What was your process, and what was the outcome?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:39:17.933084Z, jobApplicationId=null, userResponseText=I encouraged them to learn, aiFeedbackText=Feedback: That's a very concise start, and it shows you understand the core action involved: encouraging learning, which is crucial for adopting new things. It’s good that you've identified the fundamental step of getting people to learn.
+
+However, to truly impress in an interview, you need to flesh this out significantly. Think about using a structured approach like the STAR method. STAR stands for Situation, Task, Action, and Result. You've hinted at the action, but we need to understand the situation you were in, what your specific task was, and what the concrete results were. For instance, what was the specific technology or approach? What was the team or stakeholder group like, and what was their initial resistance or lack of knowledge?
+
+Your "action" part needs to detail the steps you took to encourage learning. Did you provide training sessions, create documentation, offer one-on-one support, or highlight the BENEFITS of the new approach? Simply saying you "encouraged them to learn" doesn't convey the effort or strategy involved. Also, what was the OUTCOME? Did the adoption succeed? What were the quantifiable improvements or positive changes?
+
+To make your answer more impactful, consider these tips: Be SPECIFIC. Instead of "new technology," say "a new CRM system." Instead of "team," mention "the sales team of ten people." Quantify results whenever possible. Did adoption increase efficiency by 15%? Did it reduce errors by a certain amount? Using the CAR method (Context, Action, Result) or PAR (Problem, Action, Result) can also be helpful frameworks for organizing your thoughts. The key is to tell a complete story that demonstrates your problem-solving and influencing skills.
+
+Score: 3/10., aiFeedbackScore=3, userResponseId=912f03eb-a361-443c-bf6b-9d5580e2035c, aiFeedbackId=c39ea4d8-9ee9-49f3-8edb-39b6477b2cbd),[]>
+2025-08-05 20:46:13.161 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 952db83e-5159-4a82-936d-c6b84b3307fc, 4, UserResponseSubmitDto(responseText=Look at the graphs and optimize)]
+2025-08-05 20:46:13.162 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 952db83e-5159-4a82-936d-c6b84b3307fc, 4, UserResponseSubmitDto(responseText=Look at the graphs and optimize)]
+2025-08-05 20:46:13.173 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Given a scenario where a critical API endpoint is experiencing intermittent latency issues under moderate load, what steps would you take to diagnose and resolve the performance bottleneck?'. User's response: 'Look at the graphs and optimize'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-05 20:46:13.173 [34mINFO [0;39m [http-nio-8080-exec-10] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Given a scenario where a c
+2025-08-05 20:46:14.544 [34mINFO [0;39m [http-nio-8080-exec-10] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:46:14.544 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback: That's a very concise and direct answer, which shows you understand the importance of data. Looking at graphs is absolutely a crucial first step in diagnosing performance issues. It's great that you immediately went to a data-driven approach to identify the problem.
+
+However, to really impress in an interview, we need to expand on that foundation. Think about *what kind* of graphs you'd look at and *how* you'd optimize based on that data. For example, you might check CPU utilization, memory usage, network traffic, database query times, or error rates on the API server itself. Then, for optimization, you could consider caching strategies, database indexing, code profiling, or even scaling up resources if the bottleneck is genuinely infrastructure-related. It’s about showing a deeper understanding of the tools and techniques involved.
+
+When answering these types of questions, it's often helpful to think about frameworks like STAR – Situation, Task, Action, Result – or CAR – Context, Action, Result. While this wasn't a behavioral question, the principle of detailing your actions and the expected results is valuable. Instead of just "look at graphs and optimize," you could frame it as: "In a situation where a critical API endpoint has intermittent latency, my first step would be to dive into our monitoring dashboards, specifically looking at graphs for server response times, error rates, CPU and memory usage, and database performance. Based on what those graphs reveal – perhaps a spike in database query time – my next action would be to investigate the specific queries, potentially optimizing them with better indexing or rewriting the queries themselves. This methodical approach aims to pinpoint the root cause and implement a targeted solution, ultimately improving the API's reliability." This provides a much clearer picture of your thought process and capabilities.
+
+Score: 3/10
+2025-08-05 20:46:14.554 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=952db83e-5159-4a82-936d-c6b84b3307fc, questionText=Given a scenario where a critical API endpoint is experiencing intermittent latency issues under moderate load, what steps would you take to diagnose and resolve the performance bottleneck?, questionType=TECHNICAL, createdAt=2025-08-06T01:39:17.934238Z, jobApplicationId=null, userResponseText=Look at the graphs and optimize, aiFeedbackText=Feedback: That's a very concise and direct answer, which shows you understand the importance of data. Looking at graphs is absolutely a crucial first step in diagnosing performance issues. It's great that you immediately went to a data-driven approach to identify the problem.
+
+However, to really impress in an interview, we need to expand on that foundation. Think about *what kind* of graphs you'd look at and *how* you'd optimize based on that data. For example, you might check CPU utilization, memory usage, network traffic, database query times, or error rates on the API server itself. Then, for optimization, you could consider caching strategies, database indexing, code profiling, or even scaling up resources if the bottleneck is genuinely infrastructure-related. It’s about showing a deeper understanding of the tools and techniques involved.
+
+When answering these types of questions, it's often helpful to think about frameworks like STAR – Situation, Task, Action, Result – or CAR – Context, Action, Result. While this wasn't a behavioral question, the principle of detailing your actions and the expected results is valuable. Instead of just "look at graphs and optimize," you could frame it as: "In a situation where a critical API endpoint has intermittent latency, my first step would be to dive into our monitoring dashboards, specifically looking at graphs for server response times, error rates, CPU and memory usage, and database performance. Based on what those graphs reveal – perhaps a spike in database query time – my next action would be to investigate the specific queries, potentially optimizing them with better indexing or rewriting the queries themselves. This methodical approach aims to pinpoint the root cause and implement a targeted solution, ultimately improving the API's reliability." This provides a much clearer picture of your thought process and capabilities.
+
+Score: 3/10, aiFeedbackScore=3, userResponseId=f81ee75d-63dd-45ac-a4a1-aa907dd43d3c, aiFeedbackId=28220835-9d8c-41b8-bb21-8e33c204586e)
+2025-08-05 20:46:14.556 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=952db83e-5159-4a82-936d-c6b84b3307fc, questionText=Given a scenario where a critical API endpoint is experiencing intermittent latency issues under moderate load, what steps would you take to diagnose and resolve the performance bottleneck?, questionType=TECHNICAL, createdAt=2025-08-06T01:39:17.934238Z, jobApplicationId=null, userResponseText=Look at the graphs and optimize, aiFeedbackText=Feedback: That's a very concise and direct answer, which shows you understand the importance of data. Looking at graphs is absolutely a crucial first step in diagnosing performance issues. It's great that you immediately went to a data-driven approach to identify the problem.
+
+However, to really impress in an interview, we need to expand on that foundation. Think about *what kind* of graphs you'd look at and *how* you'd optimize based on that data. For example, you might check CPU utilization, memory usage, network traffic, database query times, or error rates on the API server itself. Then, for optimization, you could consider caching strategies, database indexing, code profiling, or even scaling up resources if the bottleneck is genuinely infrastructure-related. It’s about showing a deeper understanding of the tools and techniques involved.
+
+When answering these types of questions, it's often helpful to think about frameworks like STAR – Situation, Task, Action, Result – or CAR – Context, Action, Result. While this wasn't a behavioral question, the principle of detailing your actions and the expected results is valuable. Instead of just "look at graphs and optimize," you could frame it as: "In a situation where a critical API endpoint has intermittent latency, my first step would be to dive into our monitoring dashboards, specifically looking at graphs for server response times, error rates, CPU and memory usage, and database performance. Based on what those graphs reveal – perhaps a spike in database query time – my next action would be to investigate the specific queries, potentially optimizing them with better indexing or rewriting the queries themselves. This methodical approach aims to pinpoint the root cause and implement a targeted solution, ultimately improving the API's reliability." This provides a much clearer picture of your thought process and capabilities.
+
+Score: 3/10, aiFeedbackScore=3, userResponseId=f81ee75d-63dd-45ac-a4a1-aa907dd43d3c, aiFeedbackId=28220835-9d8c-41b8-bb21-8e33c204586e),[]>
+2025-08-05 20:46:54.807 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, a6ebc419-c958-4f9b-a1e1-4806a8e780ac, 4, UserResponseSubmitDto(responseText=I would perform standard split tests)]
+2025-08-05 20:46:54.808 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, a6ebc419-c958-4f9b-a1e1-4806a8e780ac, 4, UserResponseSubmitDto(responseText=I would perform standard split tests)]
+2025-08-05 20:46:54.815 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: '[Case Study] Imagine you're tasked with designing a new content management system for marketing campaigns that needs to support multiple brands, localized content, and A/B testing capabilities. Outline the key architectural considerations, technologies you might leverage, and potential challenges you anticipate.'. User's response: 'I would perform standard split tests'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-05 20:46:54.815 [34mINFO [0;39m [http-nio-8080-exec-2] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: '[Case Study] Imagine you'r
+2025-08-05 20:46:57.860 [34mINFO [0;39m [http-nio-8080-exec-2] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:46:57.860 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback:  That's a good start acknowledging A/B testing as a key feature. You've correctly identified that split tests are a core component of A/B testing capabilities.  However, the response is quite brief and doesn't fully address the scope of the case study.  To make it stronger, you'd want to expand on how these split tests would be implemented within the larger content management system context.
+
+To improve, think about the entire system design. For instance, you could discuss *how* you'd set up those split tests, what data you'd track, and how the results would influence future content decisions. Consider the other requirements like multiple brands and localization. How would your split testing approach accommodate those? Perhaps you'd conduct localized split tests for different regions, or test variations of content tailored to specific brand voices.
+
+In future, when tackling case studies like this, aim for a more COMPREHENSIVE answer. Imagine you're explaining your approach to a technical lead or a project manager. Use frameworks like STAR (Situation, Task, Action, Result) or CAR (Context, Action, Result) if applicable, or even just a structured approach that outlines your thinking process. For example, you could start by defining the SITUATION (designing a new CMS), the TASK (supporting multiple brands, localization, A/B testing), then detail your ACTIONS (architectural considerations, technology choices, addressing challenges), and finally, the EXPECTED RESULTS (successful campaign management, improved engagement).
+
+Focus on detailing your thought process and the specifics of your proposed solution. Mentioning specific technologies, even broadly, like a database for storing test variations and results, or a framework for serving different content versions, would demonstrate a deeper understanding. Also, don't forget to address the challenges you anticipate in more detail. Thinking about potential issues like data consistency across brands or managing a large volume of localized content variations will show thoroughness. A score of 3/10 reflects the partial relevance but lack of completeness.
+
+Score: 3/10
+2025-08-05 20:46:57.868 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=a6ebc419-c958-4f9b-a1e1-4806a8e780ac, questionText=[Case Study] Imagine you're tasked with designing a new content management system for marketing campaigns that needs to support multiple brands, localized content, and A/B testing capabilities. Outline the key architectural considerations, technologies you might leverage, and potential challenges you anticipate., questionType=BEHAVIORAL, createdAt=2025-08-06T01:39:17.935153Z, jobApplicationId=null, userResponseText=I would perform standard split tests, aiFeedbackText=Feedback:  That's a good start acknowledging A/B testing as a key feature. You've correctly identified that split tests are a core component of A/B testing capabilities.  However, the response is quite brief and doesn't fully address the scope of the case study.  To make it stronger, you'd want to expand on how these split tests would be implemented within the larger content management system context.
+
+To improve, think about the entire system design. For instance, you could discuss *how* you'd set up those split tests, what data you'd track, and how the results would influence future content decisions. Consider the other requirements like multiple brands and localization. How would your split testing approach accommodate those? Perhaps you'd conduct localized split tests for different regions, or test variations of content tailored to specific brand voices.
+
+In future, when tackling case studies like this, aim for a more COMPREHENSIVE answer. Imagine you're explaining your approach to a technical lead or a project manager. Use frameworks like STAR (Situation, Task, Action, Result) or CAR (Context, Action, Result) if applicable, or even just a structured approach that outlines your thinking process. For example, you could start by defining the SITUATION (designing a new CMS), the TASK (supporting multiple brands, localization, A/B testing), then detail your ACTIONS (architectural considerations, technology choices, addressing challenges), and finally, the EXPECTED RESULTS (successful campaign management, improved engagement).
+
+Focus on detailing your thought process and the specifics of your proposed solution. Mentioning specific technologies, even broadly, like a database for storing test variations and results, or a framework for serving different content versions, would demonstrate a deeper understanding. Also, don't forget to address the challenges you anticipate in more detail. Thinking about potential issues like data consistency across brands or managing a large volume of localized content variations will show thoroughness. A score of 3/10 reflects the partial relevance but lack of completeness.
+
+Score: 3/10, aiFeedbackScore=3, userResponseId=9ba2f886-2f1a-4c8d-8b3c-e1797ae342e8, aiFeedbackId=d990c73e-0d96-46e0-8132-eddf6d932096)
+2025-08-05 20:46:57.871 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=a6ebc419-c958-4f9b-a1e1-4806a8e780ac, questionText=[Case Study] Imagine you're tasked with designing a new content management system for marketing campaigns that needs to support multiple brands, localized content, and A/B testing capabilities. Outline the key architectural considerations, technologies you might leverage, and potential challenges you anticipate., questionType=BEHAVIORAL, createdAt=2025-08-06T01:39:17.935153Z, jobApplicationId=null, userResponseText=I would perform standard split tests, aiFeedbackText=Feedback:  That's a good start acknowledging A/B testing as a key feature. You've correctly identified that split tests are a core component of A/B testing capabilities.  However, the response is quite brief and doesn't fully address the scope of the case study.  To make it stronger, you'd want to expand on how these split tests would be implemented within the larger content management system context.
+
+To improve, think about the entire system design. For instance, you could discuss *how* you'd set up those split tests, what data you'd track, and how the results would influence future content decisions. Consider the other requirements like multiple brands and localization. How would your split testing approach accommodate those? Perhaps you'd conduct localized split tests for different regions, or test variations of content tailored to specific brand voices.
+
+In future, when tackling case studies like this, aim for a more COMPREHENSIVE answer. Imagine you're explaining your approach to a technical lead or a project manager. Use frameworks like STAR (Situation, Task, Action, Result) or CAR (Context, Action, Result) if applicable, or even just a structured approach that outlines your thinking process. For example, you could start by defining the SITUATION (designing a new CMS), the TASK (supporting multiple brands, localization, A/B testing), then detail your ACTIONS (architectural considerations, technology choices, addressing challenges), and finally, the EXPECTED RESULTS (successful campaign management, improved engagement).
+
+Focus on detailing your thought process and the specifics of your proposed solution. Mentioning specific technologies, even broadly, like a database for storing test variations and results, or a framework for serving different content versions, would demonstrate a deeper understanding. Also, don't forget to address the challenges you anticipate in more detail. Thinking about potential issues like data consistency across brands or managing a large volume of localized content variations will show thoroughness. A score of 3/10 reflects the partial relevance but lack of completeness.
+
+Score: 3/10, aiFeedbackScore=3, userResponseId=9ba2f886-2f1a-4c8d-8b3c-e1797ae342e8, aiFeedbackId=d990c73e-0d96-46e0-8132-eddf6d932096),[]>
+2025-08-05 20:47:56.068 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 19930336-9440-4952-8da2-4379efa5e7b8, 4, UserResponseSubmitDto(responseText=I made sure to provide them with books to read.)]
+2025-08-05 20:47:56.075 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 19930336-9440-4952-8da2-4379efa5e7b8, 4, UserResponseSubmitDto(responseText=I made sure to provide them with books to read.)]
+2025-08-05 20:47:56.080 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Tell me about a time you mentored a less experienced engineer. What approach did you take, and how did you measure their growth?'. User's response: 'I made sure to provide them with books to read.'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-05 20:47:56.081 [34mINFO [0;39m [http-nio-8080-exec-5] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Tell me about a time you m
+2025-08-05 20:47:59.181 [34mINFO [0;39m [http-nio-8080-exec-5] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:47:59.181 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback: That's a good start, and it's clear you recognized the importance of providing resources for your mentee. Sharing books is a concrete action, and it shows you were thinking about how to help them learn. To make this answer even stronger, you'll want to add more detail about the *specific* situation and the *impact* of your mentoring. Think about what a STAR method answer would look like: Situation, Task, Action, and Result. You've given us a hint of the Action, but we need to understand the Situation and Task first. What was the specific skill or knowledge gap you were trying to address? What kind of books did you recommend, and why those particular ones?
+
+For example, you could start by setting the scene: "In my previous role, I was tasked with onboarding a junior engineer who had recently graduated and had limited practical experience with our core technology stack, specifically [mention the technology]. My task was to help them become proficient in [mention a specific skill or project]." Then, you'd expand on your action: "Beyond just providing books like '[Book Title 1]' and '[Book Title 2]' which focused on [explain why these books were relevant], I also scheduled weekly check-ins to discuss the material and answer their questions. I also assigned them small, manageable coding exercises related to the concepts in the books, and we reviewed their solutions together."
+
+To measure their growth, you could talk about observable outcomes. Did they start contributing more effectively to projects? Did their code quality improve? Did they independently solve problems that they previously struggled with? For instance, you might say, "I measured their growth by observing their ability to complete assigned tasks with less supervision and by the quality of their code reviews. Initially, they needed significant guidance on [specific area], but after our mentoring sessions and their dedicated reading, they were able to independently implement [specific feature] and their contributions to our team's velocity increased by approximately 20%."
+
+A score of 4/10. This response is very brief and lacks the detail needed to truly showcase your mentoring abilities. It's relevant, but not complete or particularly communicative in terms of demonstrating your approach or the results. By incorporating a structured approach like STAR and providing concrete examples and measurable outcomes, you'll create a much more compelling and impactful answer that truly highlights your leadership potential. Remember, interviewers want to understand *how* you mentor, not just *what* resources you provide.
+2025-08-05 20:47:59.189 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=19930336-9440-4952-8da2-4379efa5e7b8, questionText=Tell me about a time you mentored a less experienced engineer. What approach did you take, and how did you measure their growth?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:39:17.935815Z, jobApplicationId=null, userResponseText=I made sure to provide them with books to read., aiFeedbackText=Feedback: That's a good start, and it's clear you recognized the importance of providing resources for your mentee. Sharing books is a concrete action, and it shows you were thinking about how to help them learn. To make this answer even stronger, you'll want to add more detail about the *specific* situation and the *impact* of your mentoring. Think about what a STAR method answer would look like: Situation, Task, Action, and Result. You've given us a hint of the Action, but we need to understand the Situation and Task first. What was the specific skill or knowledge gap you were trying to address? What kind of books did you recommend, and why those particular ones?
+
+For example, you could start by setting the scene: "In my previous role, I was tasked with onboarding a junior engineer who had recently graduated and had limited practical experience with our core technology stack, specifically [mention the technology]. My task was to help them become proficient in [mention a specific skill or project]." Then, you'd expand on your action: "Beyond just providing books like '[Book Title 1]' and '[Book Title 2]' which focused on [explain why these books were relevant], I also scheduled weekly check-ins to discuss the material and answer their questions. I also assigned them small, manageable coding exercises related to the concepts in the books, and we reviewed their solutions together."
+
+To measure their growth, you could talk about observable outcomes. Did they start contributing more effectively to projects? Did their code quality improve? Did they independently solve problems that they previously struggled with? For instance, you might say, "I measured their growth by observing their ability to complete assigned tasks with less supervision and by the quality of their code reviews. Initially, they needed significant guidance on [specific area], but after our mentoring sessions and their dedicated reading, they were able to independently implement [specific feature] and their contributions to our team's velocity increased by approximately 20%."
+
+A score of 4/10. This response is very brief and lacks the detail needed to truly showcase your mentoring abilities. It's relevant, but not complete or particularly communicative in terms of demonstrating your approach or the results. By incorporating a structured approach like STAR and providing concrete examples and measurable outcomes, you'll create a much more compelling and impactful answer that truly highlights your leadership potential. Remember, interviewers want to understand *how* you mentor, not just *what* resources you provide., aiFeedbackScore=6, userResponseId=75228e57-4d07-4df8-a306-cfcf5db5bc2d, aiFeedbackId=b4366e80-c8c3-4c3f-8b72-05d4fab0d88e)
+2025-08-05 20:47:59.192 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=19930336-9440-4952-8da2-4379efa5e7b8, questionText=Tell me about a time you mentored a less experienced engineer. What approach did you take, and how did you measure their growth?, questionType=BEHAVIORAL, createdAt=2025-08-06T01:39:17.935815Z, jobApplicationId=null, userResponseText=I made sure to provide them with books to read., aiFeedbackText=Feedback: That's a good start, and it's clear you recognized the importance of providing resources for your mentee. Sharing books is a concrete action, and it shows you were thinking about how to help them learn. To make this answer even stronger, you'll want to add more detail about the *specific* situation and the *impact* of your mentoring. Think about what a STAR method answer would look like: Situation, Task, Action, and Result. You've given us a hint of the Action, but we need to understand the Situation and Task first. What was the specific skill or knowledge gap you were trying to address? What kind of books did you recommend, and why those particular ones?
+
+For example, you could start by setting the scene: "In my previous role, I was tasked with onboarding a junior engineer who had recently graduated and had limited practical experience with our core technology stack, specifically [mention the technology]. My task was to help them become proficient in [mention a specific skill or project]." Then, you'd expand on your action: "Beyond just providing books like '[Book Title 1]' and '[Book Title 2]' which focused on [explain why these books were relevant], I also scheduled weekly check-ins to discuss the material and answer their questions. I also assigned them small, manageable coding exercises related to the concepts in the books, and we reviewed their solutions together."
+
+To measure their growth, you could talk about observable outcomes. Did they start contributing more effectively to projects? Did their code quality improve? Did they independently solve problems that they previously struggled with? For instance, you might say, "I measured their growth by observing their ability to complete assigned tasks with less supervision and by the quality of their code reviews. Initially, they needed significant guidance on [specific area], but after our mentoring sessions and their dedicated reading, they were able to independently implement [specific feature] and their contributions to our team's velocity increased by approximately 20%."
+
+A score of 4/10. This response is very brief and lacks the detail needed to truly showcase your mentoring abilities. It's relevant, but not complete or particularly communicative in terms of demonstrating your approach or the results. By incorporating a structured approach like STAR and providing concrete examples and measurable outcomes, you'll create a much more compelling and impactful answer that truly highlights your leadership potential. Remember, interviewers want to understand *how* you mentor, not just *what* resources you provide., aiFeedbackScore=6, userResponseId=75228e57-4d07-4df8-a306-cfcf5db5bc2d, aiFeedbackId=b4366e80-c8c3-4c3f-8b72-05d4fab0d88e),[]>
+2025-08-05 20:49:16.438 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 162bf51b-14d5-4923-b25c-d0049545c828, 4, UserResponseSubmitDto(responseText=I make sure to give the best practice guidelines to everyone.)]
+2025-08-05 20:49:16.439 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 162bf51b-14d5-4923-b25c-d0049545c828, 4, UserResponseSubmitDto(responseText=I make sure to give the best practice guidelines to everyone.)]
+2025-08-05 20:49:16.448 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'How do you approach ensuring code quality and adherence to engineering best practices across a backend web development team, especially when dealing with continuous integration and different levels of experience?'. User's response: 'I make sure to give the best practice guidelines to everyone.'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-05 20:49:16.448 [34mINFO [0;39m [http-nio-8080-exec-8] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'How do you approach ensuri
+2025-08-05 20:49:18.167 [34mINFO [0;39m [http-nio-8080-exec-8] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-05 20:49:18.167 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback: That's a good start, and it's absolutely crucial to establish clear guidelines. Letting everyone know what the expected best practices are is a foundational step. However, the response is quite brief and could be much more robust to truly impress an interviewer. It doesn't really showcase HOW you ensure those guidelines are followed, especially with varying experience levels and the complexities of continuous integration. Think about concrete actions you take beyond just "giving" the guidelines.
+
+To really elevate this answer, you need to demonstrate a STRATEGY. Consider how you would actively foster a culture of quality. For instance, you could talk about implementing code reviews, where senior developers mentor junior ones through constructive feedback. Mentioning automated checks within the CI pipeline, like static code analysis tools or linters, would also be excellent. These tools *automatically* enforce many best practices.
+
+It would also be beneficial to discuss how you handle different experience levels. For newer team members, perhaps you pair programming or provide more structured onboarding with specific coding standards tutorials. For experienced developers, you might empower them to contribute to defining or refining those standards. Think about using methods like STAR – Situation, Task, Action, Result – or CAR – Context, Action, Result – to describe specific instances where you successfully improved code quality.
+
+For example, you could say something like: "In my previous role (Situation), we needed to improve the consistency of our API development across the team, which had developers with 2 years to 8 years of experience (Task). I initiated a bi-weekly code review process where each pull request was reviewed by at least two other engineers, and we implemented automated linting rules in our CI pipeline to catch common style and potential errors (Action). This resulted in a 30% reduction in reported bugs related to code inconsistency and a significant boost in developer confidence with our codebase (Result)."
+
+Score: 4/10
+2025-08-05 20:49:18.176 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=162bf51b-14d5-4923-b25c-d0049545c828, questionText=How do you approach ensuring code quality and adherence to engineering best practices across a backend web development team, especially when dealing with continuous integration and different levels of experience?, questionType=TECHNICAL, createdAt=2025-08-06T01:39:17.936543Z, jobApplicationId=null, userResponseText=I make sure to give the best practice guidelines to everyone., aiFeedbackText=Feedback: That's a good start, and it's absolutely crucial to establish clear guidelines. Letting everyone know what the expected best practices are is a foundational step. However, the response is quite brief and could be much more robust to truly impress an interviewer. It doesn't really showcase HOW you ensure those guidelines are followed, especially with varying experience levels and the complexities of continuous integration. Think about concrete actions you take beyond just "giving" the guidelines.
+
+To really elevate this answer, you need to demonstrate a STRATEGY. Consider how you would actively foster a culture of quality. For instance, you could talk about implementing code reviews, where senior developers mentor junior ones through constructive feedback. Mentioning automated checks within the CI pipeline, like static code analysis tools or linters, would also be excellent. These tools *automatically* enforce many best practices.
+
+It would also be beneficial to discuss how you handle different experience levels. For newer team members, perhaps you pair programming or provide more structured onboarding with specific coding standards tutorials. For experienced developers, you might empower them to contribute to defining or refining those standards. Think about using methods like STAR – Situation, Task, Action, Result – or CAR – Context, Action, Result – to describe specific instances where you successfully improved code quality.
+
+For example, you could say something like: "In my previous role (Situation), we needed to improve the consistency of our API development across the team, which had developers with 2 years to 8 years of experience (Task). I initiated a bi-weekly code review process where each pull request was reviewed by at least two other engineers, and we implemented automated linting rules in our CI pipeline to catch common style and potential errors (Action). This resulted in a 30% reduction in reported bugs related to code inconsistency and a significant boost in developer confidence with our codebase (Result)."
+
+Score: 4/10, aiFeedbackScore=4, userResponseId=657a0eb0-c541-41e9-9b8d-b2c9bf3bc118, aiFeedbackId=99768055-e259-4ee6-80d4-c80c1f50cd58)
+2025-08-05 20:49:18.180 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=162bf51b-14d5-4923-b25c-d0049545c828, questionText=How do you approach ensuring code quality and adherence to engineering best practices across a backend web development team, especially when dealing with continuous integration and different levels of experience?, questionType=TECHNICAL, createdAt=2025-08-06T01:39:17.936543Z, jobApplicationId=null, userResponseText=I make sure to give the best practice guidelines to everyone., aiFeedbackText=Feedback: That's a good start, and it's absolutely crucial to establish clear guidelines. Letting everyone know what the expected best practices are is a foundational step. However, the response is quite brief and could be much more robust to truly impress an interviewer. It doesn't really showcase HOW you ensure those guidelines are followed, especially with varying experience levels and the complexities of continuous integration. Think about concrete actions you take beyond just "giving" the guidelines.
+
+To really elevate this answer, you need to demonstrate a STRATEGY. Consider how you would actively foster a culture of quality. For instance, you could talk about implementing code reviews, where senior developers mentor junior ones through constructive feedback. Mentioning automated checks within the CI pipeline, like static code analysis tools or linters, would also be excellent. These tools *automatically* enforce many best practices.
+
+It would also be beneficial to discuss how you handle different experience levels. For newer team members, perhaps you pair programming or provide more structured onboarding with specific coding standards tutorials. For experienced developers, you might empower them to contribute to defining or refining those standards. Think about using methods like STAR – Situation, Task, Action, Result – or CAR – Context, Action, Result – to describe specific instances where you successfully improved code quality.
+
+For example, you could say something like: "In my previous role (Situation), we needed to improve the consistency of our API development across the team, which had developers with 2 years to 8 years of experience (Task). I initiated a bi-weekly code review process where each pull request was reviewed by at least two other engineers, and we implemented automated linting rules in our CI pipeline to catch common style and potential errors (Action). This resulted in a 30% reduction in reported bugs related to code inconsistency and a significant boost in developer confidence with our codebase (Result)."
+
+Score: 4/10, aiFeedbackScore=4, userResponseId=657a0eb0-c541-41e9-9b8d-b2c9bf3bc118, aiFeedbackId=99768055-e259-4ee6-80d4-c80c1f50cd58),[]>
+2025-08-05 20:49:34.405 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:49:34.407 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:49:34.411 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:49:34.412 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:49:34.415 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:49:34.415 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:49:34.417 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:49:34.417 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:49:38.367 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:49:38.368 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:49:38.392 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=5, averageScore=3.8, highestScore=6, lowestScore=3, improvementRate=66.66666666666666, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=2025-08-06T01:49:18.171046Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=4.0, technicalAvgScore=3.5, situationalAvgScore=0.0, mostRecentJobApplication=Staff Software Engineer, Backend Web Development, mostRecentApplicationDate=2025-08-06T01:21:25.745408Z)
+2025-08-05 20:49:38.392 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=5, averageScore=3.8, highestScore=6, lowestScore=3, improvementRate=66.66666666666666, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=2025-08-06T01:49:18.171046Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=4.0, technicalAvgScore=3.5, situationalAvgScore=0.0, mostRecentJobApplication=Staff Software Engineer, Backend Web Development, mostRecentApplicationDate=2025-08-06T01:21:25.745408Z),[]>
+2025-08-05 20:49:38.394 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:49:38.394 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-05 20:49:38.407 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=5, averageScore=3.8, highestScore=6, lowestScore=3, improvementRate=66.66666666666666, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=2025-08-06T01:49:18.171046Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=4.0, technicalAvgScore=3.5, situationalAvgScore=0.0, mostRecentJobApplication=Staff Software Engineer, Backend Web Development, mostRecentApplicationDate=2025-08-06T01:21:25.745408Z)
+2025-08-05 20:49:38.407 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=5, averageScore=3.8, highestScore=6, lowestScore=3, improvementRate=66.66666666666666, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=2025-08-06T01:49:18.171046Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=4.0, technicalAvgScore=3.5, situationalAvgScore=0.0, mostRecentJobApplication=Staff Software Engineer, Backend Web Development, mostRecentApplicationDate=2025-08-06T01:21:25.745408Z),[]>
+2025-08-05 20:50:05.654 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:05.654 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:05.658 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:50:05.659 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:50:05.662 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:05.662 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:05.664 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:50:05.664 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:50:21.659 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=John, lastName=Doe, phone=888-999-1012, bio=Experienced developer, resumeText=Experienced developer)]
+2025-08-05 20:50:21.659 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=John, lastName=Doe, phone=888-999-1012, bio=Experienced developer, resumeText=Experienced developer)]
+2025-08-05 20:50:21.661 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.updateProfile() with result = ProfileResponseDto(id=4, firstName=John, lastName=Doe, phone=888-999-1012, bio=Experienced developer, resumeText=Experienced developer, username=johndoe, email=johndoe@example.com)
+2025-08-05 20:50:21.670 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.updateProfile() with result = <202 ACCEPTED Accepted,ProfileResponseDto(id=4, firstName=John, lastName=Doe, phone=888-999-1012, bio=Experienced developer, resumeText=Experienced developer, username=johndoe, email=johndoe@example.com),[]>
+2025-08-05 20:50:30.792 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:30.793 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:30.798 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:50:30.799 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:50:30.804 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:30.804 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:30.807 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:50:30.808 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:50:35.279 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, staff, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:35.280 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, staff, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:35.284 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:50:35.285 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:50:38.117 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:38.118 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-05 20:50:38.123 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-05 20:50:38.124 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-05 20:51:01.199 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.updateJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, JobApplicationDto(id=null, userId=null, title=Staff Software Engineer, description=Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=null, expectedInterviewDate=2025-09-04, status=PENDING, tags=null)]
+2025-08-05 20:51:01.200 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.updateJobApplication() with argument[s] = [5be9f58b-2c4c-45fa-921e-8d91a9f09356, 4, JobApplicationDto(id=null, userId=null, title=Staff Software Engineer, description=Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=null, expectedInterviewDate=2025-09-04, status=PENDING, tags=null)]
+2025-08-05 20:51:01.202 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.updateJobApplication() with result = JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, description=Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null)
+2025-08-05 20:51:01.204 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.updateJobApplication() with result = <200 OK OK,JobApplicationDto(id=5be9f58b-2c4c-45fa-921e-8d91a9f09356, userId=4, title=Staff Software Engineer, description=Hybrid: This role is categorized as hybrid. This means the successful candidate is expected to report to the Austin IT Innovation Center in Austin, TX three times per week, at minimum.
+
+About the team
+
+We are the Brands & Marketing Software Engineering Team within the Digital Products Engineering (DPE) organization at GM. Our team collaborates closely with marketing leaders from across GM to build easy to use tooling to create engaging and innovative experiences at scale while providing meaningful value to our customers through a seamless customer experience.
+
+Our mission is to rapidly and relentlessly ideate, iterate, and launch the next generation of innovative solutions to connect GM with current and future customers. Our team comprises industry-leading software and quality engineers, who utilize a variety of innovative development methodologies and technologies to achieve breakthrough results, drive innovation, and delight customers.
+
+The Role
+
+We are looking for an exceptional software engineer who is excited about building web products across General Motors. You will be responsible for helping lead our engineering efforts through planning, design and architecture, execution, and ramp. As a technical leader on the team, you will be able to help mentor less experienced engineers, build strong relationships with technical leaders on other teams, and facilitate a strong team culture.
+
+What You’ll Do
+
+Develop competency across our complete web technologies stack (client, framework, and services)
+
+Produce high quality software that is unit tested, code reviewed, and checked in regularly for continuous integration
+
+Be a tech lead and will actively mentor other engineers on the team
+
+Investigate & resolve performance bottlenecks
+
+Lead efforts to automate testing
+
+Work on API, Content management, edge and cloud systems
+
+Leverage your technical leadership to ensure we adhere to engineering best practices, and evangelize opportunities to improve engineering productivity and craftsmanship
+
+&#xa;&#xa;
+Additional Job Description
+Your Skills & Abilities (Required Qualifications)
+
+Bachelor's Degree in Computer Science or related field, or equivalent work experience
+
+8+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+Expertise in more than one of the following areas: automation tasks, Kubernetes, CDNs/Edge Compute (like Akamai) and Microsoft Azure
+
+Expertise with cloud automation technology such as Helm, Terraform, and/or ArgoCD
+
+5+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Must be able to do performance analysis and write unit tests
+
+Experience working with multi-tier production software systems utilizing and implementing HTTP APIs (REST, GraphQL) and Content Management Systems, like Adobe Experience Manager
+
+Demonstrated ability to understand the tech stack, debug code and tests
+
+Experience designing and implementing microservices
+
+Enthusiastic about the opportunity of impacting the engineering culture from the bottom up
+
+What Will Give You a Competitive Edge (Preferred Qualifications)
+
+Master's Degree in Computer Science or related field
+
+10+ years of experience in web application development with a focus on backend technologies (Java w/ Spring boot, Python, server-side JavaScript)
+
+7+ years of experience contributing to the architecture, documentation and design of new and existing systems (architecture, design patterns, reliability, and scaling)
+
+Expertise with multiple cloud automation technologies such as Helm, Terraform, and ArgoCD
+
+This job is not eligible for relocation benefits. Any relocation costs would be the responsibility of the selected candidate., applicationDate=2025-08-06T01:21:25.745408Z, expectedInterviewDate=2025-09-04, status=PENDING, tags=null),[]>
+2025-08-05 20:53:14.046 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-05 20:53:16.053 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-05 20:53:16.060 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 20:53:16.085 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-05 20:53:16.086 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
