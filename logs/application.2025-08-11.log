@@ -1,0 +1,687 @@
+2025-08-11 09:56:53.871 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Starting BackendApplication using Java 17.0.8 with PID 4286 (/Users/jsu/Desktop/ga/projects/interview-coach/backend/target/classes started by jsu in /Users/jsu/Desktop/ga/projects/interview-coach/backend)
+2025-08-11 09:56:53.873 [39mDEBUG[0;39m [main] c.interviewcoach.BackendApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-11 09:56:53.873 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-11 09:56:54.318 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-11 09:56:54.357 [34mINFO [0;39m [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 7 JPA repository interfaces.
+2025-08-11 09:56:54.610 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-11 09:56:54.615 [34mINFO [0;39m [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-11 09:56:54.615 [34mINFO [0;39m [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11 09:56:54.636 [34mINFO [0;39m [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-11 09:56:54.636 [34mINFO [0;39m [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 746 ms
+2025-08-11 09:56:54.745 [34mINFO [0;39m [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-11 09:56:54.772 [34mINFO [0;39m [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-11 09:56:54.786 [34mINFO [0;39m [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-11 09:56:54.899 [34mINFO [0;39m [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-11 09:56:54.912 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-11 09:56:54.950 [34mINFO [0;39m [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6df87ffd
+2025-08-11 09:56:54.951 [34mINFO [0;39m [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-11 09:56:54.992 [34mINFO [0;39m [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-11 09:56:55.467 [34mINFO [0;39m [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-11 09:56:55.562 [34mINFO [0;39m [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11 09:56:55.699 [34mINFO [0;39m [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-11 09:56:56.666 [31mWARN [0;39m [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-11 09:56:56.906 [34mINFO [0;39m [main] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-11 09:56:56.944 [34mINFO [0;39m [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-11 09:56:56.952 [34mINFO [0;39m [main] c.interviewcoach.BackendApplication - Started BackendApplication in 3.307 seconds (process running for 3.551)
+2025-08-11 09:56:57.633 [34mINFO [0;39m [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11 09:56:57.633 [34mINFO [0;39m [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-11 09:56:57.634 [34mINFO [0;39m [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-11 10:03:41.862 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.signup() with argument[s] = [AuthRequestDto(username=peterj, email=peterj@example.com, password=password123, firstName=Peter, lastName=Jones)]
+2025-08-11 10:03:41.863 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.signup() with argument[s] = [AuthRequestDto(username=peterj, email=peterj@example.com, password=password123, firstName=Peter, lastName=Jones)]
+2025-08-11 10:03:41.940 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.signup() with result = AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=peterj, email=peterj@example.com, role=JOB_SEEKER)
+2025-08-11 10:03:41.943 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.signup() with result = <201 CREATED Created,AuthResponseDto(success=true, message=User registered successfully. Please login., id=4, username=peterj, email=peterj@example.com, role=JOB_SEEKER),[]>
+2025-08-11 10:03:56.570 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AuthController.login() with argument[s] = [LoginRequestDto(email=peterj@example.com, password=password123)]
+2025-08-11 10:03:56.571 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AuthService.login() with argument[s] = [LoginRequestDto(email=peterj@example.com, password=password123)]
+2025-08-11 10:03:56.657 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AuthService.login() with result = AuthResponseDto(success=true, message=Login Successful, id=4, username=peterj, email=peterj@example.com, role=JOB_SEEKER)
+2025-08-11 10:03:56.657 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AuthController.login() with result = <200 OK OK,AuthResponseDto(success=true, message=Login Successful, id=4, username=peterj, email=peterj@example.com, role=JOB_SEEKER),[]>
+2025-08-11 10:03:56.664 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.getProfile() with argument[s] = [4]
+2025-08-11 10:03:56.665 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.getProfileByUserId() with argument[s] = [4]
+2025-08-11 10:03:56.668 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.getProfileByUserId() with result = ProfileResponseDto(id=4, firstName=Peter, lastName=Jones, phone=null, bio=null, resumeText=null, username=peterj, email=peterj@example.com)
+2025-08-11 10:03:56.669 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.getProfile() with result = <200 OK OK,ProfileResponseDto(id=4, firstName=Peter, lastName=Jones, phone=null, bio=null, resumeText=null, username=peterj, email=peterj@example.com),[]>
+2025-08-11 10:03:56.692 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:03:56.693 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:03:56.697 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-11 10:03:56.697 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-11 10:03:56.698 [31mWARN [0;39m [http-nio-8080-exec-9] o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-11 10:03:56.702 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:03:56.702 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:03:56.704 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-11 10:03:56.704 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-11 10:05:01.781 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.763Z, expectedInterviewDate=2025-09-06, status=Applied, tags=null)]
+2025-08-11 10:05:01.782 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.createJobApplication() with argument[s] = [4, JobApplicationDto(id=null, userId=null, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.763Z, expectedInterviewDate=2025-09-06, status=Applied, tags=null)]
+2025-08-11 10:05:01.788 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.createJobApplication() with result = JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T10:05:01.787781-05:00, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)
+2025-08-11 10:05:01.792 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.createJobApplication() with result = <201 CREATED Created,JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T10:05:01.787781-05:00, expectedInterviewDate=2025-09-06, status=PENDING, tags=null),[]>
+2025-08-11 10:06:03.939 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.939 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.947 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.789728Z, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)
+2025-08-11 10:06:03.947 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.789728Z, expectedInterviewDate=2025-09-06, status=PENDING, tags=null),[]>
+2025-08-11 10:06:03.950 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.950 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.951 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.952 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.952 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.getJobApplicationById() with result = JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.789728Z, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)
+2025-08-11 10:06:03.952 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplicationById() with result = <200 OK OK,JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.789728Z, expectedInterviewDate=2025-09-06, status=PENDING, tags=null),[]>
+2025-08-11 10:06:03.961 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with result = []
+2025-08-11 10:06:03.961 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with result = <200 OK OK,[],[]>
+2025-08-11 10:06:03.963 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.963 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:06:03.965 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4, {numberOfQuestions=3, questionTypes=[BEHAVIORAL, TECHNICAL, SITUATIONAL]}]
+2025-08-11 10:06:03.965 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4, 3, [BEHAVIORAL, TECHNICAL, SITUATIONAL]]
+2025-08-11 10:06:03.965 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.getQuestionsForJobApplication() with result = []
+2025-08-11 10:06:03.965 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.getQuestionsForJobApplication() with result = <200 OK OK,[],[]>
+2025-08-11 10:06:03.967 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 3 interview questions for a "Data analyst" role based on this job description: "At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Cent". Focus on the following types: BEHAVIORAL, TECHNICAL, SITUATIONAL. Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format specified. [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-11 10:06:03.968 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4, {numberOfQuestions=3, questionTypes=[BEHAVIORAL, TECHNICAL, SITUATIONAL]}]
+2025-08-11 10:06:03.968 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4, 3, [BEHAVIORAL, TECHNICAL, SITUATIONAL]]
+2025-08-11 10:06:03.970 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, please generate 3 interview questions for a "Data analyst" role based on this job description: "At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Cent". Focus on the following types: BEHAVIORAL, TECHNICAL, SITUATIONAL. Provide only the questions, each on a new line. Don't include any extra comments, headings, or greetings. Only provide the clean questions in the format specified. [question type] question text ?. For example, [Behavioral] Tell me about a goal you set and reached. How did you achieve it?]
+2025-08-11 10:06:04.019 [34mINFO [0;39m [http-nio-8080-exec-5] c.i.service.GeminiService - GeminiService initialized with model: gemini-2.5-flash-lite
+2025-08-11 10:06:04.019 [34mINFO [0;39m [http-nio-8080-exec-4] c.i.service.GeminiService - GeminiService initialized with model: gemini-2.5-flash-lite
+2025-08-11 10:06:04.019 [34mINFO [0;39m [http-nio-8080-exec-5] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 3 interview questions for a "Data analyst" role based on this job
+2025-08-11 10:06:04.019 [34mINFO [0;39m [http-nio-8080-exec-4] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, please generate 3 interview questions for a "Data analyst" role based on this job
+2025-08-11 10:06:05.816 [34mINFO [0;39m [http-nio-8080-exec-5] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-11 10:06:05.816 [34mINFO [0;39m [http-nio-8080-exec-4] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-11 10:06:05.816 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to analyze a large dataset to understand player behavior in a game or similar interactive product. What was your process, what challenges did you face, and what insights did you uncover that led to a tangible improvement?
+[Technical] How would you approach analyzing the impact of a new in-game feature on player retention and monetization, considering factors like player segmentation and potential confounding variables?
+[Situational] Imagine you've identified a significant drop in engagement for one of Zynga's popular games. What steps would you take to diagnose the root cause and what data sources would you prioritize to inform your recommendations to the game studio?
+2025-08-11 10:06:05.816 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = [Behavioral] Describe a time you had to analyze a large dataset to identify a trend or insight that significantly impacted a product or strategy. What was your process, and what was the outcome?
+[Technical] Imagine you've been asked to analyze user engagement for a new feature in one of our games. What key metrics would you track, what tools would you use, and how would you present your findings to a non-technical stakeholder?
+[Situational] A specific game’s player retention rates have recently dropped unexpectedly. You’ve been tasked with investigating the cause. Walk me through your approach to diagnosing the problem and proposing solutions.
+2025-08-11 10:06:05.823 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=c4537d60-2316-4535-8fe6-bdf5544c2faf, questionText=Describe a time you had to analyze a large dataset to understand player behavior in a game or similar interactive product. What was your process, what challenges did you face, and what insights did you uncover that led to a tangible improvement?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5904315f-a673-448e-beb1-75db0f8864ee, questionText=How would you approach analyzing the impact of a new in-game feature on player retention and monetization, considering factors like player segmentation and potential confounding variables?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=4db24f6d-6a2a-4945-8cbe-73246ff37434, questionText=Imagine you've identified a significant drop in engagement for one of Zynga's popular games. What steps would you take to diagnose the root cause and what data sources would you prioritize to inform your recommendations to the game studio?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-11 10:06:05.823 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.generateAndSaveQuestions() with result = [InterviewQuestionDto(id=6a866d9c-740f-4c4c-8288-0da3a1cc54ca, questionText=Describe a time you had to analyze a large dataset to identify a trend or insight that significantly impacted a product or strategy. What was your process, and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=0c970486-577c-476f-91e0-49ead431e08e, questionText=Imagine you've been asked to analyze user engagement for a new feature in one of our games. What key metrics would you track, what tools would you use, and how would you present your findings to a non-technical stakeholder?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=3c519ad6-5ed2-47c5-904b-66180f7bf76b, questionText=A specific game’s player retention rates have recently dropped unexpectedly. You’ve been tasked with investigating the cause. Walk me through your approach to diagnosing the problem and proposing solutions., questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)]
+2025-08-11 10:06:05.835 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=c4537d60-2316-4535-8fe6-bdf5544c2faf, questionText=Describe a time you had to analyze a large dataset to understand player behavior in a game or similar interactive product. What was your process, what challenges did you face, and what insights did you uncover that led to a tangible improvement?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=5904315f-a673-448e-beb1-75db0f8864ee, questionText=How would you approach analyzing the impact of a new in-game feature on player retention and monetization, considering factors like player segmentation and potential confounding variables?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=4db24f6d-6a2a-4945-8cbe-73246ff37434, questionText=Imagine you've identified a significant drop in engagement for one of Zynga's popular games. What steps would you take to diagnose the root cause and what data sources would you prioritize to inform your recommendations to the game studio?, questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-11 10:06:05.836 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.generateQuestions() with result = <201 CREATED Created,[InterviewQuestionDto(id=6a866d9c-740f-4c4c-8288-0da3a1cc54ca, questionText=Describe a time you had to analyze a large dataset to identify a trend or insight that significantly impacted a product or strategy. What was your process, and what was the outcome?, questionType=BEHAVIORAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=0c970486-577c-476f-91e0-49ead431e08e, questionText=Imagine you've been asked to analyze user engagement for a new feature in one of our games. What key metrics would you track, what tools would you use, and how would you present your findings to a non-technical stakeholder?, questionType=TECHNICAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null), InterviewQuestionDto(id=3c519ad6-5ed2-47c5-904b-66180f7bf76b, questionText=A specific game’s player retention rates have recently dropped unexpectedly. You’ve been tasked with investigating the cause. Walk me through your approach to diagnosing the problem and proposing solutions., questionType=SITUATIONAL, createdAt=null, jobApplicationId=null, userResponseText=null, aiFeedbackText=null, aiFeedbackScore=null, userResponseId=null, aiFeedbackId=null)],[]>
+2025-08-11 10:07:22.597 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, c4537d60-2316-4535-8fe6-bdf5544c2faf, 4, UserResponseSubmitDto(responseText=I used SQL and Tableau to understand and analyze the data.)]
+2025-08-11 10:07:22.598 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, c4537d60-2316-4535-8fe6-bdf5544c2faf, 4, UserResponseSubmitDto(responseText=I used SQL and Tableau to understand and analyze the data.)]
+2025-08-11 10:07:22.605 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Describe a time you had to analyze a large dataset to understand player behavior in a game or similar interactive product. What was your process, what challenges did you face, and what insights did you uncover that led to a tangible improvement?'. User's response: 'I used SQL and Tableau to understand and analyze the data.'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-11 10:07:22.605 [34mINFO [0;39m [http-nio-8080-exec-10] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Describe a time you had to
+2025-08-11 10:07:25.371 [34mINFO [0;39m [http-nio-8080-exec-10] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-11 10:07:25.371 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback:  It's great that you immediately identified the tools you used, SQL and Tableau, which shows you're familiar with essential data analysis technologies. That's a strong start for a question about analyzing a large dataset.  Mentioning specific tools demonstrates your technical capabilities.
+
+However, the response is quite brief and doesn't really tell me anything about your *process*. For example, what kind of questions were you trying to answer with the data? Did you have to clean or transform the data before analyzing it? What were you looking for in the dataset to understand player behavior? Sharing these details would paint a much clearer picture of your analytical thinking.
+
+Think about using a structured approach like the STAR method (Situation, Task, Action, Result) or CAR (Context, Action, Result). You could describe the specific *situation* you were in, the *task* you needed to accomplish, the *actions* you took using SQL and Tableau, and the *results* or insights you uncovered. This will make your answer much more comprehensive and impactful.
+
+For instance, you could say something like, "In my previous role, our game had a drop-off in player engagement after the first few levels. My task was to analyze player behavior data to understand why. I used SQL to extract session data, looking at metrics like time spent per level and completion rates, and then used Tableau to visualize common drop-off points and player progression paths. I discovered that players were struggling with a particular mechanic in level three, causing frustration. By simplifying that mechanic based on my insights, we saw a 15% increase in player retention for that segment.
+
+To improve in the future, try to elaborate on the "how" and "why" behind your actions. What specific insights did you gain, and how did you translate those into concrete improvements? Providing quantifiable results is always a HUGE plus. Consider what specific player behaviors you were trying to understand, like retention, monetization, or feature adoption, and how your analysis helped address those.
+
+Score: 3/10
+2025-08-11 10:07:25.378 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=c4537d60-2316-4535-8fe6-bdf5544c2faf, questionText=Describe a time you had to analyze a large dataset to understand player behavior in a game or similar interactive product. What was your process, what challenges did you face, and what insights did you uncover that led to a tangible improvement?, questionType=BEHAVIORAL, createdAt=2025-08-11T15:06:05.832201Z, jobApplicationId=null, userResponseText=I used SQL and Tableau to understand and analyze the data., aiFeedbackText=Feedback:  It's great that you immediately identified the tools you used, SQL and Tableau, which shows you're familiar with essential data analysis technologies. That's a strong start for a question about analyzing a large dataset.  Mentioning specific tools demonstrates your technical capabilities.
+
+However, the response is quite brief and doesn't really tell me anything about your *process*. For example, what kind of questions were you trying to answer with the data? Did you have to clean or transform the data before analyzing it? What were you looking for in the dataset to understand player behavior? Sharing these details would paint a much clearer picture of your analytical thinking.
+
+Think about using a structured approach like the STAR method (Situation, Task, Action, Result) or CAR (Context, Action, Result). You could describe the specific *situation* you were in, the *task* you needed to accomplish, the *actions* you took using SQL and Tableau, and the *results* or insights you uncovered. This will make your answer much more comprehensive and impactful.
+
+For instance, you could say something like, "In my previous role, our game had a drop-off in player engagement after the first few levels. My task was to analyze player behavior data to understand why. I used SQL to extract session data, looking at metrics like time spent per level and completion rates, and then used Tableau to visualize common drop-off points and player progression paths. I discovered that players were struggling with a particular mechanic in level three, causing frustration. By simplifying that mechanic based on my insights, we saw a 15% increase in player retention for that segment.
+
+To improve in the future, try to elaborate on the "how" and "why" behind your actions. What specific insights did you gain, and how did you translate those into concrete improvements? Providing quantifiable results is always a HUGE plus. Consider what specific player behaviors you were trying to understand, like retention, monetization, or feature adoption, and how your analysis helped address those.
+
+Score: 3/10, aiFeedbackScore=3, userResponseId=74ea0e45-c426-452a-abf4-cc9e0be49174, aiFeedbackId=e14d03b3-dd36-44a0-9fa6-7c9ec6ffa833)
+2025-08-11 10:07:25.380 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=c4537d60-2316-4535-8fe6-bdf5544c2faf, questionText=Describe a time you had to analyze a large dataset to understand player behavior in a game or similar interactive product. What was your process, what challenges did you face, and what insights did you uncover that led to a tangible improvement?, questionType=BEHAVIORAL, createdAt=2025-08-11T15:06:05.832201Z, jobApplicationId=null, userResponseText=I used SQL and Tableau to understand and analyze the data., aiFeedbackText=Feedback:  It's great that you immediately identified the tools you used, SQL and Tableau, which shows you're familiar with essential data analysis technologies. That's a strong start for a question about analyzing a large dataset.  Mentioning specific tools demonstrates your technical capabilities.
+
+However, the response is quite brief and doesn't really tell me anything about your *process*. For example, what kind of questions were you trying to answer with the data? Did you have to clean or transform the data before analyzing it? What were you looking for in the dataset to understand player behavior? Sharing these details would paint a much clearer picture of your analytical thinking.
+
+Think about using a structured approach like the STAR method (Situation, Task, Action, Result) or CAR (Context, Action, Result). You could describe the specific *situation* you were in, the *task* you needed to accomplish, the *actions* you took using SQL and Tableau, and the *results* or insights you uncovered. This will make your answer much more comprehensive and impactful.
+
+For instance, you could say something like, "In my previous role, our game had a drop-off in player engagement after the first few levels. My task was to analyze player behavior data to understand why. I used SQL to extract session data, looking at metrics like time spent per level and completion rates, and then used Tableau to visualize common drop-off points and player progression paths. I discovered that players were struggling with a particular mechanic in level three, causing frustration. By simplifying that mechanic based on my insights, we saw a 15% increase in player retention for that segment.
+
+To improve in the future, try to elaborate on the "how" and "why" behind your actions. What specific insights did you gain, and how did you translate those into concrete improvements? Providing quantifiable results is always a HUGE plus. Consider what specific player behaviors you were trying to understand, like retention, monetization, or feature adoption, and how your analysis helped address those.
+
+Score: 3/10, aiFeedbackScore=3, userResponseId=74ea0e45-c426-452a-abf4-cc9e0be49174, aiFeedbackId=e14d03b3-dd36-44a0-9fa6-7c9ec6ffa833),[]>
+2025-08-11 10:08:58.276 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 5904315f-a673-448e-beb1-75db0f8864ee, 4, UserResponseSubmitDto(responseText=I would make sure the variables correlates well to the segmentation)]
+2025-08-11 10:08:58.277 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 5904315f-a673-448e-beb1-75db0f8864ee, 4, UserResponseSubmitDto(responseText=I would make sure the variables correlates well to the segmentation)]
+2025-08-11 10:08:58.283 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'How would you approach analyzing the impact of a new in-game feature on player retention and monetization, considering factors like player segmentation and potential confounding variables?'. User's response: 'I would make sure the variables correlates well to the segmentation'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-11 10:08:58.283 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'How would you approach ana
+2025-08-11 10:09:01.492 [34mINFO [0;39m [http-nio-8080-exec-3] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-11 10:09:01.492 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback:  That's a good starting point. You've correctly identified that ensuring variables correlate with player segmentation is important. This shows you understand that different player groups might react differently to a new feature.  However, to really impress in an interview, you'll want to expand on that a bit and be more specific about your methodology. Think about *how* you'd establish those correlations and what specific variables you'd be looking at.
+
+To really nail this type of question, it's helpful to think in terms of a structured approach. Many people use methods like STAR or CAR to frame their answers. For example, you could start by describing the "Situation" (launching a new feature), then the "Task" (analyzing its impact), the "Action" you'd take (which is where you'd detail your segmentation and correlation strategy), and finally the "Result" (what insights you'd gain).
+
+Let's break down what would make this answer stronger. First, clarity on *how* you'd segment players is key. Are we talking about new versus veteran players, free-to-play versus paying players, or players who engage with specific game modes? Then, on the analysis side, you need to go beyond just correlation. You should mention specific metrics you'd track for retention, like daily active users or churn rate, and for monetization, like average revenue per user or conversion rates.
+
+Consider mentioning A/B testing as a primary method. This allows you to isolate the impact of the new feature by comparing a group of players who experience it versus a control group who don't. Also, don't forget confounding variables like marketing campaigns, other game updates, or even seasonality. Acknowledging these demonstrates a more SOPHISTICATED understanding of data analysis.
+
+For future interviews, try to be more comprehensive. Imagine you're explaining this to someone who needs to understand the entire process. Think about the data you'd need, the tools you might use, and the types of conclusions you'd draw. A solid answer would involve outlining your hypotheses, the data collection methods, the analytical techniques, and how you'd communicate your findings. This shows you're not just identifying a concept, but you have a PLAN.
+
+Score: 6/10
+2025-08-11 10:09:01.498 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=5904315f-a673-448e-beb1-75db0f8864ee, questionText=How would you approach analyzing the impact of a new in-game feature on player retention and monetization, considering factors like player segmentation and potential confounding variables?, questionType=TECHNICAL, createdAt=2025-08-11T15:06:05.833136Z, jobApplicationId=null, userResponseText=I would make sure the variables correlates well to the segmentation, aiFeedbackText=Feedback:  That's a good starting point. You've correctly identified that ensuring variables correlate with player segmentation is important. This shows you understand that different player groups might react differently to a new feature.  However, to really impress in an interview, you'll want to expand on that a bit and be more specific about your methodology. Think about *how* you'd establish those correlations and what specific variables you'd be looking at.
+
+To really nail this type of question, it's helpful to think in terms of a structured approach. Many people use methods like STAR or CAR to frame their answers. For example, you could start by describing the "Situation" (launching a new feature), then the "Task" (analyzing its impact), the "Action" you'd take (which is where you'd detail your segmentation and correlation strategy), and finally the "Result" (what insights you'd gain).
+
+Let's break down what would make this answer stronger. First, clarity on *how* you'd segment players is key. Are we talking about new versus veteran players, free-to-play versus paying players, or players who engage with specific game modes? Then, on the analysis side, you need to go beyond just correlation. You should mention specific metrics you'd track for retention, like daily active users or churn rate, and for monetization, like average revenue per user or conversion rates.
+
+Consider mentioning A/B testing as a primary method. This allows you to isolate the impact of the new feature by comparing a group of players who experience it versus a control group who don't. Also, don't forget confounding variables like marketing campaigns, other game updates, or even seasonality. Acknowledging these demonstrates a more SOPHISTICATED understanding of data analysis.
+
+For future interviews, try to be more comprehensive. Imagine you're explaining this to someone who needs to understand the entire process. Think about the data you'd need, the tools you might use, and the types of conclusions you'd draw. A solid answer would involve outlining your hypotheses, the data collection methods, the analytical techniques, and how you'd communicate your findings. This shows you're not just identifying a concept, but you have a PLAN.
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=ca1f919f-ca3d-4e42-8a79-8d3be597161a, aiFeedbackId=e96ca400-7db1-4132-809e-562d326e8412)
+2025-08-11 10:09:01.500 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=5904315f-a673-448e-beb1-75db0f8864ee, questionText=How would you approach analyzing the impact of a new in-game feature on player retention and monetization, considering factors like player segmentation and potential confounding variables?, questionType=TECHNICAL, createdAt=2025-08-11T15:06:05.833136Z, jobApplicationId=null, userResponseText=I would make sure the variables correlates well to the segmentation, aiFeedbackText=Feedback:  That's a good starting point. You've correctly identified that ensuring variables correlate with player segmentation is important. This shows you understand that different player groups might react differently to a new feature.  However, to really impress in an interview, you'll want to expand on that a bit and be more specific about your methodology. Think about *how* you'd establish those correlations and what specific variables you'd be looking at.
+
+To really nail this type of question, it's helpful to think in terms of a structured approach. Many people use methods like STAR or CAR to frame their answers. For example, you could start by describing the "Situation" (launching a new feature), then the "Task" (analyzing its impact), the "Action" you'd take (which is where you'd detail your segmentation and correlation strategy), and finally the "Result" (what insights you'd gain).
+
+Let's break down what would make this answer stronger. First, clarity on *how* you'd segment players is key. Are we talking about new versus veteran players, free-to-play versus paying players, or players who engage with specific game modes? Then, on the analysis side, you need to go beyond just correlation. You should mention specific metrics you'd track for retention, like daily active users or churn rate, and for monetization, like average revenue per user or conversion rates.
+
+Consider mentioning A/B testing as a primary method. This allows you to isolate the impact of the new feature by comparing a group of players who experience it versus a control group who don't. Also, don't forget confounding variables like marketing campaigns, other game updates, or even seasonality. Acknowledging these demonstrates a more SOPHISTICATED understanding of data analysis.
+
+For future interviews, try to be more comprehensive. Imagine you're explaining this to someone who needs to understand the entire process. Think about the data you'd need, the tools you might use, and the types of conclusions you'd draw. A solid answer would involve outlining your hypotheses, the data collection methods, the analytical techniques, and how you'd communicate your findings. This shows you're not just identifying a concept, but you have a PLAN.
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=ca1f919f-ca3d-4e42-8a79-8d3be597161a, aiFeedbackId=e96ca400-7db1-4132-809e-562d326e8412),[]>
+2025-08-11 10:09:47.803 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4db24f6d-6a2a-4945-8cbe-73246ff37434, 4, UserResponseSubmitDto(responseText=I would analyze user behavior data with professional tools in Python.)]
+2025-08-11 10:09:47.804 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4db24f6d-6a2a-4945-8cbe-73246ff37434, 4, UserResponseSubmitDto(responseText=I would analyze user behavior data with professional tools in Python.)]
+2025-08-11 10:09:47.812 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.GeminiService.generateText() with argument[s] = [As a career coach, evaluate the following user response to the question: 'Imagine you've identified a significant drop in engagement for one of Zynga's popular games. What steps would you take to diagnose the root cause and what data sources would you prioritize to inform your recommendations to the game studio?'. User's response: 'I would analyze user behavior data with professional tools in Python.'. Provide constructive feedback and a suggested score out of 10. Focus on clarity, completeness, relevance, and communication style. Acknowledge what the user did well in their response first, and then start giving suggestions. Make your feedback one or more paragraphs of plain text, with no special characters like the asterisk and no need to divide into sections. Format it as a simple script that a career coach could take and read and make it sound like the way a person would naturally talk. In addition to suggestions, also provide examples of best practices and tips to answer questions like this in the future. If possible make reference to common interview response techniques such as the STAR, CAR, PAR and SOAR methods. Avoid making each paragraph longer than 5 sentences for better readability. To emphasize an important word, make it all capitalized instead of surrounding it with asterisks. Format: Feedback: [feedback text]. Score: [score]/10.]
+2025-08-11 10:09:47.813 [34mINFO [0;39m [http-nio-8080-exec-4] c.i.service.GeminiService - Attempting to connect to Gemini API with model: gemini-2.5-flash-lite and prompt (first 100 chars): As a career coach, evaluate the following user response to the question: 'Imagine you've identified 
+2025-08-11 10:09:50.532 [34mINFO [0;39m [http-nio-8080-exec-4] c.i.service.GeminiService - Successfully received response from Gemini API.
+2025-08-11 10:09:50.533 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.GeminiService.generateText() with result = Feedback: That's a good start. You correctly identified the need to analyze user behavior data, which is absolutely critical. Mentioning Python and professional tools shows you understand the technical side of data analysis.  Now, let's build on that to make your answer even stronger.  Think about the "how" and "what" of that analysis.  What specific user behaviors would you look for, and what kinds of "professional tools" beyond just Python are relevant?
+
+To really impress, you'd want to elaborate on the diagnostic process. Instead of just saying you'd analyze data, you could think about specific hypotheses you might test. For instance, did a recent game update cause the drop? Or is there a new competitor stealing players? Mentioning specific metrics like retention rates, session length, or in-game purchases would demonstrate a deeper understanding of game analytics.
+
+For data sources, you could go beyond just "user behavior data." Think about things like game telemetry, player feedback forums, app store reviews, and even social media sentiment. Prioritizing these would show you can gather a well-rounded picture. It's also helpful to think about structuring your answer using a framework like the STAR method, or perhaps a modified version for problem-solving. You could frame it as: Situation (drop in engagement), Task (diagnose root cause), Action (specific analysis steps), and Result (recommendations).
+
+To further enhance your response, consider adding a brief explanation of *why* you'd prioritize certain data sources. For example, "I'd prioritize telemetry data because it provides real-time, objective insights into player actions, allowing us to pinpoint specific features or points of friction within the game." Think about being SPECIFIC with your actions. Instead of just "analyze user behavior," you could say "I would segment users by their in-game progression and analyze their activity leading up to the engagement drop to identify common patterns or drop-off points."
+
+Score: 6/10
+2025-08-11 10:09:50.539 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.InterviewQuestionService.submitUserResponseAndGetFeedback() with result = InterviewQuestionDto(id=4db24f6d-6a2a-4945-8cbe-73246ff37434, questionText=Imagine you've identified a significant drop in engagement for one of Zynga's popular games. What steps would you take to diagnose the root cause and what data sources would you prioritize to inform your recommendations to the game studio?, questionType=SITUATIONAL, createdAt=2025-08-11T15:06:05.834009Z, jobApplicationId=null, userResponseText=I would analyze user behavior data with professional tools in Python., aiFeedbackText=Feedback: That's a good start. You correctly identified the need to analyze user behavior data, which is absolutely critical. Mentioning Python and professional tools shows you understand the technical side of data analysis.  Now, let's build on that to make your answer even stronger.  Think about the "how" and "what" of that analysis.  What specific user behaviors would you look for, and what kinds of "professional tools" beyond just Python are relevant?
+
+To really impress, you'd want to elaborate on the diagnostic process. Instead of just saying you'd analyze data, you could think about specific hypotheses you might test. For instance, did a recent game update cause the drop? Or is there a new competitor stealing players? Mentioning specific metrics like retention rates, session length, or in-game purchases would demonstrate a deeper understanding of game analytics.
+
+For data sources, you could go beyond just "user behavior data." Think about things like game telemetry, player feedback forums, app store reviews, and even social media sentiment. Prioritizing these would show you can gather a well-rounded picture. It's also helpful to think about structuring your answer using a framework like the STAR method, or perhaps a modified version for problem-solving. You could frame it as: Situation (drop in engagement), Task (diagnose root cause), Action (specific analysis steps), and Result (recommendations).
+
+To further enhance your response, consider adding a brief explanation of *why* you'd prioritize certain data sources. For example, "I'd prioritize telemetry data because it provides real-time, objective insights into player actions, allowing us to pinpoint specific features or points of friction within the game." Think about being SPECIFIC with your actions. Instead of just "analyze user behavior," you could say "I would segment users by their in-game progression and analyze their activity leading up to the engagement drop to identify common patterns or drop-off points."
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=255a5712-f737-4e3d-9c32-6e33c407f281, aiFeedbackId=4add70f6-4b45-4f62-b5f8-9d56ed32aa9e)
+2025-08-11 10:09:50.542 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.InterviewQuestionController.submitUserResponse() with result = <200 OK OK,InterviewQuestionDto(id=4db24f6d-6a2a-4945-8cbe-73246ff37434, questionText=Imagine you've identified a significant drop in engagement for one of Zynga's popular games. What steps would you take to diagnose the root cause and what data sources would you prioritize to inform your recommendations to the game studio?, questionType=SITUATIONAL, createdAt=2025-08-11T15:06:05.834009Z, jobApplicationId=null, userResponseText=I would analyze user behavior data with professional tools in Python., aiFeedbackText=Feedback: That's a good start. You correctly identified the need to analyze user behavior data, which is absolutely critical. Mentioning Python and professional tools shows you understand the technical side of data analysis.  Now, let's build on that to make your answer even stronger.  Think about the "how" and "what" of that analysis.  What specific user behaviors would you look for, and what kinds of "professional tools" beyond just Python are relevant?
+
+To really impress, you'd want to elaborate on the diagnostic process. Instead of just saying you'd analyze data, you could think about specific hypotheses you might test. For instance, did a recent game update cause the drop? Or is there a new competitor stealing players? Mentioning specific metrics like retention rates, session length, or in-game purchases would demonstrate a deeper understanding of game analytics.
+
+For data sources, you could go beyond just "user behavior data." Think about things like game telemetry, player feedback forums, app store reviews, and even social media sentiment. Prioritizing these would show you can gather a well-rounded picture. It's also helpful to think about structuring your answer using a framework like the STAR method, or perhaps a modified version for problem-solving. You could frame it as: Situation (drop in engagement), Task (diagnose root cause), Action (specific analysis steps), and Result (recommendations).
+
+To further enhance your response, consider adding a brief explanation of *why* you'd prioritize certain data sources. For example, "I'd prioritize telemetry data because it provides real-time, objective insights into player actions, allowing us to pinpoint specific features or points of friction within the game." Think about being SPECIFIC with your actions. Instead of just "analyze user behavior," you could say "I would segment users by their in-game progression and analyze their activity leading up to the engagement drop to identify common patterns or drop-off points."
+
+Score: 6/10, aiFeedbackScore=6, userResponseId=255a5712-f737-4e3d-9c32-6e33c407f281, aiFeedbackId=4add70f6-4b45-4f62-b5f8-9d56ed32aa9e),[]>
+2025-08-11 10:11:16.065 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:11:16.066 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:11:16.070 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-11 10:11:16.071 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-11 10:11:16.075 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:11:16.075 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:11:16.077 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-11 10:11:16.078 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-11 10:12:26.855 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.ProfileController.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=Peter, lastName=Jones, phone=888-999-1013, bio=Experienced data analyst, resumeText=Experienced data analyst with Python and SQL)]
+2025-08-11 10:12:26.856 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.ProfileService.updateProfile() with argument[s] = [4, ProfileRequestDto(firstName=Peter, lastName=Jones, phone=888-999-1013, bio=Experienced data analyst, resumeText=Experienced data analyst with Python and SQL)]
+2025-08-11 10:12:26.859 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.ProfileService.updateProfile() with result = ProfileResponseDto(id=4, firstName=Peter, lastName=Jones, phone=888-999-1013, bio=Experienced data analyst, resumeText=Experienced data analyst with Python and SQL, username=peterj, email=peterj@example.com)
+2025-08-11 10:12:26.868 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.ProfileController.updateProfile() with result = <202 ACCEPTED Accepted,ProfileResponseDto(id=4, firstName=Peter, lastName=Jones, phone=888-999-1013, bio=Experienced data analyst, resumeText=Experienced data analyst with Python and SQL, username=peterj, email=peterj@example.com),[]>
+2025-08-11 10:12:32.146 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:12:32.149 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:12:32.160 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-11 10:12:32.160 [39mDEBUG[0;39m [http-nio-8080-exec-2] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-11 10:12:32.163 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:12:32.164 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:12:32.166 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-11 10:12:32.167 [39mDEBUG[0;39m [http-nio-8080-exec-3] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-11 10:12:39.764 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:12:39.765 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:12:39.786 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=3, averageScore=5.0, highestScore=6, lowestScore=3, improvementRate=100.0, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=1, longestStreak=1, lastPracticeDate=2025-08-11T15:09:50.535889Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=3.0, technicalAvgScore=6.0, situationalAvgScore=6.0, mostRecentJobApplication=Data analyst, mostRecentApplicationDate=2025-08-11T15:05:01.789728Z)
+2025-08-11 10:12:39.790 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=3, averageScore=5.0, highestScore=6, lowestScore=3, improvementRate=100.0, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=1, longestStreak=1, lastPracticeDate=2025-08-11T15:09:50.535889Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=3.0, technicalAvgScore=6.0, situationalAvgScore=6.0, mostRecentJobApplication=Data analyst, mostRecentApplicationDate=2025-08-11T15:05:01.789728Z),[]>
+2025-08-11 10:12:39.793 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:12:39.793 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:12:39.803 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=3, averageScore=5.0, highestScore=6, lowestScore=3, improvementRate=100.0, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=1, longestStreak=1, lastPracticeDate=2025-08-11T15:09:50.535889Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=3.0, technicalAvgScore=6.0, situationalAvgScore=6.0, mostRecentJobApplication=Data analyst, mostRecentApplicationDate=2025-08-11T15:05:01.789728Z)
+2025-08-11 10:12:39.804 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=1, upcomingInterviews=1, totalPracticeSessions=1, totalQuestionsAnswered=3, averageScore=5.0, highestScore=6, lowestScore=3, improvementRate=100.0, applicationsPending=1, applicationsInProgress=0, applicationsCompleted=0, currentStreak=1, longestStreak=1, lastPracticeDate=2025-08-11T15:09:50.535889Z, practiceSessionsThisWeek=1, practiceSessionsThisMonth=1, behavioralAvgScore=3.0, technicalAvgScore=6.0, situationalAvgScore=6.0, mostRecentJobApplication=Data analyst, mostRecentApplicationDate=2025-08-11T15:05:01.789728Z),[]>
+2025-08-11 10:13:13.666 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:13:13.668 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:13:13.673 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-11 10:13:13.674 [39mDEBUG[0;39m [http-nio-8080-exec-7] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-11 10:13:13.676 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:13:13.677 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:13:13.679 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances
+2025-08-11 10:13:13.680 [39mDEBUG[0;39m [http-nio-8080-exec-8] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 1 containing com.interviewcoach.dto.JobApplicationDto instances,[]>
+2025-08-11 10:13:33.114 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.updateJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4, JobApplicationDto(id=null, userId=null, title=Data analyst II, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=null, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)]
+2025-08-11 10:13:33.115 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.updateJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4, JobApplicationDto(id=null, userId=null, title=Data analyst II, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=null, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)]
+2025-08-11 10:13:33.117 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.updateJobApplication() with result = JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst II, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.789728Z, expectedInterviewDate=2025-09-06, status=PENDING, tags=null)
+2025-08-11 10:13:33.120 [39mDEBUG[0;39m [http-nio-8080-exec-10] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.updateJobApplication() with result = <200 OK OK,JobApplicationDto(id=8c2a99d2-4d90-4385-92d2-706a7efb3c4c, userId=4, title=Data analyst II, description=At Zynga, we bring people together through the power of play. As a global leader in interactive entertainment and a proud label of Take-Two Interactive, our games have been downloaded over 6 billion times—connecting players in 175+ countries through fun, strategy, and a little friendly competition.
+
+From thrilling casino spins to epic strategy battles, mind-bending puzzles, and social word challenges, our diverse game portfolio has something for everyone. Fan-favorites and latest hits include FarmVille™, Words With Friends™, Zynga Poker™, Game of Thrones Slots Casino™, Wizard of Oz Slots™, Hit it Rich! Slots™, Wonka Slots™, Top Eleven™, Toon Blast™, Empires & Puzzles™, Merge Dragons!™, CSR Racing™, Harry Potter: Puzzles & Spells™, Match Factory™, and Color Block Jam™—plus many more!
+
+Founded in 2007 and headquartered in California, our teams span North America, Europe, and Asia, working together to craft unforgettable gaming experiences. Whether you're spinning, strategizing, matching, or competing, Zynga is where fun meets innovation—and where you can take your career to the next level.
+
+Join us and be part of the play!
+
+Position Overview:
+
+Zynga’s mission is to connect the world through games. Its vision was that gaming would become a mass market activity, and "play" would be an important verb in our daily lives. As a part of this vision, Zynga Analytics partners with studios to release and grow multiple games, while also owning the analytics stack and central tools.
+
+Zynga’s Data Science and Analytics team uses our unique and expansive data to model and predict user behavior, making our games more personalized and more fun to play! We continually strive to better understand our players and provide them with experiences that surprise and delight.
+
+Here’s where you would come in: A successful candidate will be passionate about analytics and data science and ability to impact game performance through customer-centric, data-driven initiatives. As a member of the Central Analytics team, you will have the opportunity to build end-to-end, scalable data-driven solutions to generate impactful insights and work on exciting, large-scale projects. You will collaborate with Product Managers, Game Analysts, and Engineers to deliver business impact.
+
+Be innovative, be creative, use every bit of that key commodity – data. Millions of people play Zynga games every day, so our data is tremendously rich, and we have a lot of it!
+
+What You'll Do:
+Work with large amounts of data to find opportunities to improve the experience that Zynga provides to its players
+Use our modern tech stack, Redshift, Databricks and PySpark, DBT, Airflow, and Tableau to develop innovative tools
+Analyze performance metrics to provide statistical insights that support data-driven decision-making
+Build and maintain centralized data assets
+Develop clear narratives from data using visualization tools such as Tableau.
+Work closely with game teams and product managers to craft, test, verify, and implement end-to-end data pipelines that ingest data from multiple sources and output meaningful insights to optimize Zynga audience growth
+What You Bring:
+Proficient in SQL; Intermediate experience with programming in Python
+Adept in at least one visualization tool such as Tableau
+Adept in at least one visualization tool such as Tableau.
+Understanding of B2C app metrics and KPIs, performance monitoring, and insights.
+Demonstrated experience with some or all of the following: data mining, optimization, experimental design, computational analytics, econometric modeling.
+2+ years of work experience in data analytics or data science roles
+BS in Computer Science, Math, Statistics, Economics, or other quantitative field; Master's, MBA, or PhD preferred, applicationDate=2025-08-11T15:05:01.789728Z, expectedInterviewDate=2025-09-06, status=PENDING, tags=null),[]>
+2025-08-11 10:13:41.345 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.deleteJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:13:41.346 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.deleteJobApplication() with argument[s] = [8c2a99d2-4d90-4385-92d2-706a7efb3c4c, 4]
+2025-08-11 10:13:41.361 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.deleteJobApplication() with result = null
+2025-08-11 10:13:41.372 [39mDEBUG[0;39m [http-nio-8080-exec-9] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.deleteJobApplication() with result = <204 NO_CONTENT No Content,[]>
+2025-08-11 10:44:12.931 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:44:12.931 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:44:12.943 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null)
+2025-08-11 10:44:12.943 [39mDEBUG[0;39m [http-nio-8080-exec-1] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null),[]>
+2025-08-11 10:44:12.944 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:44:12.945 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with argument[s] = [4]
+2025-08-11 10:44:12.948 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.AnalyticsService.getUserAnalytics() with result = UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null)
+2025-08-11 10:44:12.948 [39mDEBUG[0;39m [http-nio-8080-exec-4] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.AnalyticsController.getUserAnalytics() with result = <200 OK OK,UserAnalyticsDto(totalJobApplications=0, upcomingInterviews=0, totalPracticeSessions=0, totalQuestionsAnswered=0, averageScore=0.0, highestScore=0, lowestScore=0, improvementRate=0.0, applicationsPending=0, applicationsInProgress=0, applicationsCompleted=0, currentStreak=0, longestStreak=0, lastPracticeDate=null, practiceSessionsThisWeek=0, practiceSessionsThisMonth=0, behavioralAvgScore=0.0, technicalAvgScore=0.0, situationalAvgScore=0.0, mostRecentJobApplication=No applications yet, mostRecentApplicationDate=null),[]>
+2025-08-11 10:44:15.555 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:44:15.555 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:44:15.558 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-11 10:44:15.559 [39mDEBUG[0;39m [http-nio-8080-exec-5] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-11 10:44:15.563 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.controller.JobApplicationController.getJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:44:15.563 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Enter: com.interviewcoach.service.JobApplicationService.searchJobApplications() with argument[s] = [4, null, Page request [number: 0, size 20, sort: UNSORTED]]
+2025-08-11 10:44:15.565 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.service.JobApplicationService.searchJobApplications() with result = Page 1 of 0 containing UNKNOWN instances
+2025-08-11 10:44:15.565 [39mDEBUG[0;39m [http-nio-8080-exec-6] c.interviewcoach.aop.LoggingAspect - Exit: com.interviewcoach.controller.JobApplicationController.getJobApplications() with result = <200 OK OK,Page 1 of 0 containing UNKNOWN instances,[]>
+2025-08-11 11:29:18.546 [31mWARN [0;39m [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s880ms).
+2025-08-11 12:07:16.413 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11 12:07:16.416 [34mINFO [0;39m [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-11 12:07:16.418 [34mINFO [0;39m [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11 12:07:16.443 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-11 12:07:16.443 [34mINFO [0;39m [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
